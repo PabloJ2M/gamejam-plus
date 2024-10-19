@@ -12,9 +12,9 @@ namespace UI.Effects
         [HideInInspector, SerializeField] private CanvasGroup _group;
         protected override float _alpha { get => _group.alpha; set => _group.alpha = value; }
 
-        private void Awake() => _group = GetComponent<CanvasGroup>();
-        private void OnEnable() => _onFade += OnFadeComplete;
-        private void OnDisable() => _onFade -= OnFadeComplete;
+        protected virtual void Awake() => _group = GetComponent<CanvasGroup>();
+        protected virtual void OnEnable() => _onFade += OnFadeComplete;
+        protected virtual void OnDisable() => _onFade -= OnFadeComplete;
 
         public void Default()
         {
