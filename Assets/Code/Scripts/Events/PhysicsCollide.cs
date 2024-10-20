@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Events
 {
@@ -11,7 +12,7 @@ namespace Events
         [SerializeField] private LayerMask _layer;
         [SerializeField] private Interaction _interaction;
 
-        public Action<Collider2D> onEnter, onExit;
+        public UnityEvent<Collider2D> onEnter, onExit;
 
         protected void OnCollideEnter(Collider2D other)
         {
