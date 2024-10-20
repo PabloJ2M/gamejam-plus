@@ -9,7 +9,7 @@ namespace UI.Effects
         [Header("Canvas Group")]
         [SerializeField] private bool _affectRaycast;
         [SerializeField] private bool _affectInteraction;
-        [SerializeField] private UnityEvent _onComplete;
+        [SerializeField] private UnityEvent _onFadeIn, _onFadeOut;
 
         [HideInInspector, SerializeField] private CanvasGroup _group;
         protected override float _alpha { get => _group.alpha; set => _group.alpha = value; }
@@ -17,7 +17,7 @@ namespace UI.Effects
         protected virtual void Awake() => _group = GetComponent<CanvasGroup>();
         protected virtual void OnEnable() => _onFade += OnFadeComplete;
         protected virtual void OnDisable() => _onFade -= OnFadeComplete;
-        protected override void OnComplete() { base.OnComplete(); _onComplete.Invoke(); }
+        protected override void OnComplete() { base.OnComplete(); if (_isVisible) _onFadeIn.Invoke(); else _onFadeOut.Invoke(); }
 
         public void Default()
         {

@@ -529,7 +529,10 @@ MonoBehaviour:
   _ignoreTimeScale: 0
   _affectRaycast: 1
   _affectInteraction: 1
-  _onComplete:
+  _onFadeIn:
+    m_PersistentCalls:
+      m_Calls: []
+  _onFadeOut:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 442897501}
@@ -581,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35aa29c9e25103a4fa26d0c9e9e37804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _area: 4
+  _area: {x: 4, y: 2.5}
   _threshold: 1
 --- !u!1 &519420028
 GameObject:
