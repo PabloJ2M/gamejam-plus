@@ -38,7 +38,7 @@ namespace Controller
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, _area);
+            Gizmos.DrawWireCube(transform.position, new Vector3(_area, _area, 0));
         }
     }
 }

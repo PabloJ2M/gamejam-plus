@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _area: 4
-  _threshold: 3
+  _threshold: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
