@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace UI.Effects
 {
-    public enum Orientation { Horizontal, Vertical }
     public enum Direction { Top, Right, Left, Bottom }
 
     public abstract class Tweening<T> : MonoBehaviour

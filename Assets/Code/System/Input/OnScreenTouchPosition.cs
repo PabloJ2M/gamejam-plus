@@ -4,24 +4,22 @@ using UnityEngine.InputSystem;
 
 namespace UI.Inputs
 {
-    public class OnScreenTouchPosition : MonoBehaviour
+    public class OnScreenTouchPosition : OnScreenTouch
     {
-        [SerializeField] protected UnityEvent<Vector2> _onPosition;
+        [SerializeField] protected UnityEvent<Vector3> _onPosition;
 
-        private InputSystem_Actions _actions;
         private Camera _camera;
 
-        protected virtual void Awake() { _actions = new(); _camera = Camera.main; }
-        protected virtual void Start() { _actions.UI.Point.performed += OnPointPosition; _actions.UI.Click.performed += OnPointPressed; }
-        protected virtual void OnEnable() => _actions.Enable();
-        protected virtual void OnDisable() => _actions.Disable();
+        protected override void Awake() { base.Awake(); _camera = Camera.main; }
+        protected override void Start() { base.Start(); _actions.UI.Point.performed += OnPointPosition; }
 
-        protected virtual void OnPointPressed(InputAction.CallbackContext ctx) { }
+        protected Vector2 WorldPosition(Vector2 input) => _camera.ScreenToWorldPoint(input);
+
         protected virtual void OnPointPosition(InputAction.CallbackContext ctx)
         {
-            if (!_actions.UI.Click.IsPressed()) return;
-            Vector2 position = _camera.ScreenToWorldPoint(ctx.ReadValue<Vector2>());
-            _onPosition.Invoke(position);
+            Vector2 input = ctx.ReadValue<Vector2>();
+            if (!_actions.UI.Click.IsPressed() || IsPointerOverUI(input)) return;
+            _onPosition.Invoke(WorldPosition(input));
         }
     }
 }
