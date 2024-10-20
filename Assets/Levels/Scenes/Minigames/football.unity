@@ -260,7 +260,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   _interaction: 1
-  _destroyOther: 1
+  _destroyOther: 0
+  _hideOther: 1
   onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -774,6 +775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _item: {fileID: 5226346843767190444, guid: 710dc937dfae1b040b701233af259b34, type: 3}
+  _length: 1
 --- !u!1 &870052859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,7 +1149,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   _interaction: 1
-  _destroyOther: 1
+  _destroyOther: 0
+  _hideOther: 1
   onEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -1295,7 +1298,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   _interaction: 1
-  _destroyOther: 1
+  _destroyOther: 0
+  _hideOther: 1
   onEnter:
     m_PersistentCalls:
       m_Calls: []
