@@ -11,7 +11,7 @@ namespace UI.Inputs.Drag
         public Vector2 Position => transform.position;
 
         private void Awake() => _manager = GetComponentInParent<OnConnect>();
-        private void SendPoint() { if (_manager.IsCurrent(Index)) _manager.AddPoint(this); }
+        private void SendPoint() { if (_manager.IsPressing) _manager.AddPoint(this); }
 
         public void OnPointerEnter(PointerEventData eventData) => SendPoint();
         public void OnPointerExit(PointerEventData eventData) => SendPoint();

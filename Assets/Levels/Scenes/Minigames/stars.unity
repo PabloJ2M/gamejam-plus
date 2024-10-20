@@ -306,6 +306,7 @@ GameObject:
   - component: {fileID: 442897500}
   - component: {fileID: 442897502}
   - component: {fileID: 442897501}
+  - component: {fileID: 442897505}
   - component: {fileID: 442897503}
   - component: {fileID: 442897504}
   m_Layer: 5
@@ -543,6 +544,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 442897505}
+        m_TargetAssemblyTypeName: Controller.RandomPositions, Assembly-CSharp
+        m_MethodName: SetRandomPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 442897504}
         m_TargetAssemblyTypeName: UI.Effects.Fade, Assembly-CSharp
         m_MethodName: FadeIn
@@ -556,6 +569,20 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _group: {fileID: 0}
+--- !u!114 &442897505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442897499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35aa29c9e25103a4fa26d0c9e9e37804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _area: 4
+  _threshold: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

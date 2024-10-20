@@ -9,8 +9,8 @@ namespace UI.Inputs.Drag
     {
         [SerializeField] private UnityEvent _onComplete;
 
-        private bool _isPressed, _isCompleted;
         private LineRenderer _renderer;
+        private bool _isCompleted;
         private Vector2 _target;
 
         protected override void Awake() { base.Awake(); _renderer = GetComponent<LineRenderer>(); }
@@ -20,22 +20,24 @@ namespace UI.Inputs.Drag
 
         private void Update()
         {
-            if (!_isPressed || _renderer.positionCount > transform.childCount) return;
+            if (!IsPressing || _renderer.positionCount > transform.childCount) return;
             _renderer.SetPosition(_renderer.positionCount - 1, _target);
         }
         protected override void OnPointPressed(InputAction.CallbackContext ctx)
         {
-            _isPressed = ctx.action.IsPressed();
-            if (_isPressed || _isCompleted) return;
+            base.OnPointPressed(ctx);
+            if (IsPressing || _isCompleted) return;
             SetDefault();
         }
 
-        public void SetDefault() { _isCompleted = false; _renderer.positionCount = 1; /*_renderer.SetPosition(0, Vector2.zero);*/ }
-        public bool IsCurrent(int index) => _isPressed && _renderer.positionCount - 1 == index;
+        public void SetDefault() { _isCompleted = false; _renderer.positionCount = 1; }
         public void AddPoint(Point point)
         {
+            //block duplicated positions
+            for (int i = 0; i < _renderer.positionCount; i++) { if ((Vector2)_renderer.GetPosition(i) == point.Position) return; }
+
             _renderer.positionCount = Mathf.Clamp(_renderer.positionCount + 1, 0, transform.childCount + 1);
-            _renderer.SetPosition(point.Index, point.Position);
+            _renderer.SetPosition(_renderer.positionCount - 2, point.Position);
 
             if (_renderer.positionCount <= transform.childCount) return;
             _renderer.SetPosition(_renderer.positionCount - 1, point.Position);

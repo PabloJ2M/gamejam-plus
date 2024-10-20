@@ -18,7 +18,6 @@ namespace UI.Inputs
         protected virtual void OnPointPosition(InputAction.CallbackContext ctx)
         {
             Vector2 input = ctx.ReadValue<Vector2>();
-            if (!_actions.UI.Click.IsPressed() || IsPointerOverUI(input)) return;
             _onPosition.Invoke(WorldPosition(input));
         }
     }
