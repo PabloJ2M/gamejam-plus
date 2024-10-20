@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -15,20 +14,15 @@ namespace UI.Inputs
         [SerializeField] private Vector2 _range;
         [SerializeField] private UnityEvent _onSuccess;
 
-        private IEnumerator Start()
-        {
-            yield return new WaitForSeconds(Random.Range(2, 4));
-            LeanTween.cancel(gameObject);
-            LeanTween.value(gameObject, _target.rect.height, Random.Range(_range.x, _range.y), 0.5f).setOnUpdate(TargetScale);
-            StartCoroutine(Start());
-        }
-
-        private void Update()
+        private void Start()
         {
             float area = _container.rect.height + _padding;
-            
             TargetMovement(area);
-
+            TargetScale(Random.Range(_range.x, _range.y));
+        }
+        public void CompareResult()
+        {
+            float area = _container.rect.height + _padding;
             float fill = (_progress.fillAmount * _container.rect.height) + 50;
             float target = _target.anchoredPosition.y + area * 0.5f;
             float range = _target.rect.height * 0.5f;
@@ -39,10 +33,9 @@ namespace UI.Inputs
         private void TargetMovement(float area)
         {
             float areaMovement = area - _target.rect.height;
-            float t = Mathf.PingPong(Time.time * _speed, 1);
 
             Vector2 limit = areaMovement * 0.5f * _progress.GetDirection();
-            _target.localPosition = Vector2.Lerp(-limit, limit, t);
+            _target.localPosition = Vector2.Lerp(-limit, limit, Random.value);
         }
         private void TargetScale(float value)
         {

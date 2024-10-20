@@ -15,7 +15,7 @@ namespace UI.Inputs
         private void FixedUpdate()
         {
             float velocity = _speed * Time.fixedDeltaTime;
-            _image.fillAmount += _isHold ? velocity : -velocity;
+            _image.fillAmount += _isHold ? velocity : 0;
 
             if (!_target) return;
             _target.anchoredPosition = (1 - _image.fillAmount) * _image.rectTransform.rect.height * Vector2.down;
