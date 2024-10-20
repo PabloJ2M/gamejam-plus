@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Events
+namespace Events.Physic
 {
     public static class LayerExtension
     {
