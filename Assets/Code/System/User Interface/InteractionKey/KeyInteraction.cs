@@ -22,7 +22,7 @@ namespace UI.Events
         {
             if (_area == null) return;
 
-            _icon.position = 2f * Vector2.up + _area.WorldCoords;
+            _icon.position = 1f * Vector2.up + _area.WorldCoords;
         }
     }
 }
