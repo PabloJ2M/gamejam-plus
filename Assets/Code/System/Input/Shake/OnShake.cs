@@ -8,29 +8,22 @@ namespace UI.Inputs
     {
         [SerializeField] private Orientation _orientation;
         [SerializeField, Range(0, 1)] private float _threshold;
-        [SerializeField] private UnityEvent _onForward, _onBackward;
+        [SerializeField, Range(0, 10)] private int _amount;
 
-        private Vector3 _lastPosition;
+        [SerializeField] private UnityEvent _onSuccess;
+
         private bool _isForward;
+        private int _current;
 
         public Orientation Orientation { set => _orientation = value; }
 
         protected override void OnEnable() { base.OnEnable(); _onPosition.AddListener(PositionPerfome); }
         protected override void OnDisable() { base.OnDisable(); _onPosition.RemoveAllListeners(); }
 
-        protected override void OnPointPressed(InputAction.CallbackContext ctx)
-        {
-            Vector2 input = _actions.UI.Point.ReadValue<Vector2>();
-            if (IsPointerOverUI(input)) return;
-
-            Vector2 position = WorldPosition(input);
-            _lastPosition = ctx.action.IsPressed() ? position : Vector3.zero;
-        }
         private void PositionPerfome(Vector3 point)
         {
-            if (_lastPosition == Vector3.zero) return;
             Vector2 direction = _orientation.GetOrientation();
-            Vector2 movement = _lastPosition - point;
+            Vector2 movement = (point - transform.position).normalized;
 
             float value = Vector2.Dot(direction, movement);
             if (value > _threshold && _isForward) { MatchDirection(true); }
@@ -38,9 +31,12 @@ namespace UI.Inputs
 
             void MatchDirection(bool isForward)
             {
-                if (isForward) _onForward.Invoke(); else _onBackward.Invoke();
                 _isForward = !isForward;
-                _lastPosition = point;
+                _current++;
+
+                if (_current < _amount) return;
+                _onSuccess.Invoke();
+                _current = 0;
             }
         }
     }
