@@ -25,5 +25,6 @@ namespace UI.Inputs
         public void Hold(BaseEventData data) => Hold();
         public void Release() => _isHold = false;
         public void Release(BaseEventData data) => Release();
+        public void ResetBar() => _image.fillAmount = 0;
     }
 }

@@ -12,7 +12,7 @@ namespace UI.Inputs
 
         [SerializeField, Range(0, 1)] private float _speed;
         [SerializeField] private Vector2 _range;
-        [SerializeField] private UnityEvent _onSuccess;
+        [SerializeField] private UnityEvent _onSuccess, _onFailure;
 
         private void Start()
         {
@@ -27,7 +27,9 @@ namespace UI.Inputs
             float target = _target.anchoredPosition.y + area * 0.5f;
             float range = _target.rect.height * 0.5f;
 
-            if (fill > target - range && fill < target + range) { _onSuccess.Invoke(); }
+            if (fill > target - range && fill < target + range) _onSuccess.Invoke();
+            else _onFailure.Invoke();
+            Start();
         }
 
         private void TargetMovement(float area)
