@@ -11,7 +11,7 @@ namespace Events.Physic
     {
         [SerializeField] private LayerMask _layer;
         [SerializeField] private Interaction _interaction;
-        [SerializeField] private bool _destroyOther = false;
+        [SerializeField] private bool _destroyOther = false, _hideOther = false;
 
         public UnityEvent<Collider2D> onEnter, onExit;
 
@@ -21,6 +21,7 @@ namespace Events.Physic
             if (!_layer.CompareLayer(other.gameObject)) return;
             onEnter?.Invoke(other);
 
+            if (_hideOther) other.gameObject.SetActive(false);
             if (_destroyOther) Destroy(other.gameObject);
         }
         protected void OnCollideExit(Collider2D other)
@@ -29,6 +30,7 @@ namespace Events.Physic
             if (!_layer.CompareLayer(other.gameObject)) return;
             onExit?.Invoke(other);
 
+            if (_hideOther) other.gameObject.SetActive(false);
             if (_destroyOther) Destroy(other.gameObject);
         }
     }
