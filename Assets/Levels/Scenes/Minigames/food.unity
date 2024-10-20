@@ -1100,9 +1100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25aa4952e3c07d479ad815d77ddb6ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 1640464592}
+  _progressBar: {fileID: 1640464593}
   _target: {fileID: 1853157152}
-  _progress: {fileID: 1091091376}
   _padding: -20
   _speed: 0.25
   _range: {x: 80, y: 150}

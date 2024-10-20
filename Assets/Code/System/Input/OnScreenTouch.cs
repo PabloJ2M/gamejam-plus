@@ -7,6 +7,7 @@ namespace UI.Inputs
 {
     public class OnScreenTouch : MonoBehaviour
     {
+        [SerializeField] private bool _ignoreUI;
         protected InputSystem_Actions _actions;
         private EventSystem _system;
 
@@ -21,7 +22,7 @@ namespace UI.Inputs
 
         protected bool IsPointerOverUI(Vector2 touchPosition)
         {
-            if (!_system) return false;
+            if (!_system || _ignoreUI) return false;
             PointerEventData data = new(_system);
             List<RaycastResult> result = new();
             data.position = touchPosition;

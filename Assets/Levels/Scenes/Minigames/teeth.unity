@@ -856,6 +856,7 @@ MonoBehaviour:
     m_Bits: 1
   _interaction: 5
   _destroyOther: 0
+  _hideOther: 0
   onEnter:
     m_PersistentCalls:
       m_Calls:
@@ -914,7 +915,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _orientation: 0
-  _threshold: 0.65
+  _threshold: 0.8
   _amount: 4
   _onSuccess:
     m_PersistentCalls:
@@ -1246,7 +1247,10 @@ MonoBehaviour:
   _ignoreTimeScale: 1
   _affectRaycast: 1
   _affectInteraction: 1
-  _onComplete:
+  _onFadeIn:
+    m_PersistentCalls:
+      m_Calls: []
+  _onFadeOut:
     m_PersistentCalls:
       m_Calls: []
   _group: {fileID: 0}
@@ -1528,9 +1532,13 @@ MonoBehaviour:
   _displacement: 150
   _values:
   - orient: 0
-    icon: {fileID: 7482667652216324306, guid: c98e07a1e3487e64c94a2f04fc1ad832, type: 3}
+    icon: {fileID: 1257159427287217244, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
   - orient: 1
-    icon: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
+    icon: {fileID: 1211296271776697414, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
+  - orient: 2
+    icon: {fileID: 3125943778807702796, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
+  - orient: 3
+    icon: {fileID: -8998939241605495143, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
   _onDirectionChanged:
     m_PersistentCalls:
       m_Calls:
@@ -2576,7 +2584,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.3
       minScalar: 0
       maxCurve:
         serializedVersion: 2

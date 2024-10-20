@@ -26,5 +26,9 @@ namespace UI.Inputs
         public void Release() => _isHold = false;
         public void Release(BaseEventData data) => Release();
         public void ResetBar() => _image.fillAmount = 0;
+
+        public Vector2 Direction => _image.GetDirection();
+        public float Target() => (_image.fillAmount * _image.rectTransform.rect.height) + _target.rect.height;
+        public float Area() => _image.rectTransform.rect.height + _target.rect.height;
     }
 }

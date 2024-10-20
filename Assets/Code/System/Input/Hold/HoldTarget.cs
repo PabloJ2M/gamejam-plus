@@ -1,13 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
 
 namespace UI.Inputs
 {
     public class HoldTarget : MonoBehaviour
     {
-        [SerializeField] private RectTransform _container, _target;
-        [SerializeField] private Image _progress;
+        [SerializeField] private LoadProgressBar _progressBar;
+        [SerializeField] private RectTransform _target;
         [SerializeField] private float _padding;
 
         [SerializeField, Range(0, 1)] private float _speed;
@@ -16,18 +15,17 @@ namespace UI.Inputs
 
         private void Start()
         {
-            float area = _container.rect.height + _padding;
-            TargetMovement(area);
+            TargetMovement(_progressBar.Area() + _padding);
             TargetScale(Random.Range(_range.x, _range.y));
         }
         public void CompareResult()
         {
-            float area = _container.rect.height + _padding;
-            float fill = (_progress.fillAmount * _container.rect.height) + 50;
-            float target = _target.anchoredPosition.y + area * 0.5f;
+            float area = _progressBar.Area() + _padding;
+            float target = _target.anchoredPosition.y + (area * 0.5f);
             float range = _target.rect.height * 0.5f;
 
-            if (fill > target - range && fill < target + range) _onSuccess.Invoke();
+            float value = _progressBar.Target();
+            if (value > target - range && value < target + range) _onSuccess.Invoke();
             else _onFailure.Invoke();
             Start();
         }
@@ -36,7 +34,7 @@ namespace UI.Inputs
         {
             float areaMovement = area - _target.rect.height;
 
-            Vector2 limit = areaMovement * 0.5f * _progress.GetDirection();
+            Vector2 limit = areaMovement * 0.5f * _progressBar.Direction;
             _target.localPosition = Vector2.Lerp(-limit, limit, Random.value);
         }
         private void TargetScale(float value)

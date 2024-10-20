@@ -351,6 +351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95fe62a25a62e9d468463d9b16693a0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ignoreUI: 1
+  _singleTouch: 0
   _onPosition:
     m_PersistentCalls:
       m_Calls: []

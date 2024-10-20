@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 
 namespace UI.Inputs
 {
@@ -22,6 +21,7 @@ namespace UI.Inputs
 
         private void PositionPerfome(Vector3 point)
         {
+            if (!IsPressing) return;
             Vector2 direction = _orientation.GetOrientation();
             Vector2 movement = (point - transform.position).normalized;
 
