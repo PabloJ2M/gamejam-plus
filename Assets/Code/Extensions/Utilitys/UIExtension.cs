@@ -24,7 +24,7 @@ namespace UI
                 case Orientation.Horizontal: return Vector2.right;
                 case Orientation.Vertical: return Vector2.up;
                 case Orientation.DiagonalRight: return Vector2.one;
-                case Orientation.DiagonalLeft: return -Vector2.one;
+                case Orientation.DiagonalLeft: return new Vector2(-1, 1);
                 default: return Vector2.zero;
             }
         }

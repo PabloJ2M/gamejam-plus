@@ -899,6 +899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ce30c49e8a008c498da9045bb9cb9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ignoreUI: 0
+  _singleTouch: 0
   _onPosition:
     m_PersistentCalls:
       m_Calls:
@@ -915,7 +917,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   _orientation: 0
-  _threshold: 0.8
+  _threshold: 0.95
   _amount: 4
   _onSuccess:
     m_PersistentCalls:
@@ -1557,9 +1559,9 @@ MonoBehaviour:
   _onComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1460265594}
-        m_TargetAssemblyTypeName: UI.Effects.Fade, Assembly-CSharp
-        m_MethodName: FadeIn
+      - m_Target: {fileID: 1911475185}
+        m_TargetAssemblyTypeName: Events.Sequence.DirectionSequence, Assembly-CSharp
+        m_MethodName: Start
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

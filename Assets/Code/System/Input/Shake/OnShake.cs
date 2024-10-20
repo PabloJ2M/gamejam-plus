@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 namespace UI.Inputs
 {
@@ -16,16 +17,16 @@ namespace UI.Inputs
 
         public Orientation Orientation { set => _orientation = value; }
 
-        protected override void OnEnable() { base.OnEnable(); _onPosition.AddListener(PositionPerfome); }
-        protected override void OnDisable() { base.OnDisable(); _onPosition.RemoveAllListeners(); }
+        protected override void Start() { base.Start(); _actions.UI.Delta.performed += OnDeltaMovement; }
 
-        private void PositionPerfome(Vector3 point)
+        private void OnDeltaMovement(InputAction.CallbackContext ctx)
         {
             if (!IsPressing) return;
             Vector2 direction = _orientation.GetOrientation();
-            Vector2 movement = (point - transform.position).normalized;
+            Vector2 delta = ctx.ReadValue<Vector2>();
+            if (delta.magnitude < 5) return;
 
-            float value = Vector2.Dot(direction, movement);
+            float value = Vector2.Dot(direction, delta.normalized);
             if (value > _threshold && _isForward) { MatchDirection(true); }
             if (value < -_threshold && !_isForward) { MatchDirection(false); }
 

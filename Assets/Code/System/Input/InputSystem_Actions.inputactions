@@ -516,6 +516,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Delta",
+                    "type": "PassThrough",
+                    "id": "e4303aaf-f5ae-4a74-8009-17cc95cac581",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Click",
                     "type": "PassThrough",
                     "id": "3c7022bf-7922-4f7c-a998-c437916075ad",
@@ -1006,6 +1015,28 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse;Gamepad;Touch;Joystick;XR",
                     "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a4f6c571-b702-49ce-9d87-99b7df9a377d",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76adc3e9-c39b-4c0a-a780-7a8138ca25a2",
+                    "path": "<Touchscreen>/primaryTouch/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Delta",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

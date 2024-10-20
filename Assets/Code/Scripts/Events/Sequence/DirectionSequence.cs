@@ -31,14 +31,19 @@ namespace Events.Sequence
 
         private void Awake() { _icons = _container.GetComponentsInChildren<Image>(); _directions = new Orientation[_icons.Length]; }
         private void Update() => _container.anchoredPosition = Vector2.Lerp(_container.anchoredPosition, _position, 10 * Time.deltaTime);
-        private void Start()
+        public void Start()
         {
+            _position = Vector2.zero;
+
             for (int i = 0; i < _icons.Length; i++) {
                 int r = Random.Range(0, _values.Length);
-                _icons[i].sprite = _values[r].icon;
                 _directions[i] = _values[r].orient;
+                _icons[i].sprite = _values[r].icon;
+                _icons[i].color = _normal;
             }
 
+            _current = 0;
+            _isComplete = false;
             _onDirectionChanged.Invoke(_directions[_current]);
         }
 
