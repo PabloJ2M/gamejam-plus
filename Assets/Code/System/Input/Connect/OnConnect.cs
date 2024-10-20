@@ -16,7 +16,7 @@ namespace UI.Inputs.Drag
         protected override void Awake() { base.Awake(); _renderer = GetComponent<LineRenderer>(); }
         protected override void OnEnable() { base.OnEnable(); _renderer.positionCount = 1; _onPosition.AddListener(TrailPosition); }
         protected override void OnDisable() { base.OnDisable(); _onPosition.RemoveAllListeners(); }
-        private void TrailPosition(Vector2 point) => _target = point;
+        private void TrailPosition(Vector3 point) => _target = point;
 
         private void Update()
         {
