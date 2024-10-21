@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonSound : MonoBehaviour
-
 {
     private AudioSource ButtonSource;
-    void awake()
+
+    private void Awake()
     {
         ButtonSource=GameObject.FindWithTag("Audio").GetComponent<AudioSource>();
     }
