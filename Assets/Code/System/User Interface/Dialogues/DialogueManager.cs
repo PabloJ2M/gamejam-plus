@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace UI.Dialogues
 {
@@ -9,6 +10,8 @@ namespace UI.Dialogues
     {
         [SerializeField, Range(0, 1)] private float _charDelay;
         [SerializeField, Range(0, 10)] private float _lastDelay;
+
+        [SerializeField] private UnityEvent<bool> _onDisplay;
 
         private Queue<DialogueSingle> _listOfDialogues = new();
         private WaitForSeconds _textDelay, _waitDelay;
@@ -26,6 +29,8 @@ namespace UI.Dialogues
 
         private IEnumerator DisplayDialogues()
         {
+            _onDisplay.Invoke(true);
+
             while (_listOfDialogues.Count > 0)
             {
                 var dialogue = _listOfDialogues.Dequeue();
@@ -44,6 +49,7 @@ namespace UI.Dialogues
             }
 
             _animation = null;
+            _onDisplay.Invoke(false);
         }
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5258656944154712106}
   - component: {fileID: 1541439831457874467}
   m_Layer: 5
-  m_Name: Item - Icon
+  m_Name: icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,9 +33,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4385818549764651259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 55}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2190154666460081535
@@ -60,15 +60,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 5104614694429087499, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -89,7 +89,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeName: item-icon
-  _img: {fileID: 0}
 --- !u!1 &3214375882099039291
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,7 +102,7 @@ GameObject:
   - component: {fileID: 8249665369785746980}
   - component: {fileID: 8788214679926977483}
   m_Layer: 5
-  m_Name: Item - Name
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -240,7 +239,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeName: item-name
-  _text: {fileID: 0}
 --- !u!1 &6554718005633735742
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +252,7 @@ GameObject:
   - component: {fileID: 4734010557604996204}
   - component: {fileID: 6884136674069780775}
   m_Layer: 5
-  m_Name: Item - Cost
+  m_Name: cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,7 +389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeName: item-cost
-  _text: {fileID: 0}
 --- !u!1 &8218709503520766198
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,9 +400,10 @@ GameObject:
   - component: {fileID: 4385818549764651259}
   - component: {fileID: 7153668412862142419}
   - component: {fileID: 6731870497444073082}
+  - component: {fileID: 8418328412362440988}
   - component: {fileID: 4501610035712613481}
   m_Layer: 5
-  m_Name: Cell
+  m_Name: item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -461,8 +459,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: -5177388603050735206, guid: 2312fad98fd95d1409449cc756bb84a6, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -471,6 +469,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8418328412362440988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8218709503520766198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 5, y: 5}
+  m_UseGraphicAlpha: 1
 --- !u!114 &4501610035712613481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,8 +497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeName: cell-node
+  guid: 
   _selectionPanelNodeName: selection-items
-  _startItemNumber: 0
   _icon: {fileID: 0}
   _itemName: 
   _cost: 0

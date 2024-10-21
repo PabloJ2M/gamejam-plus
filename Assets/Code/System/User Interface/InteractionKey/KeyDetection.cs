@@ -1,29 +1,33 @@
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
 
 namespace UI.Events
 {
     public class KeyDetection : MonoBehaviour, IInteractable
     {
-        [SerializeField] private InputSystem_Actions _input;
         [SerializeField] private bool _isUnique;
         [SerializeField] private UnityEvent _onInteract;
 
         public Vector2 WorldCoords => transform.position;
+        private KeyInteraction _interaction;
         private bool _locked, _enabled;
 
-        private void Awake() => _input = new();
-        private void Start() => _input.UI.Click.performed += OnInteract;
-        //private void OnDestroy() => _input.UI.Click.performed -= OnInteract;
+        private void Awake() => _interaction = KeyInteraction.Instance;
 
-        public void OnEnter(Collider2D collider) { KeyInteraction.Instance?.SetInteractable(this); _enabled = true; }
-        public void OnExit(Collider2D collider) { KeyInteraction.Instance?.RemoveInteractable(); _enabled = false; }
+        public void OnEnter(Collider2D collider)
+        {
+            _interaction.onInteract += OnInteract;
+            _interaction?.SetInteractable(this);
+            _enabled = true;
+        }
+        public void OnExit(Collider2D collider)
+        {
+            _interaction.onInteract -= OnInteract;
+            _interaction?.RemoveInteractable();
+            _enabled = false;
+        }
 
-        void OnEnable() => _input.Enable();
-        void OnDisable() => _input.Disable();
-
-        private void OnInteract(InputAction.CallbackContext ctx)
+        private void OnInteract()
         {
             if (_locked || !_enabled || Time.timeScale == 0) return;
             if (_isUnique) _locked = true;

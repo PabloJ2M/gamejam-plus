@@ -1,5 +1,7 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace UI.Events
 {
@@ -14,9 +16,11 @@ namespace UI.Events
         [SerializeField] private UnityEvent _onDisplay, _onHide;
 
         private IInteractable _area;
+        public Action onInteract;
 
         public void SetInteractable(IInteractable area) { _area = area; _onDisplay.Invoke(); }
         public void RemoveInteractable() { _area = null; _onHide.Invoke(); }
+        public void Interact(BaseEventData data) => onInteract?.Invoke();
 
         private void Update()
         {

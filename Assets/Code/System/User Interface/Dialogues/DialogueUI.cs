@@ -7,6 +7,8 @@ namespace UI.Dialogues
     {
         [SerializeField] private TextMeshProUGUI _headerText;
         [SerializeField] private TextMeshProUGUI _dialogueText;
+        [SerializeField] private Animator _animator;
+
         private DialogueManager _manager;
 
         private void Awake() => _manager = DialogueManager.Instance;
@@ -17,8 +19,8 @@ namespace UI.Dialogues
             _manager.onTextChange += OnTextChange;
         }
 
-        private void OnHeaderChange(string value) => _headerText.SetText(value);
-        private void OnTextChange(string value) => _dialogueText.SetText(value);
+        private void OnHeaderChange(string value) => _headerText?.SetText(value);
+        private void OnTextChange(string value) => _dialogueText?.SetText(value);
         public void OnSkipButton() => _manager?.SkipDialogue();
     }
 }
