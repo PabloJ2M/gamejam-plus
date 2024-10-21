@@ -1843,7 +1843,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xEDtalo Yupanqui & Mauricio Flora"
+  m_text: Italo Yupanqui & Mauricio Flora
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
   m_sharedMaterial: {fileID: 4688546598861446586, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
