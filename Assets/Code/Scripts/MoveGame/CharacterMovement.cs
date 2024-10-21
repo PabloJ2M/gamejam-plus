@@ -4,16 +4,26 @@ using UnityEngine.AI;
 public class CharacterMovement : MonoBehaviour
 {
     private NavMeshAgent _agent;
+    private SpriteRenderer _render;
+    private Animator _animator;
 
+    private void Start() => _agent.updateRotation = _agent.updateUpAxis = false;
+    public void MoveToPosition(Vector3 targetPosition) => _agent.SetDestination(targetPosition);
+    
     private void Awake()
     {
+        _animator = GetComponentInChildren<Animator>();
+        _render = GetComponentInChildren<SpriteRenderer>();
         _agent = GetComponent<NavMeshAgent>();
-        _agent.updateRotation = false;
-        _agent.updateUpAxis = false;
     }
-
-    public void MoveToPosition(Vector3 targetPosition)
+    private void Update()
     {
-        _agent.SetDestination(targetPosition);
+        _animator.SetFloat("Velocity", _agent.velocity.magnitude);
+
+        if (_agent.velocity == Vector3.zero) return;
+
+        _render.flipX = _agent.velocity.x > 0;
+        _animator.SetFloat("X", _agent.velocity.x);
+        _animator.SetFloat("Y", _agent.velocity.y);
     }
 }

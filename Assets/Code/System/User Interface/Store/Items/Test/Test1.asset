@@ -15,4 +15,5 @@ MonoBehaviour:
   _id: 1839
   _icon: {fileID: 6281311873728053372, guid: 2d7ed20aa7a30bc4fab001e50fe0569f, type: 3}
   _name: ropa
+  _type: 0
   _cost: 1

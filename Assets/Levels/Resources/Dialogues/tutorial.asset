@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogues:
   - {fileID: 11400000, guid: 2f0f4d48798036049813d10424f53ca3, type: 2}
+  - {fileID: 11400000, guid: 994de526d18455d48a89197ff352db82, type: 2}
+  - {fileID: 11400000, guid: 8d28d0231d41a124ca27f4020e05e0cf, type: 2}

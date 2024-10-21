@@ -694,7 +694,9 @@ GameObject:
   - component: {fileID: 573834097}
   - component: {fileID: 573834099}
   - component: {fileID: 573834098}
+  - component: {fileID: 573834102}
   - component: {fileID: 573834100}
+  - component: {fileID: 573834101}
   m_Layer: 5
   m_Name: store system
   m_TagString: Untagged
@@ -776,6 +778,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nodeName: store-bg
+--- !u!114 &573834101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573834096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47abf560b8a5e1b4ca09e7733be6f620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _time: 0.2
+  _delay: 0
+  _loop: 0
+  _playOnAwake: 0
+  _ignoreTimeScale: 0
+  _affectRaycast: 1
+  _affectInteraction: 1
+  _onFadeIn:
+    m_PersistentCalls:
+      m_Calls: []
+  _onFadeOut:
+    m_PersistentCalls:
+      m_Calls: []
+  _group: {fileID: 0}
+--- !u!225 &573834102
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573834096}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,7 +1147,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _time: 0.3
-  _delay: 0
+  _delay: 0.1
   _loop: 0
   _playOnAwake: 0
   _ignoreTimeScale: 0
@@ -2405,7 +2469,6 @@ GameObject:
   - component: {fileID: 1324628949}
   - component: {fileID: 1324628948}
   - component: {fileID: 1324628947}
-  - component: {fileID: 1324628946}
   - component: {fileID: 1324628950}
   m_Layer: 5
   m_Name: close button
@@ -2433,19 +2496,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -50}
   m_SizeDelta: {x: 125, y: 125}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &1324628946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324628944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e66ce28156335c644baac79d204c5c68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _scenePath: Assets/Levels/Scenes/1_gameplay.unity
 --- !u!114 &1324628947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2490,9 +2540,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1324628946}
-        m_TargetAssemblyTypeName: UnityEngine.SceneManagement.SceneLoader, Assembly-CSharp
-        m_MethodName: SwipeScene
+      - m_Target: {fileID: 573834101}
+        m_TargetAssemblyTypeName: UI.Effects.Fade, Assembly-CSharp
+        m_MethodName: FadeOut
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2914,13 +2964,37 @@ MonoBehaviour:
   nodeName: selection-items
   _cellsPool: {fileID: 1435999389}
   _itemSets:
-  - itemSetName: test2
-    items:
-    - {fileID: 11400000, guid: 6921d75b170528447ad31825024d332f, type: 2}
   - itemSetName: test1
     items:
-    - {fileID: 11400000, guid: ae191809d44df96479eeafee9f4fe066, type: 2}
-    - {fileID: 11400000, guid: 28cab87f6fcac8f4a93e3f8bb10d7308, type: 2}
+    - {fileID: 11400000, guid: f54ee7c646f3d574096d073ae2ae6d70, type: 2}
+    - {fileID: 11400000, guid: 0db195b37b0668f43bef20bd33bf1fdc, type: 2}
+    - {fileID: 11400000, guid: 5cb378e2e6106254f862b0f94af32e81, type: 2}
+    - {fileID: 11400000, guid: 3b5ed404831c3b343b669ff92dae646c, type: 2}
+    - {fileID: 11400000, guid: 08e7bf9c126240843906241eca720334, type: 2}
+    - {fileID: 11400000, guid: 2b0bdf7ebf6583840b86e4df15c72786, type: 2}
+    - {fileID: 11400000, guid: 33d3a1caa3a00ab4a83994065c15aa7d, type: 2}
+    - {fileID: 11400000, guid: a7cdc81c2beb11c44a2b8761bc1d71f7, type: 2}
+  - itemSetName: test2
+    items:
+    - {fileID: 11400000, guid: 45a6121e4e2b6c842812b9745daf471c, type: 2}
+    - {fileID: 11400000, guid: 8caa1a6290aa6b94bab66ada9bdcc1a1, type: 2}
+    - {fileID: 11400000, guid: ad68745f68685084abbddfdd7adb84cc, type: 2}
+    - {fileID: 11400000, guid: 755a17b53fd79954bb61cc8f5a9ef708, type: 2}
+    - {fileID: 11400000, guid: e4495770e057274479ceac439f113a79, type: 2}
+    - {fileID: 11400000, guid: 1bedd7fa4b0dd724086dd837872a05b9, type: 2}
+    - {fileID: 11400000, guid: f8737bdbbd4480b4abeb69e164ddc969, type: 2}
+    - {fileID: 11400000, guid: 279c8f5a0d3fb214fab4717e162626e4, type: 2}
+    - {fileID: 11400000, guid: e59cc94f89568044d946bcaa29496958, type: 2}
+    - {fileID: 11400000, guid: 7da1f61f35eb5d343803f6ddd31ab1ec, type: 2}
+  - itemSetName: nothing
+    items:
+    - {fileID: 11400000, guid: 90dca2ff1d724784ca3bf5308baa4db0, type: 2}
+    - {fileID: 11400000, guid: 43f7dd0b0e40ad34a8ab3ed5ff5919b3, type: 2}
+    - {fileID: 11400000, guid: 4ff64db0d69c8f14483916e7a1bbde26, type: 2}
+    - {fileID: 11400000, guid: b2f6fd174d8b6984192be59131d8eadb, type: 2}
+    - {fileID: 11400000, guid: 5cdec7e4a89650349871b1ade1ed392a, type: 2}
+    - {fileID: 11400000, guid: 62ad9e641114b084b81e6429f8339a3f, type: 2}
+    - {fileID: 11400000, guid: ee110c7136a63ac41b7a9a05329d402f, type: 2}
   activeItemSet: 
 --- !u!114 &1435999389
 MonoBehaviour:
@@ -3255,7 +3329,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _time: 0.3
-  _delay: 0
+  _delay: 0.1
   _loop: 0
   _playOnAwake: 0
   _ignoreTimeScale: 0
@@ -3801,7 +3875,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   _time: 0.3
-  _delay: 0
+  _delay: 0.1
   _loop: 0
   _playOnAwake: 0
   _ignoreTimeScale: 0
@@ -3825,7 +3899,6 @@ GameObject:
   - component: {fileID: 1906409748}
   - component: {fileID: 1906409751}
   - component: {fileID: 1906409752}
-  - component: {fileID: 1906409753}
   m_Layer: 5
   m_Name: nav
   m_TagString: Untagged
@@ -3944,33 +4017,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5295179a7568f438af2868cfa1ff0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1906409753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1906409746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ef473b2fd874b14087e95bac265b9c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _onBegin:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1881974534}
-        m_TargetAssemblyTypeName: UI.Effects.Swipe, Assembly-CSharp
-        m_MethodName: SwipeIn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1916792205
 GameObject:
   m_ObjectHideFlags: 0

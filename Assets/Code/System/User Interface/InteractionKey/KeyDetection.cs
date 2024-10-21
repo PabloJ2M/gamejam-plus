@@ -6,7 +6,7 @@ namespace UI.Events
     public class KeyDetection : MonoBehaviour, IInteractable
     {
         [SerializeField] private bool _isUnique;
-        [SerializeField] private UnityEvent _onInteract;
+        [SerializeField] private UnityEvent _onInteract, _onSuccess;
 
         public Vector2 WorldCoords => transform.position;
         private KeyInteraction _interaction;
@@ -17,12 +17,14 @@ namespace UI.Events
         public void OnEnter(Collider2D collider)
         {
             _interaction.onInteract += OnInteract;
+            _interaction.onSuccess += OnSuccess;
             _interaction?.SetInteractable(this);
             _enabled = true;
         }
         public void OnExit(Collider2D collider)
         {
             _interaction.onInteract -= OnInteract;
+            _interaction.onSuccess -= OnSuccess;
             _interaction?.RemoveInteractable();
             _enabled = false;
         }
@@ -32,7 +34,10 @@ namespace UI.Events
             if (_locked || !_enabled || Time.timeScale == 0) return;
             if (_isUnique) _locked = true;
             _onInteract.Invoke();
-            OnExit(null);
+        }
+        private void OnSuccess()
+        {
+            _onSuccess.Invoke();
         }
     }
 }

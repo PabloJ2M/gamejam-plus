@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class UITree : Singleton<UITree>
+public class UITree : SingletonBasic<UITree>
 {
     private Dictionary<string, UITreeNode> _tree;
 
