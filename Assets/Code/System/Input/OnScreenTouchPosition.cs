@@ -9,9 +9,9 @@ namespace UI.Inputs
         [SerializeField] private bool _singleTouch;
         [SerializeField] protected UnityEvent<Vector3> _onPosition;
 
-        private Camera _camera;
+        [SerializeField] private Camera _camera;
 
-        protected override void Awake() { base.Awake(); _camera = Camera.main; }
+        protected override void Awake() { base.Awake(); if (!_camera) _camera = Camera.main; }
         protected override void Start() { base.Start(); _actions.UI.Point.performed += OnPointPosition; }
 
         protected Vector2 WorldPosition(Vector2 input) => _camera.ScreenToWorldPoint(input);
