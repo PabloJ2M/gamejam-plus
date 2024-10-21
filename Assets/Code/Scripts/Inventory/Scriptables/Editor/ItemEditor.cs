@@ -1,3 +1,4 @@
+using System;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
@@ -21,6 +22,9 @@ namespace Inventory
 
             FieldInfo nameField = item.GetType().GetField("_name", _flags);
             nameField?.SetValue(item, EditorGUILayout.TextField("Name", (string)nameField?.GetValue(item)));
+
+            FieldInfo typeField = item.GetType().GetField("_type", _flags);
+            typeField?.SetValue(item, EditorGUILayout.EnumPopup("Type", (ItemType)typeField?.GetValue(item)));
 
             FieldInfo costField = item.GetType().GetField("_cost", _flags);
             costField?.SetValue(item, Mathf.Clamp(EditorGUILayout.IntField("Cost", (int)costField?.GetValue(item)), 0, int.MaxValue));

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13489df05f4d5d54caa6bcf6ae65ae17, type: 3}
-  m_Name: Test1
+  m_Name: sample 18
   m_EditorClassIdentifier: 
-  _id: 1839
-  _icon: {fileID: 6281311873728053372, guid: 2d7ed20aa7a30bc4fab001e50fe0569f, type: 3}
-  _name: ropa
+  _id: 7545
+  _icon: {fileID: 5104614694429087499, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
+  _name: Sample Item
   _type: 0
-  _cost: 1
+  _cost: 0
