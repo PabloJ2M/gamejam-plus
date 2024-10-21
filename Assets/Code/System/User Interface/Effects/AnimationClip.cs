@@ -11,6 +11,6 @@ namespace UI.Effects
 
         private void Awake() => _animator = GetComponent<Animator>();
         private void Start() => _animator.Play(_default);
-        private void Update() => _animator.SetFloat("Speed", _speed);
+        private void Update() => _animator.SetFloat("Velocity", _speed);
     }
 }
