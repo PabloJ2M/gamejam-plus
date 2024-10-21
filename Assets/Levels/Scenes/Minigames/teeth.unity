@@ -1441,7 +1441,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _camera: {fileID: 0}
+  _camera: {fileID: 519420031}
   _orientation: 0
   _threshold: 0.95
   _amount: 4

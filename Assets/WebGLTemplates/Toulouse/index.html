@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Toulouse Multiplayer</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+  </head>
+  <body>
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <div id="unity-warning"> </div>
+      <div id="unity-footer">
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">multiplayer-tls</div>
+      </div>
+      <div id="unity-loader">
+        <div id="unity-loader-fill"></div>
+      </div>
+    </div>
+    <script>
+      var container = document.querySelector("#unity-container");
+      var canvas = document.querySelector("#unity-canvas");
+      var footer = document.querySelector("#unity-footer");
+      var loader = document.querySelector("#unity-loader");
+      var loaderFill = document.querySelector("#unity-loader-fill");
+      var warningBanner = document.querySelector("#unity-warning");
+      var fullscreenButton = document.querySelector("#unity-fullscreen-button");
+
+      //--------------web message--------------
+      function unityShowBanner(msg, type)
+      {
+        function updateBannerVisibility() { warningBanner.style.display = warningBanner.children.length ? 'block' : 'none'; }
+        var div = document.createElement('div');
+        div.innerHTML = msg;
+        warningBanner.appendChild(div);
+
+        if (type == 'error' || type == 'warn') setTimeout(function() { warningBanner.removeChild(div); updateBannerVisibility(); }, 5000);
+        updateBannerVisibility();
+      }
+
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/webgl.loader.js";
+      var config = {
+        dataUrl: buildUrl + "/webgl.data",
+        frameworkUrl: buildUrl + "/webgl.framework.js",
+        codeUrl: buildUrl + "/webgl.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "toulouse",
+        productName: "multiplayer-tls",
+        productVersion: "0.1",
+        showBanner: unityShowBanner,
+      };
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent))
+      {
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+        container.className = "unity-mobile";
+        canvas.className = "unity-mobile";
+      }
+      else
+      {
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
+        footer.style.width = canvas.style.width;
+      }
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      
+      script.onload = () =>
+      {
+        createUnityInstance(canvas, config, (progress) =>
+        {
+          loader.style.display = "block";
+          loaderFill.style.width = 100 * progress + "%";
+        })
+        .then((unityInstance) =>
+        {
+          loader.style.display = "none";
+          window.onbeforeunload = function(e)
+          {
+            console.log("Calling OnClose from Browser!");
+            unityInstance.SendMessage("network connection", "OnCloseWebPage");
+            var dialogText = "Seguro que deseas salir?";
+            e.returnValue = dialogText;
+            return dialogText;
+          }
+          fullscreenButton.onclick = () => { unityInstance.SetFullscreen(1); };
+        })
+        .catch((message) => { alert(message); });
+      };
+
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
