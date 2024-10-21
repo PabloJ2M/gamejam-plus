@@ -16,11 +16,12 @@ namespace UI.Events
         [SerializeField] private UnityEvent _onDisplay, _onHide;
 
         private IInteractable _area;
-        public Action onInteract;
+        public Action onInteract, onSuccess;
 
         public void SetInteractable(IInteractable area) { _area = area; _onDisplay.Invoke(); }
         public void RemoveInteractable() { _area = null; _onHide.Invoke(); }
         public void Interact(BaseEventData data) => onInteract?.Invoke();
+        public void ConfirmInteraction(BaseEventData data) => onSuccess?.Invoke();
 
         private void Update()
         {
