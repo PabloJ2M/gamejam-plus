@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: eyes
+    m_Hash: 656028822
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: open
+      m_Hash: 611353508
+      m_Sprite: {fileID: 9062500366673480242, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 9062500366673480242, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+    - m_Name: close 1
+      m_Hash: 816481434
+      m_Sprite: {fileID: 2172495133581071065, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2172495133581071065, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+    - m_Name: close 2
+      m_Hash: 698602784
+      m_Sprite: {fileID: 7845040035752836059, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7845040035752836059, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+    - m_Name: close 3
+      m_Hash: 514123190
+      m_Sprite: {fileID: 8971557533124945308, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8971557533124945308, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+    - m_Name: close 4
+      m_Hash: 12611605
+      m_Sprite: {fileID: -9120298573738188357, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -9120298573738188357, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+    - m_Name: close 5
+      m_Hash: 935805059
+      m_Sprite: {fileID: -6686852328249327237, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6686852328249327237, guid: b2dc2f17a608edd46a57dcd93af75748, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 6
+  - m_Name: cloth
+    m_Hash: 586247102
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: upper
+      m_Hash: 778035100
+      m_Sprite: {fileID: -4621154325046283943, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4621154325046283943, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+    - m_Name: color
+      m_Hash: 643188969
+      m_Sprite: {fileID: 1513780984342177909, guid: e0ba1198a0113cd4e87c45e547889b21, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1513780984342177909, guid: e0ba1198a0113cd4e87c45e547889b21, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: arms
+    m_Hash: 754239016
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: default
+      m_Hash: 593363167
+      m_Sprite: {fileID: 7242390398971778301, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7242390398971778301, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+    - m_Name: color
+      m_Hash: 643188969
+      m_Sprite: {fileID: 753736179674001172, guid: e0ba1198a0113cd4e87c45e547889b21, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 753736179674001172, guid: e0ba1198a0113cd4e87c45e547889b21, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  - m_Name: legs
+    m_Hash: 1025000330
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: default
+      m_Hash: 593363167
+      m_Sprite: {fileID: 3051571777575504442, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3051571777575504442, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+    - m_Name: color
+      m_Hash: 643188969
+      m_Sprite: {fileID: -1923820972048931858, guid: e0ba1198a0113cd4e87c45e547889b21, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1923820972048931858, guid: e0ba1198a0113cd4e87c45e547889b21, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 2
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638654790513302002
+  m_Version: 1
