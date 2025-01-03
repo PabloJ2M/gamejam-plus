@@ -9,7 +9,7 @@ namespace UI.Controller
         public bool IsPaused { get; private set; }
 
         #region Input System CallbackContext
-        private InputSystem_Actions _inputActions;
+        private Actions _inputActions;
 
         protected override void Awake() { base.Awake(); _inputActions = new(); }
         protected override void OnEnable() { base.OnEnable(); _inputActions.Enable(); }

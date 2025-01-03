@@ -11,7 +11,7 @@ namespace Inventory.Build
         
         private Grid _manager;
         private Camera _camera;
-        private InputSystem_Actions _actions;
+        private Actions _actions;
 
         private void Awake() { _actions = new(); _camera = Camera.main; _manager = GetComponentInParent<Grid>(); }
         private void Start() => _actions.UI.Point.performed += OnDrag;

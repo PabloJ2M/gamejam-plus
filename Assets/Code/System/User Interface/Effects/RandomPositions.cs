@@ -3,39 +3,42 @@ using UnityEngine;
 
 namespace Controller
 {
+    [RequireComponent(typeof(RectTransform))]
     public class RandomPositions : MonoBehaviour
     {
-        [SerializeField] private Vector2 _area;
         [SerializeField] private float _threshold;
-        private Transform _transform;
+        private RectTransform _rectTransform;
 
-        private void Awake() => _transform = transform;
+        private void Awake() => _rectTransform = GetComponent<RectTransform>();
         private void Start() => SetRandomPosition();
 
         public void SetRandomPosition()
         {
             List<Vector3> positions = new();
-            for (int i = 0; i < _transform.childCount; i++)
+            for (int i = 0; i < _rectTransform.childCount; i++)
             {
                 Vector2 pos;
                 bool isValid;
 
                 do { pos = RandomPosition(); isValid = IsPositionValid(positions, pos); } while (!isValid);
-                _transform.GetChild(i).position = pos;
+                _rectTransform.GetChild(i).localPosition = pos;
                 positions.Add(pos);
             }
         }
-        private Vector2 RandomPosition() => new Vector2(Random.Range(-_area.x, _area.x), Random.Range(-_area.y, _area.y));
+        private Vector2 RandomPosition()
+        {
+            Vector2 position = _rectTransform.anchoredPosition;
+            float width = _rectTransform.rect.width / 2;
+            float height = _rectTransform.rect.height / 2;
+
+            position.x += Random.Range(-width, width);
+            position.y += Random.Range(-height, height);
+            return position;
+        }
         private bool IsPositionValid(List<Vector3> positions, Vector3 position)
         {
             foreach (var pos in positions) { if ((pos - position).magnitude < _threshold) return false; }
             return true;
-        }
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(transform.position, _area * 2);
         }
     }
 }

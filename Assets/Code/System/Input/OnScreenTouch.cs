@@ -8,7 +8,7 @@ namespace UI.Inputs
     public class OnScreenTouch : MonoBehaviour
     {
         [SerializeField] private bool _ignoreUI;
-        protected InputSystem_Actions _actions;
+        protected Actions _actions;
         private EventSystem _system;
 
         public bool IsPressing { get; private set; }
