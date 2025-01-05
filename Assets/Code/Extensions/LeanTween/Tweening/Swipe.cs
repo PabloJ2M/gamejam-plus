@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 
 namespace UI.Effects
@@ -8,7 +9,7 @@ namespace UI.Effects
     {
         [Header("Movement")]
         [SerializeField, Tooltip("0 is null")] private float _overrideDistance = 0;
-        [SerializeField] private Orientation _orientation;
+        [SerializeField] private AdvancedOrientation _orientation;
         [SerializeField] private Direction _direction;
         [SerializeField] private UnityEvent<float> _onValueChange;
 
@@ -23,10 +24,10 @@ namespace UI.Effects
 
         protected override void Start()
         {
-            float size = _orientation == Orientation.Horizontal ? _rect.sizeDelta.x : _rect.sizeDelta.y;
+            float size = _orientation == AdvancedOrientation.Horizontal ? _rect.sizeDelta.x : _rect.sizeDelta.y;
             if (_overrideDistance != 0) size = _overrideDistance;
 
-            _movement = (Vector3)_direction.GetDirection();
+            _movement = _direction.GetDirection();
             _position = _rect.localPosition;
             _target = (size * _movement) + _position;
         }

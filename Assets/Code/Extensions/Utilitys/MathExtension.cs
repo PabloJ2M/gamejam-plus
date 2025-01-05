@@ -3,8 +3,12 @@ using Unity.Mathematics;
 
 public static class mathf
 {
-    public static readonly float3 one = new(1f, 1f, 1f);
-    public static readonly float3 zero = new(0f, 0f, 0f);
+    public static readonly float2 up = new(0f, 1f);
+    public static readonly float2 down = new(0f, -1f);
+    public static readonly float2 left = new(-1f, 0f);
+    public static readonly float2 right = new(1f, 0f);
+    public static readonly float2 one = new(1f, 1f);
+    public static readonly float2 zero = new(0f, 0f);
 }
 
 public static class MathExtension

@@ -4,14 +4,14 @@ namespace UI.Effects
 {
     public static class TweeningExtension
     {
-        public static float3 GetDirection(this Direction dir)
+        public static float2 GetDirection(this Direction dir)
         {
             switch (dir)
             {
-                case Direction.Left: return math.left();
-                case Direction.Right: return math.right();
-                case Direction.Top: return math.up();
-                case Direction.Bottom: return math.down();
+                case Direction.Left: return mathf.left;
+                case Direction.Right: return mathf.right;
+                case Direction.Top: return mathf.up;
+                case Direction.Bottom: return mathf.down;
                 default: return mathf.zero;
             }
         }

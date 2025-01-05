@@ -20,13 +20,19 @@ namespace UnityEngine.InputSystem
             float scaleFactor = screenWidth / 1920f;
             _limit = _distanceLimit * scaleFactor;
             base.Start();
+            ClearTrack();
         }
         protected override void OnSelect()
         {
             if (IsPointerOverUI()) return;
-            _render.positionCount = 0;
+            ClearTrack(); ForceUpdate();
             base.OnSelect();
-            ForceUpdate();
+        }
+
+        public void ClearTrack()
+        {
+            _onUpdateDistance.Invoke(1f);
+            _render.positionCount = 0;
         }
 
         protected override void OnUpdateSelection(Vector2 screenPosition)

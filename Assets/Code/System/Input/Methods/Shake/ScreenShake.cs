@@ -1,12 +1,13 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace UI.Inputs
 {
-    public class OnShake : OnScreenTouchPosition
+    public class ScreenShake : OnScreenTouchPosition
     {
-        [SerializeField] private Orientation _orientation;
+        [SerializeField] private AdvancedOrientation _orientation;
         [SerializeField, Range(0, 1)] private float _threshold;
         [SerializeField, Range(0, 10)] private int _amount;
 
@@ -15,7 +16,7 @@ namespace UI.Inputs
         private bool _isForward;
         private int _current;
 
-        public Orientation Orientation { set => _orientation = value; }
+        public AdvancedOrientation Orientation { set => _orientation = value; }
 
         protected override void Start() { base.Start(); _actions.UI.Delta.performed += OnDeltaMovement; }
 

@@ -9,7 +9,7 @@ namespace Events.Sequence
     {
         [System.Serializable] public struct DirectionHandler
         {
-            public Orientation orient;
+            public AdvancedOrientation orient;
             public Sprite icon;
         }
 
@@ -19,17 +19,17 @@ namespace Events.Sequence
 
         [SerializeField] private DirectionHandler[] _values;
 
-        [SerializeField] private UnityEvent<Orientation> _onDirectionChanged;
+        [SerializeField] private UnityEvent<AdvancedOrientation> _onDirectionChanged;
         [SerializeField] private UnityEvent _onComplete;
 
         private Image[] _icons;
-        private Orientation[] _directions;
+        private AdvancedOrientation[] _directions;
 
         private Vector2 _position;
         private bool _isComplete;
         private int _current;
 
-        private void Awake() { _icons = _container.GetComponentsInChildren<Image>(); _directions = new Orientation[_icons.Length]; }
+        private void Awake() { _icons = _container.GetComponentsInChildren<Image>(); _directions = new AdvancedOrientation[_icons.Length]; }
         private void Update() => _container.anchoredPosition = Vector2.Lerp(_container.anchoredPosition, _position, 10 * Time.deltaTime);
         public void Start()
         {

@@ -24,13 +24,14 @@ namespace UI.Effects
         private Vector2 CalculatePosition(float t)
         {
             float heigh = _area.rect.height * 0.5f;
+            float width = _area.rect.width;
             float2 end = new(0, -heigh);
             float2 start = new(0, heigh);
-            float2 control = new(_invertDirection ? -_area.rect.width : _area.rect.width, 0);
+            float2 control = new(_invertDirection ? -width : width, 0);
 
-            return Mathf.Pow(1 - t, 2) * start +
+            return math.pow(1 - t, 2) * start +
                    2 * (1 - t) * t * control +
-                   Mathf.Pow(t, 2) * end;
+                   math.pow(t, 2) * end;
         }
 
         [ContextMenu("Start")] public void OnStart()
