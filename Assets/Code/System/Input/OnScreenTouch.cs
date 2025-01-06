@@ -15,6 +15,7 @@ namespace UI.Inputs
 
         protected virtual void Awake() { _system = EventSystem.current; _actions = new(); }
         protected virtual void Start() => _actions.UI.Click.performed += OnPointPressed;
+        protected virtual void OnDestroy() => _actions.UI.Click.performed -= OnPointPressed;
         protected virtual void OnEnable() => _actions.Enable();
         protected virtual void OnDisable() => _actions.Disable();
 

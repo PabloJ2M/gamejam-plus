@@ -6,11 +6,14 @@ public class ButtonSound : MonoBehaviour
 
     private void Awake()
     {
-        ButtonSource=GameObject.FindWithTag("Audio").GetComponent<AudioSource>();
+        GameObject audio = GameObject.FindWithTag("Audio");
+        if (audio == null) { print("audio not found in scene"); return; }
+
+        ButtonSource = audio.GetComponent<AudioSource>();
     }
 
     public void PlayButtonSound(AudioClip clip)
     {
-        ButtonSource.PlayOneShot(clip);
+        ButtonSource?.PlayOneShot(clip);
     }
 }

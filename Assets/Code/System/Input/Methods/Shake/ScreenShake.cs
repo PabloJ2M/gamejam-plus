@@ -1,11 +1,10 @@
-using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using UnityEngine.InputSystem;
+using Unity.Mathematics;
 
-namespace UI.Inputs
+namespace UnityEngine.InputSystem
 {
-    public class ScreenShake : OnScreenTouchPosition
+    public class ScreenShake : DragBehaviour
     {
         [SerializeField] private AdvancedOrientation _orientation;
         [SerializeField, Range(0, 1)] private float _threshold;
@@ -13,33 +12,39 @@ namespace UI.Inputs
 
         [SerializeField] private UnityEvent _onSuccess;
 
-        private bool _isForward;
+        private bool _inverseDirection;
         private int _current;
 
         public AdvancedOrientation Orientation { set => _orientation = value; }
 
-        protected override void Start() { base.Start(); _actions.UI.Delta.performed += OnDeltaMovement; }
-
-        private void OnDeltaMovement(InputAction.CallbackContext ctx)
+        protected override void Start()
         {
-            if (!IsPressing) return;
-            Vector2 direction = _orientation.GetOrientation();
-            Vector2 delta = ctx.ReadValue<Vector2>();
+            _inputs.UI.Click.performed += OnSelectStatus;
+            _inputs.UI.Delta.performed += OnPointerUpdate;
+        }
+        protected override void OnDestroy()
+        {
+            _inputs.UI.Click.performed -= OnSelectStatus;
+            _inputs.UI.Delta.performed -= OnPointerUpdate;
+        }
+
+        protected override void OnUpdateSelection(Vector2 delta)
+        {
+            float2 direction = _orientation.GetOrientation();
             if (delta.magnitude < 5) return;
 
-            float value = Vector2.Dot(direction, delta.normalized);
-            if (value > _threshold && _isForward) { MatchDirection(true); }
-            if (value < -_threshold && !_isForward) { MatchDirection(false); }
+            float value = math.dot(direction, delta.normalized);
+            if (value > _threshold && _inverseDirection) MatchDirection(true);
+            if (value < -_threshold && !_inverseDirection) MatchDirection(false);
+        }
+        private void MatchDirection(bool isForward)
+        {
+            _inverseDirection = !isForward;
+            _current++;
 
-            void MatchDirection(bool isForward)
-            {
-                _isForward = !isForward;
-                _current++;
-
-                if (_current < _amount) return;
-                _onSuccess.Invoke();
-                _current = 0;
-            }
+            if (_current < _amount) return;
+            _onSuccess.Invoke();
+            _current = 0;
         }
     }
 }

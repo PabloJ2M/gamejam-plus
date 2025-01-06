@@ -10,7 +10,7 @@ namespace UnityEngine.InputSystem
         protected virtual void Start() => _inputs.UI.Click.performed += OnSelectStatus;
         protected virtual void OnDestroy() => _inputs.UI.Click.performed -= OnSelectStatus;
 
-        private void OnSelectStatus(InputAction.CallbackContext ctx)
+        protected void OnSelectStatus(InputAction.CallbackContext ctx)
         {
             bool isPressed = ctx.control.IsPressed();
             if ((isPressed && !_isOverElement) || (!isPressed && !_isSelected)) return;

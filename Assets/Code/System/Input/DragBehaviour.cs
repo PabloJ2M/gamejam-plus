@@ -7,7 +7,7 @@ namespace UnityEngine.InputSystem
         protected override void Start() { base.Start(); _inputs.UI.Point.performed += OnPointerUpdate; }
         protected override void OnDestroy() { base.OnDestroy(); _inputs.UI.Point.performed -= OnPointerUpdate; }
 
-        private void OnPointerUpdate(InputAction.CallbackContext ctx)
+        protected void OnPointerUpdate(InputAction.CallbackContext ctx)
         {
             if (!_isDragging) return;
             OnUpdateSelection(ctx.ReadValue<Vector2>());
