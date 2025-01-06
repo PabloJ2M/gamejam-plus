@@ -17,7 +17,7 @@ public interface IPoolItem
 
 public abstract class PoolBehaviour : MonoBehaviour, IPoolBehaviour
 {
-    [SerializeField] protected Transform _parent;
+    [SerializeField] protected RectTransform _parent;
     [SerializeField] protected GameObject _prefab;
 
     private IObjectPool<IPoolItem> _pooling;

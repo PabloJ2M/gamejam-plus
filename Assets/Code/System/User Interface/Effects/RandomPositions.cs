@@ -14,7 +14,7 @@ namespace Controller
 
         public void SetRandomPosition()
         {
-            List<Vector3> positions = new();
+            List<Vector2> positions = new();
             for (int i = 0; i < _rectTransform.childCount; i++)
             {
                 Vector2 pos;
@@ -35,7 +35,7 @@ namespace Controller
             position.y += Random.Range(-height, height);
             return position;
         }
-        private bool IsPositionValid(List<Vector3> positions, Vector3 position)
+        private bool IsPositionValid(List<Vector2> positions, Vector2 position)
         {
             foreach (var pos in positions) { if ((pos - position).magnitude < _threshold) return false; }
             return true;
