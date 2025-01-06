@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 767196135}
   - component: {fileID: 767196134}
   - component: {fileID: 767196136}
+  - component: {fileID: 767196137}
   m_Layer: 0
   m_Name: virtual camera
   m_TagString: Untagged
@@ -242,7 +243,7 @@ MonoBehaviour:
   Lens:
     FieldOfView: 60
     OrthographicSize: 5
-    NearClipPlane: 0
+    NearClipPlane: 0.01
     FarClipPlane: 20
     Dutch: 0
     ModeOverride: 0
@@ -294,6 +295,19 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!114 &767196137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767196132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42a67a33eef7b942b5064b4bb34ef1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 2016050540}
 --- !u!1 &1492213539
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,7 +653,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
+  near clip plane: 0.01
   far clip plane: 20
   field of view: 60
   orthographic: 1

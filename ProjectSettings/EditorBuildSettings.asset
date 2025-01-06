@@ -12,16 +12,16 @@ EditorBuildSettings:
     path: Assets/Levels/Scenes/1_gameplay.unity
     guid: 8310e3d1d1abe084ea94a526642a2a4d
   - enabled: 1
-    path: Assets/Levels/Scenes/minigames/stars.unity
+    path: Assets/Levels/Scenes/Minigames/stars.unity
     guid: ca63fd154ee6c5844a6bc46caa8dd5cb
   - enabled: 1
-    path: Assets/Levels/Scenes/minigames/food.unity
+    path: Assets/Levels/Scenes/Minigames/food.unity
     guid: da73654855b5e5c47b762238d5e20fb0
   - enabled: 1
-    path: Assets/Levels/Scenes/minigames/football.unity
+    path: Assets/Levels/Scenes/Minigames/football.unity
     guid: 585b2926c2442f04aa19673e16dea7ca
   - enabled: 1
-    path: Assets/Levels/Scenes/minigames/teeth.unity
+    path: Assets/Levels/Scenes/Minigames/teeth.unity
     guid: 45a7fa33745c6fe4fbb3a10bfa8a8169
   - enabled: 1
     path: Assets/Levels/Scenes/options.unity
