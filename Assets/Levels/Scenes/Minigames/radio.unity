@@ -1052,7 +1052,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 1217835540}
-  _area: {fileID: 352290661}
+  _areaRect: {fileID: 1122818385}
+  _targetRect: {fileID: 0}
   _direction: 0
   _offset: 0
   _target: 0.5
@@ -3605,7 +3606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 1217835540}
-  _area: {fileID: 856945828}
+  _areaRect: {fileID: 535699580}
+  _targetRect: {fileID: 0}
   _direction: 0
   _offset: 0
   _target: 0.5
@@ -6109,7 +6111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 1217835540}
-  _area: {fileID: 742832175}
+  _areaRect: {fileID: 1352725912}
+  _targetRect: {fileID: 0}
   _direction: 0
   _offset: 0
   _target: 0.5
