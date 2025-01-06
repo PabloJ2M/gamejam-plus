@@ -4,7 +4,7 @@ using Unity.Mathematics;
 
 namespace UnityEngine.InputSystem
 {
-    public class ScreenShake : DragBehaviour
+    public class ScreenShake : DeltaBehaviour
     {
         [SerializeField] private AdvancedOrientation _orientation;
         [SerializeField, Range(0, 1)] private float _threshold;
@@ -16,17 +16,6 @@ namespace UnityEngine.InputSystem
         private int _current;
 
         public AdvancedOrientation Orientation { set => _orientation = value; }
-
-        protected override void Start()
-        {
-            _inputs.UI.Click.performed += OnSelectStatus;
-            _inputs.UI.Delta.performed += OnPointerUpdate;
-        }
-        protected override void OnDestroy()
-        {
-            _inputs.UI.Click.performed -= OnSelectStatus;
-            _inputs.UI.Delta.performed -= OnPointerUpdate;
-        }
 
         protected override void OnUpdateSelection(Vector2 delta)
         {
