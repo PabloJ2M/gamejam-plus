@@ -17,6 +17,6 @@ namespace UnityEngine.InputSystem
         protected abstract void OnUpdateSelection(Vector2 screenPosition);
 
         protected override void OnSelect() => _isDragging = true;
-        protected override void OnDiselect() => _isDragging = false;
+        protected override void OnDeselect() => _isDragging = false;
     }
 }

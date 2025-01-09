@@ -9,10 +9,11 @@ public interface IPoolBehaviour
 }
 public interface IPoolItem
 {
+    public IObjectPool<IPoolItem> Pool { get; set; }
     public bool IsActive { set; }
     public GameObject Object { get; }
-    public IObjectPool<IPoolItem> Pool { get; set; }
-    public Vector3 Position { get; set; }
+    public Vector2 Position { get; set; }
+    public Vector2 LocalPosition { get; set; }
 }
 
 public abstract class PoolBehaviour : MonoBehaviour, IPoolBehaviour

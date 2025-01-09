@@ -1051,9 +1051,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _group: {fileID: 1217835540}
   _areaRect: {fileID: 1122818385}
   _targetRect: {fileID: 0}
+  _group: {fileID: 1217835540}
   _direction: 0
   _offset: 0
   _target: 0.5
@@ -3605,9 +3605,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _group: {fileID: 1217835540}
   _areaRect: {fileID: 535699580}
   _targetRect: {fileID: 0}
+  _group: {fileID: 1217835540}
   _direction: 0
   _offset: 0
   _target: 0.5
@@ -4803,6 +4803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1217835539}
   - component: {fileID: 1217835540}
+  - component: {fileID: 1217835541}
   m_Layer: 5
   m_Name: right area
   m_TagString: Untagged
@@ -4843,13 +4844,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d4214e009a31174e984452756bbf0ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onActiveTogglesChanged:
+  _onTogglesChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2051505404}
         m_TargetAssemblyTypeName: SineWave, Assembly-CSharp
         m_MethodName: SetNoise
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onToggleCompleted:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1217835541}
+        m_TargetAssemblyTypeName: Events.Interact.Delay, Assembly-CSharp
+        m_MethodName: PlatDefault
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1217835541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217835538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62e7ec9c37f1ab4eb9f13dfe6856256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultTime: 1
+  _onStart:
+    m_PersistentCalls:
+      m_Calls: []
+  _onComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1217835540}
+        m_TargetAssemblyTypeName: ActivationGroup, Assembly-CSharp
+        m_MethodName: SetRandomValues
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6110,9 +6157,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _group: {fileID: 1217835540}
   _areaRect: {fileID: 1352725912}
   _targetRect: {fileID: 0}
+  _group: {fileID: 1217835540}
   _direction: 0
   _offset: 0
   _target: 0.5

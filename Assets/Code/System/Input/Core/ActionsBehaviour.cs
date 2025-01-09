@@ -18,7 +18,7 @@ namespace UnityEngine.InputSystem
         [Flags] private enum UIInteraction { Nothing = 0, SelfOnly = 1, AllChildren = 2 }
         [SerializeField] private UIInteraction _ignoreObjects;
 
-        private EventSystem _system;
+        protected EventSystem _system;
 
         protected override void Awake() { base.Awake(); _system = EventSystem.current; }
 

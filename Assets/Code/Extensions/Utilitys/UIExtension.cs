@@ -17,6 +17,10 @@ namespace UnityEngine.UI
             }
         }
 
+        public static bool IsDirection(this Orientation orientation, Orientation reference)
+        {
+            return orientation == reference;
+        }
         public static float2 GetOrientation(this Orientation orientation)
         {
             switch (orientation)

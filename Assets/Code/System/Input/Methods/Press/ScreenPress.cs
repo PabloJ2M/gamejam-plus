@@ -7,23 +7,15 @@ namespace UnityEngine.InputSystem
     {
         [SerializeField] private Sprite _normal, _pressed;
         [SerializeField, Range(0, 1)] private float _speed;
-        [SerializeField] private UnityEvent _onRelease;
+        [SerializeField] private UnityEvent _onSuccess;
 
         private Image _image;
         private Slider _slider;
 
         protected override void Awake() { base.Awake(); _image = GetComponent<Image>(); _slider = GetComponent<Slider>(); }
-        protected override void OnSelect()
-        {
-            _slider.SetValueWithoutNotify(0);
-            _image.sprite = _pressed;
-        }
-        protected override void OnDiselect()
-        {
-            _image.sprite = _normal;
-            _slider.value -= 0.01f;
-            _onRelease.Invoke();
-        }
+        protected override void OnSelect() { _slider.SetValueWithoutNotify(0); _image.sprite = _pressed; }
+        protected override void OnDeselect() { _image.sprite = _normal; _slider.value -= 0.01f; }
+        public void OnResult(bool value) { if (value) _onSuccess.Invoke(); }
 
         private void FixedUpdate()
         {

@@ -6,49 +6,52 @@ namespace UnityEngine.UI
     [RequireComponent(typeof(Slider))]
     public class Toggle_Slider : MonoBehaviour, IToggle
     {
+        [SerializeField] private RectTransform _container, _visualTarget;
         [SerializeField] private ActivationGroup _group;
-        [SerializeField] private RectTransform _areaRect, _targetRect;
-        [SerializeField] private Orientation _direction;
-        [SerializeField] private int _offset;
+
+        [SerializeField] private Orientation _orientation;
+
+        [SerializeField] private RectOffset _padding;
         [SerializeField] private float _target, _threshold;
         [SerializeField] private UnityEvent<bool> _onValueChanged;
-
+        
         public bool IsActive => _inRange;
 
-        private float2 _rectSize;
+        private bool _isHorizontal, _inRange;
         private Slider _slider;
-        private bool _inRange;
+        private float _size;
 
-        private void Awake() => _slider = GetComponent<Slider>();
-        private void Start() { _rectSize = _direction.GetOrientation() * (float2)_areaRect.sizeDelta; SetTargetSize(); }
+        private void Awake() { _slider = GetComponent<Slider>(); _isHorizontal = _orientation.IsDirection(Orientation.Horizontal); }
+        private void Start() { _size = _isHorizontal ? _container.rect.width : _container.rect.height; SetTargetSize(); }
         private void OnEnable() { _slider.onValueChanged.AddListener(Perfome); _group?.RegisterToggle(this); }
         private void OnDisable() { _slider.onValueChanged.RemoveAllListeners(); _group?.UnregisterToggle(this); }
+        private float RandomValue() => Random.Range(_slider.minValue + _threshold, _slider.maxValue - _threshold);
 
-        public void SetRandomValue() { SetRandomTarget(); _slider.value = Random.Range(_slider.minValue, _slider.maxValue); }
-        public void SetRandomTarget() { _target = Random.Range(_slider.minValue, _slider.maxValue); SetTargetSize(); }
+        public void ForceUpdate() => _slider.value -= 0.01f;
+        public void SetRandomValue() { SetRandomTarget(); _slider.value = RandomValue(); }
+        public void SetRandomTarget() { _target = RandomValue(); SetTargetSize(); }
+
         private void SetTargetSize()
         {
-            if (!_targetRect) return;
+            if (!_visualTarget) return;
 
-            float2 area = _targetRect.sizeDelta;
-            float2 position = (Vector2)_targetRect.localPosition;
+            float rectSize = _size * _threshold;
+            float position = _size * _target;
+            position -= _size * 0.5f;
 
-            bool isHorizontal = _direction == Orientation.Horizontal;
-            if (isHorizontal) area.x = _rectSize.x * _threshold; else area.y = _rectSize.y * _threshold;
-            if (isHorizontal) position.x = _rectSize.x * _target - (area.x * 0.5f); else position.y = _rectSize.y * _target - (area.y * 0.5f);
-
-            _targetRect.sizeDelta = area;
-            _targetRect.localPosition = (Vector2)position;
+            float2 rect = _visualTarget.sizeDelta;
+            _visualTarget.sizeDelta = new(_isHorizontal ? rectSize : rect.x, _isHorizontal ? rect.y : rectSize);
+            _visualTarget.localPosition = new(_isHorizontal ? position : 0, _isHorizontal ? 0 : position);
         }
-
         private void Perfome(float value)
         {
-            float size = _direction == Orientation.Horizontal ? _rectSize.x : _rectSize.y;
-            float range = _slider.maxValue - _slider.minValue;
-            float offset = (_offset / size) * range;
+            float2 padding = _isHorizontal ? new(_padding.left, _padding.right) : new(_padding.bottom, _padding.top);
+            padding /= _size;
+            padding *= 0.5f;
 
-            float min = math.clamp(_target - offset - (_threshold * range), _slider.minValue, _slider.maxValue);
-            float max = math.clamp(_target + offset + (_threshold * range), _slider.minValue, _slider.maxValue);
+            float target = _target + padding.x - padding.y;
+            float min = target - _threshold * 0.5f;
+            float max = target + _threshold * 0.5f;
 
             _inRange = value >= min && value <= max;
             _onValueChanged.Invoke(_inRange);

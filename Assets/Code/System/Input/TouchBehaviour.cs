@@ -16,13 +16,13 @@ namespace UnityEngine.InputSystem
             if ((isPressed && !_isOverElement) || (!isPressed && !_isSelected)) return;
 
             if (isPressed) OnSelect();
-            else OnDiselect();
+            else OnDeselect();
 
             _isSelected = isPressed;
         }
 
         protected abstract void OnSelect();
-        protected abstract void OnDiselect();
+        protected abstract void OnDeselect();
 
         public void OnPointerEnter(PointerEventData eventData) => _isOverElement = true;
         public void OnPointerExit(PointerEventData eventData) => _isOverElement = false;

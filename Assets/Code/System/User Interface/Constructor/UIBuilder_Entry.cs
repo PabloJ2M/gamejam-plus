@@ -9,7 +9,8 @@ namespace UnityEngine.UI
         public GameObject Object => gameObject;
 
         public IObjectPool<IPoolItem> Pool { get; set; }
-        public Vector3 Position { get => transform.localPosition; set => transform.localPosition = value; }
+        public Vector2 Position { get => transform.position; set => transform.position = value; }
+        public Vector2 LocalPosition { get => transform.localPosition; set => transform.localPosition = value; }
 
         public int GetIndex() => transform.GetSiblingIndex();
         public abstract void Setup(T data);
