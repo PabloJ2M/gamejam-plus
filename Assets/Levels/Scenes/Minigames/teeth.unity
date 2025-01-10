@@ -1568,6 +1568,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567415370}
   - component: {fileID: 567415371}
+  - component: {fileID: 567415373}
   - component: {fileID: 567415372}
   m_Layer: 8
   m_Name: song rythm
@@ -1613,7 +1614,6 @@ MonoBehaviour:
   _parent: {fileID: 727336171}
   _prefab: {fileID: 2335358428304883756, guid: 8532e9349c2fe384e8e6281a97c11c5d, type: 3}
   _source: {fileID: 11400000, guid: 572e07714db0e8f4791505e28038960d, type: 2}
-  _pixelSpeedPerSecond: 1000
   _onSuccess:
     m_PersistentCalls:
       m_Calls:
@@ -1732,6 +1732,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &567415373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567415369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f1bf20770779dd43bc6dcd945233add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _direction: 3
+  _isLocalPosition: 1
+  _speed: 1000
 --- !u!1 &586154514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3778,6 +3793,7 @@ GameObject:
   - component: {fileID: 1731823249}
   - component: {fileID: 1731823248}
   - component: {fileID: 1731823250}
+  - component: {fileID: 1731823251}
   m_Layer: 8
   m_Name: presition tap
   m_TagString: Untagged
@@ -3881,6 +3897,36 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.UI.Toggle_Slider, Assembly-CSharp
         m_MethodName: ForceUpdate
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1731823251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731823246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4077fee13acefa24fb6585a36b709866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
+  _loop: 1
+  _backwards: 0
+  _onValueChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11150414}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI
+        m_MethodName: SetValueWithoutNotify
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

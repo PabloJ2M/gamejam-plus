@@ -3,16 +3,9 @@ using UnityEngine.Pool;
 
 namespace UnityEngine.UI
 {
-    public abstract class UI_Entry<T> : MonoBehaviour, IPoolItem
+    public abstract class UI_Entry<T> : ItemBehaviour
     {
-        public bool IsActive { set => gameObject.SetActive(value); }
-        public GameObject Object => gameObject;
-
-        public IObjectPool<IPoolItem> Pool { get; set; }
-        public Vector2 Position { get => transform.position; set => transform.position = value; }
-        public Vector2 LocalPosition { get => transform.localPosition; set => transform.localPosition = value; }
-
-        public int GetIndex() => transform.GetSiblingIndex();
+        public int GetIndex() => _transform.GetSiblingIndex();
         public abstract void Setup(T data);
     }
 

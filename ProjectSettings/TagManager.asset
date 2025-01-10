@@ -15,7 +15,7 @@ TagManager:
   - HideRender
   - Minigame_Default
   - Minigame_UI
-  - 
+  - Minigame_Entity
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
     locked: 0
   - name: Minigame
     uniqueID: 491037401
+    locked: 0
+  - name: MinigameUI
+    uniqueID: 1645904001
     locked: 0
   m_RenderingLayers:
   - Default

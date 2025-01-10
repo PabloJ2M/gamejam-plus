@@ -3,21 +3,15 @@ using UnityEngine.Pool;
 
 namespace Gameplay.GuitarHero
 {
-    public class TrackItem : MonoBehaviour, IPoolItem
+    public class TrackItem : ItemBehaviour
     {
-        public GameObject Object => _rect.gameObject;
-        public bool IsActive { set => _rect.gameObject.SetActive(value); }
-
-        public IObjectPool<IPoolItem> Pool { get; set; }
-        public Vector2 Position { get => _rect.position; set => _rect.position = value; }
-        public Vector2 LocalPosition { get => _rect.localPosition; set => _rect.localPosition = value; }
-
         private TrackController _controller;
         private TrackListener _listener;
         private RectTransform _rect;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             _rect = GetComponent<RectTransform>();
             _controller = GetComponentInParent<TrackController>();
         }

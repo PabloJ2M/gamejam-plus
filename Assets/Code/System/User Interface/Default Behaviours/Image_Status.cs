@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 namespace Events.Gameplay
 {
-    public class ImageResult : MonoBehaviour
+    public class Image_Status : MonoBehaviour
     {
         [SerializeField] private Sprite _success, _failure;
         private Image _image;
