@@ -1051,11 +1051,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _areaRect: {fileID: 1122818385}
-  _targetRect: {fileID: 0}
+  _container: {fileID: 1122818385}
+  _visualTarget: {fileID: 0}
   _group: {fileID: 1217835540}
-  _direction: 0
-  _offset: 0
+  _orientation: 0
+  _padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
   _target: 0.5
   _threshold: 0.1
   _onValueChanged:
@@ -3605,11 +3609,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _areaRect: {fileID: 535699580}
-  _targetRect: {fileID: 0}
+  _container: {fileID: 535699580}
+  _visualTarget: {fileID: 0}
   _group: {fileID: 1217835540}
-  _direction: 0
-  _offset: 0
+  _orientation: 0
+  _padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
   _target: 0.5
   _threshold: 0.1
   _onValueChanged:
@@ -6157,11 +6165,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _areaRect: {fileID: 1352725912}
-  _targetRect: {fileID: 0}
+  _container: {fileID: 1352725912}
+  _visualTarget: {fileID: 0}
   _group: {fileID: 1217835540}
-  _direction: 0
-  _offset: 0
+  _orientation: 0
+  _padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
   _target: 0.5
   _threshold: 0.1
   _onValueChanged:
