@@ -18,7 +18,7 @@ namespace UnityEngine.UI
         {
             _item = data;
             _image.sprite = _item.Image;
-            _cost?.SetText($"${_item.Cost}");
+            _cost?.SetText($"${_item.Resources}");
         }
     }
 }

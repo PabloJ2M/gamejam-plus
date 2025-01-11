@@ -16,7 +16,9 @@ MonoBehaviour:
   _max: 64
   _name: item 1
   _image: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
-  _cost: 0
+  _resources: 4
+  _research: 10
+  _health: 7
   _description: 
   _front: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
   _back: {fileID: 0}

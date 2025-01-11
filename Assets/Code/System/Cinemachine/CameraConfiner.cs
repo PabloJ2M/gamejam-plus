@@ -14,8 +14,6 @@ namespace Unity.Cinemachine
         private void Start() => _size = _camera.ViewportToWorldPoint(Vector2.one) - _camera.transform.position;
         private void LateUpdate()
         {
-            if (_confiner2D.BoundingShape2D == null) return;
-
             Vector3 position = transform.position;
             Bounds area = _confiner2D.BoundingShape2D.bounds;
 

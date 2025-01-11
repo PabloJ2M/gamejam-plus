@@ -33,6 +33,7 @@ namespace UnityEngine.InputSystem
             result.RemoveAll(x => x.gameObject.layer == LayerMask.NameToLayer("Ignore Raycast"));
             if (_ignoreObjects.HasFlag(UIInteraction.SelfOnly)) result.RemoveAll(x => x.gameObject.Equals(gameObject));
             if (_ignoreObjects.HasFlag(UIInteraction.AllChildren)) result.RemoveAll(x => x.gameObject.transform.IsChildOf(transform));
+            foreach (var item in result) print(item.gameObject.name);
             return result.Count > 0;
         }
     }

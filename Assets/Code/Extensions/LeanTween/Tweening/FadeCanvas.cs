@@ -21,8 +21,8 @@ namespace UI.Effects
 
         public void Default()
         {
-            _alpha = 1;
-            OnFadeComplete(true);
+            _alpha = 0;
+            OnFadeComplete(false);
         }
         private void OnFadeComplete(bool value)
         {
