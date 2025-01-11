@@ -536,8 +536,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../Astrowaifu - FMOD Project/Astrowaifu - FMOD.fspro
-  sourceBankPath: ../Astrowaifu - FMOD Project/Build
+  sourceProjectPath: ../../../../Downloads/Astrowaifu - FMOD Project/Astrowaifu -
+    FMOD.fspro
+  sourceBankPath: ../../../../Downloads/Astrowaifu - FMOD Project/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
