@@ -29,13 +29,13 @@ public class AddScoreVisualEffect : MonoBehaviour
     [SerializeField] private AnimationCurve _scaleVariation;
     [SerializeField] private AnimationCurve _positionVariation;
 
-    void Awake()
+    private void Awake()
     {
         if(_scoreAddedTextLabel == null) _scoreAddedTextLabel = GetComponent<TextMeshProUGUI>();
         if(_rectTransform == null) _rectTransform = GetComponent<RectTransform>();
     }
 
-    void Start()
+    private void Start()
     {
         GetVariableParameters();
     }
@@ -65,7 +65,7 @@ public class AddScoreVisualEffect : MonoBehaviour
         _startPosition = transform.position;
     }
 
-    void Update()
+    private void Update()
     {
         _timer += Time.deltaTime;
 
