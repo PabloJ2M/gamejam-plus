@@ -14,6 +14,8 @@ namespace UnityEngine.Pool
         protected virtual void OnGetFromPool(IPoolItem item) { item.IsActive = true; _activeItems.Add(item); }
         protected virtual void OnReleaseFromPool(IPoolItem item) { item.IsActive = false; _activeItems.Remove(item); }
         protected virtual void OnDestroyPooledObject(IPoolItem item) => Destroy(item.Object);
+
+        public void ClearItems() { for (int i = _activeItems.Count - 1; i >= 0; i--) OnReleaseFromPool(_activeItems[i]); }
     }
     public abstract class PoolBehaviour : PoolCore
     {

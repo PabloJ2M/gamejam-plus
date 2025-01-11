@@ -9,7 +9,7 @@ namespace Events.Gameplay
     {
         [SerializeField, Range(0, 10)] private float _delay;
         [SerializeField] private GameObject[] _sequences;
-        [SerializeField] private UnityEvent _onFailure;
+        [SerializeField] private UnityEvent _onSuccess, _onFailure;
 
         private int _current;
         private WaitForSeconds _wait;
@@ -24,7 +24,7 @@ namespace Events.Gameplay
 
             int length = _sequences.Length;
             _current++; _current = math.clamp(_current, 0, length);
-            ObjectsStatus(-1); StartCoroutine(Delay());
+            ObjectsStatus(-1); StartCoroutine(Delay()); _onSuccess.Invoke();
         }
     }
 }

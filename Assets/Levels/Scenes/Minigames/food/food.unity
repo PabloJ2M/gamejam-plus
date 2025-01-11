@@ -267,7 +267,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 64994972}
-  - component: {fileID: 64994973}
   m_Layer: 5
   m_Name: hud
   m_TagString: Untagged
@@ -287,30 +286,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 502992130}
   - {fileID: 1038313435}
   - {fileID: 1716803407}
-  - {fileID: 502992130}
   m_Father: {fileID: 870052863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 150}
+  m_SizeDelta: {x: 0, y: 250}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &64994973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64994971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50fb0bc64ad216f49b4a911fd7d24393, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _prefix: 'Score:'
-  _textUI: {fileID: 1816878815}
 --- !u!1 &379579519
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,10 +454,10 @@ GameObject:
   - component: {fileID: 502992130}
   - component: {fileID: 502992132}
   - component: {fileID: 502992131}
-  - component: {fileID: 502992133}
   - component: {fileID: 502992134}
+  - component: {fileID: 502992133}
   m_Layer: 5
-  m_Name: Image
+  m_Name: return button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -576,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66ce28156335c644baac79d204c5c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenePath: Assets/Levels/Scenes/Minigames/food.unity
+  _scenePath: Assets/Levels/Scenes/minigames/food/food.unity
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,6 +778,9 @@ GameObject:
   - component: {fileID: 864717730}
   - component: {fileID: 864717732}
   - component: {fileID: 864717731}
+  - component: {fileID: 864717733}
+  - component: {fileID: 864717734}
+  - component: {fileID: 864717735}
   m_Layer: 5
   m_Name: food
   m_TagString: Untagged
@@ -833,9 +821,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -857,6 +845,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864717729}
   m_CullTransparentMesh: 1
+--- !u!111 &864717733
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864717729}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 4a51a54395fe0e04384791b9dda7607a, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4a51a54395fe0e04384791b9dda7607a, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!114 &864717734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864717729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea801e87b59c7b147ad378ca7bb31025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _default: {fileID: -4126739752072296125, guid: 1049374eaac62de41b93aefbe2c695de, type: 3}
+  _success: {fileID: -6123949187380665769, guid: 1049374eaac62de41b93aefbe2c695de, type: 3}
+  _failure: {fileID: -1694633171331267742, guid: 1049374eaac62de41b93aefbe2c695de, type: 3}
+--- !u!114 &864717735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864717729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0afa8f30d5acb6844bbeea091711a9ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &870052859
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,8 +984,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1484132601}
-  - {fileID: 64994972}
   - {fileID: 899572327}
+  - {fileID: 64994972}
   - {fileID: 41228899}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1104,8 +1136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77070714b5035040abc62ef88030e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _areaRect: {fileID: 1640464592}
-  _targetRect: {fileID: 1853157152}
+  _container: {fileID: 1640464592}
+  _visualTarget: {fileID: 1853157152}
   _group: {fileID: 0}
   _orientation: 1
   _padding:
@@ -1114,13 +1146,37 @@ MonoBehaviour:
     m_Top: 50
     m_Bottom: 0
   _target: 0.5
-  _threshold: 0.2
+  _threshold: 0.1
   _onValueChanged:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 864717734}
+        m_TargetAssemblyTypeName: Events.Gameplay.Image_Status, Assembly-CSharp
+        m_MethodName: SetResult
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1325117272}
         m_TargetAssemblyTypeName: Events.Gameplay.ImageResult, Assembly-CSharp
         m_MethodName: SetResult
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 899572332}
+        m_TargetAssemblyTypeName: UnityEngine.InputSystem.ScreenPress, Assembly-CSharp
+        m_MethodName: OnResult
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1161,7 +1217,7 @@ MonoBehaviour:
   _onSuccess:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 64994973}
+      - m_Target: {fileID: 1038313438}
         m_TargetAssemblyTypeName: UI.Display.Score, Assembly-CSharp
         m_MethodName: AddScore
         m_Mode: 4
@@ -1169,7 +1225,22 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 10
+          m_FloatArgument: 100
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onFailure:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1038313438}
+        m_TargetAssemblyTypeName: UI.Display.Score, Assembly-CSharp
+        m_MethodName: RemoveScore
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 50
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -1220,8 +1291,9 @@ GameObject:
   - component: {fileID: 1038313435}
   - component: {fileID: 1038313437}
   - component: {fileID: 1038313436}
+  - component: {fileID: 1038313438}
   m_Layer: 5
-  m_Name: background
+  m_Name: score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1285,6 +1357,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038313434}
   m_CullTransparentMesh: 1
+--- !u!114 &1038313438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038313434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50fb0bc64ad216f49b4a911fd7d24393, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _format: '{0}'
+  _textUI: {fileID: 1816878815}
 --- !u!1 &1091091374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,7 +1538,19 @@ MonoBehaviour:
   _defaultTime: 0.25
   _onStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 864717735}
+        m_TargetAssemblyTypeName: Events.Gameplay.LegacyAnimation, Assembly-CSharp
+        m_MethodName: StartAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _onComplete:
     m_PersistentCalls:
       m_Calls:
@@ -1480,6 +1578,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 899572331}
+        m_TargetAssemblyTypeName: UnityEngine.UI.Toggle_Slider, Assembly-CSharp
+        m_MethodName: SetRandomThreshold
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1325117272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1492,6 +1602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea801e87b59c7b147ad378ca7bb31025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _default: {fileID: -4424784022458369742, guid: 1049374eaac62de41b93aefbe2c695de, type: 3}
   _success: {fileID: -4424784022458369742, guid: 1049374eaac62de41b93aefbe2c695de, type: 3}
   _failure: {fileID: -7895382447359459618, guid: 1049374eaac62de41b93aefbe2c695de, type: 3}
 --- !u!1 &1484132600
@@ -1844,7 +1955,7 @@ GameObject:
   - component: {fileID: 1816878816}
   - component: {fileID: 1816878815}
   m_Layer: 5
-  m_Name: score text
+  m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1866,8 +1977,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 25, y: 0}
+  m_SizeDelta: {x: -50, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1816878815
 MonoBehaviour:
@@ -1883,13 +1994,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 0'
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1517892c4f42634458fd2b4855767215, type: 2}
   m_sharedMaterial: {fileID: 5097231738043291567, guid: 1517892c4f42634458fd2b4855767215, type: 2}
@@ -1919,9 +2030,9 @@ MonoBehaviour:
   m_fontSize: 70
   m_fontSizeBase: 70
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 35
+  m_fontSizeMax: 70
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -1941,9 +2052,9 @@ MonoBehaviour:
   m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
+  m_isRichText: 0
+  m_EmojiFallbackSupport: 0
+  m_parseCtrlCharacters: 0
   m_isOrthographic: 1
   m_isCullingEnabled: 0
   m_horizontalMapping: 0
@@ -1952,7 +2063,7 @@ MonoBehaviour:
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
+  m_useMaxVisibleDescender: 0
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0

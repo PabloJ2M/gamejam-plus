@@ -21,7 +21,7 @@ namespace Gameplay.Runner
         private int _index;
 
         private void Awake() => _spawnRate.ResetDificulty();
-        private void OnEnable() => _onSpeedChanged.Invoke(_speed);
+        private void OnEnable() { _speed = 1; _onSpeedChanged.Invoke(_speed); }
 
         private IEnumerator Start()
         {
@@ -42,7 +42,11 @@ namespace Gameplay.Runner
             _onSpeedChanged.Invoke(_speed);
         }
 
+        public void RestartSpawner() { Awake(); OnEnable(); StartCoroutine(Start()); }
+        public void StopSpawner() => StopAllCoroutines();
         public void Release(IPoolItem item) => OnReleaseFromPool(item);
+        public void OnCollectScore() => _onCollectScore.Invoke();
+        
         protected override IPoolItem CreateItem()
         {
             IPoolItem obstacle = Create(_spawnRate.CreateObstacle(_index), _index, float2.zero);
@@ -50,7 +54,6 @@ namespace Gameplay.Runner
             obstacle.Index = _index;
             return obstacle;
         }
-
         private IPoolItem Create(GameObject item, int id, float2 offset)
         {
             int index = _pool.FindIndex(x => !x.IsActive && x.Index == id);
@@ -63,6 +66,5 @@ namespace Gameplay.Runner
             obj.LocalPosition = mathf.zero + offset;
             return obj;
         }
-        public void OnCollectScore() => _onCollectScore.Invoke();
     }
 }

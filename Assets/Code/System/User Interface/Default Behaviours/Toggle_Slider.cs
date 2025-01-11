@@ -30,6 +30,7 @@ namespace UnityEngine.UI
         public void ForceUpdate() => _slider.value -= 0.01f;
         public void SetRandomValue() { SetRandomTarget(); _slider.value = RandomValue(); }
         public void SetRandomTarget() { _target = RandomValue(); SetTargetSize(); }
+        public void SetRandomThreshold() => _threshold = Random.Range(0.1f, 0.3f);
 
         private void SetTargetSize()
         {
