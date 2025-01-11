@@ -11,7 +11,7 @@ namespace Unity.Cinemachine
         private Vector2 _size;
 
         private void Awake() => _confiner2D = GetComponent<CinemachineConfiner2D>();
-        private void Start() => _size = _camera.ViewportToWorldPoint(Vector2.one);
+        private void Start() => _size = _camera.ViewportToWorldPoint(Vector2.one) - _camera.transform.position;
         private void LateUpdate()
         {
             if (_confiner2D.BoundingShape2D == null) return;
