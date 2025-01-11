@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f336eecc-3e06-4730-b8a8-31e8810c3153}">
+		<property name="assetPath">
+			<value>SFX/Ritmo Dental/SFX_Resplandecer.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.2387981859410431</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3ac518d-0304-4719-a243-8a64a101766d}</destination>
+		</relationship>
+	</object>
+</objects>
