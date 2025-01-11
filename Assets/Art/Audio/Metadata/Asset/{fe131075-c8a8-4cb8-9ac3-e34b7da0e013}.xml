@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{fe131075-c8a8-4cb8-9ac3-e34b7da0e013}">
+		<property name="color">
+			<value>Red</value>
+		</property>
+		<property name="assetPath">
+			<value>MUS/Mini Games/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3ac518d-0304-4719-a243-8a64a101766d}</destination>
+		</relationship>
+	</object>
+</objects>

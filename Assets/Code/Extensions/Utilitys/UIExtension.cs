@@ -1,32 +1,52 @@
-using UnityEngine;
-using UnityEngine.UI;
+using Unity.Mathematics;
 
-namespace UI
+namespace UnityEngine.UI
 {
-    public enum Orientation { Horizontal, Vertical, DiagonalRight, DiagonalLeft }
+    public enum Orientation { Horizontal, Vertical }
+    public enum AdvancedOrientation { Horizontal, Vertical, DiagonalRight, DiagonalLeft }
 
     public static class UIExtension
     {
-        public static Vector2 GetDirection(this Image image)
+        public static float2 GetDirection(this Image image)
         {
             switch (image.fillMethod)
             {
-                case Image.FillMethod.Horizontal: return image.fillOrigin == 0 ? Vector2.left : Vector2.right;
-                case Image.FillMethod.Vertical: return image.fillOrigin == 0 ? Vector2.down : Vector2.up;
-                default: return Vector2.zero;
+                case Image.FillMethod.Horizontal: return image.fillOrigin == 0 ? mathf.left : mathf.right;
+                case Image.FillMethod.Vertical: return image.fillOrigin == 0 ? mathf.down : mathf.up;
+                default: return mathf.zero;
             }
         }
 
-        public static Vector2 GetOrientation(this Orientation orientation)
+        public static bool IsDirection(this Orientation orientation, Orientation reference)
+        {
+            return orientation == reference;
+        }
+        public static float2 GetOrientation(this Orientation orientation)
+        {
+            switch (orientation)
+            {
+                case Orientation.Horizontal: return mathf.right;
+                case Orientation.Vertical: return mathf.up;
+                default: return mathf.zero;
+            }
+        }
+        public static float2 GetOrientation(this AdvancedOrientation orientation)
         {
             switch(orientation)
             {
-                case Orientation.Horizontal: return Vector2.right;
-                case Orientation.Vertical: return Vector2.up;
-                case Orientation.DiagonalRight: return Vector2.one;
-                case Orientation.DiagonalLeft: return new Vector2(-1, 1);
-                default: return Vector2.zero;
+                case AdvancedOrientation.Horizontal: return mathf.right;
+                case AdvancedOrientation.Vertical: return mathf.up;
+                case AdvancedOrientation.DiagonalRight: return mathf.one;
+                case AdvancedOrientation.DiagonalLeft: return new Vector2(-1, 1);
+                default: return mathf.zero;
             }
+        }
+
+        public static void Fade(this Image image, float alpha)
+        {
+            Color color = image.color;
+            color.a = alpha;
+            image.color = color;
         }
     }
 }

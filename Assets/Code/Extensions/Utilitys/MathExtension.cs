@@ -1,14 +1,34 @@
 using UnityEngine;
 using Unity.Mathematics;
 
+public enum Direction
+{
+    Top, Right, Left, Bottom
+}
+
 public static class mathf
 {
-    public static readonly float3 one = new(1f, 1f, 1f);
-    public static readonly float3 zero = new(0f, 0f, 0f);
+    public static readonly float2 up = new(0f, 1f);
+    public static readonly float2 down = new(0f, -1f);
+    public static readonly float2 left = new(-1f, 0f);
+    public static readonly float2 right = new(1f, 0f);
+    public static readonly float2 one = new(1f, 1f);
+    public static readonly float2 zero = new(0f, 0f);
 }
 
 public static class MathExtension
 {
+    public static float2 GetDirection(this Direction dir)
+    {
+        switch (dir)
+        {
+            case Direction.Top: return mathf.up;
+            case Direction.Right: return mathf.right;
+            case Direction.Left: return mathf.left;
+            case Direction.Bottom: return mathf.down;
+            default: return mathf.zero;
+        }
+    }
     public static bool Compare(this float3 direction, float3 other)
     {
         direction = math.round(direction);

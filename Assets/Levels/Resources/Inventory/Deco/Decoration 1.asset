@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cda5ccb0dcc8734ab563567d927c0b6, type: 3}
+  m_Name: Decoration 1
+  m_EditorClassIdentifier: 
+  _id: 125248
+  _max: 64
+  _name: item 1
+  _image: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
+  _resources: 4
+  _research: 10
+  _health: 7
+  _description: 
+  _front: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
+  _back: {fileID: 0}
+  _left: {fileID: 0}
+  _right: {fileID: 0}
