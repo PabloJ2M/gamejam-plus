@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b594ea0bbf9206c4e92d5fb29119db48, type: 3}
   m_Name: spawn rate - runner
   m_EditorClassIdentifier: 
+  _probability: 0.5
+  _items:
+  - {fileID: 1934640754030761317, guid: 156387e63cf9ace459865a642018667e, type: 3}
   _threshold: 10
-  _prefabs:
+  _obstacles:
   - {fileID: 1241863219695452581, guid: 1ba4209ba84d7164f9824beb1f3a928b, type: 3}
   - {fileID: 1241863219695452581, guid: 687c4ab731e4fd14bb8eac661596476d, type: 3}
   _rate:
@@ -26,6 +29,6 @@ MonoBehaviour:
   - _min: 0.7
     _max: 1
     _step: 2
-  - _min: 0.7
-    _max: 0.9
-    _step: 2.2
+  - _min: 0.5
+    _max: 0.8
+    _step: 2.25

@@ -758,9 +758,9 @@ MonoBehaviour:
   _onSpeedChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 802060019}
-        m_TargetAssemblyTypeName: Parallax, Assembly-CSharp
-        m_MethodName: set_SpeedMultiply
+      - m_Target: {fileID: 479023037}
+        m_TargetAssemblyTypeName: UnityEngine.Pool.PoolDisplacement, Assembly-CSharp
+        m_MethodName: set_Speed
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -770,9 +770,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 479023037}
-        m_TargetAssemblyTypeName: UnityEngine.Pool.PoolDisplacement, Assembly-CSharp
-        m_MethodName: set_Speed
+      - m_Target: {fileID: 802060019}
+        m_TargetAssemblyTypeName: Parallax, Assembly-CSharp
+        m_MethodName: set_SpeedMultiply
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,6 +791,21 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onCollectScore:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 781302561}
+        m_TargetAssemblyTypeName: UI.Display.Score, Assembly-CSharp
+        m_MethodName: AddScore
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -928,7 +943,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 781302556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 891ce1f03489983419b7b9bfef1c9c20, type: 3}
+  m_Script: {fileID: 11500000, guid: 50fb0bc64ad216f49b4a911fd7d24393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _prefix: 
@@ -1259,7 +1274,7 @@ GameObject:
   - component: {fileID: 1677804605}
   m_Layer: 9
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

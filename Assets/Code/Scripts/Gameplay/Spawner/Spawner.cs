@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
 using UnityEngine.Events;
+using Unity.Mathematics;
 
 namespace Gameplay.Runner
 {
@@ -11,6 +12,7 @@ namespace Gameplay.Runner
         [SerializeField] private Transform _parent;
         [SerializeField] private SpawnRate _spawnRate;
         [SerializeField] private UnityEvent<float> _onSpeedChanged;
+        [SerializeField] private UnityEvent _onCollectScore;
 
         private List<IPoolItem> _pool = new();
 
@@ -43,16 +45,24 @@ namespace Gameplay.Runner
         public void Release(IPoolItem item) => OnReleaseFromPool(item);
         protected override IPoolItem CreateItem()
         {
-            int index = _pool.FindIndex(x => !x.IsActive && x.Index == _index);
-
-            IPoolItem item = null;
-            if (index >= 0) { item = _pool[index]; item.IsActive = true; }
-            else { item = Instantiate(_spawnRate.Create(_index), _parent).GetComponent<IPoolItem>(); _pool.Add(item); }
-
-            ActiveItems.Add(item);
-            item.LocalPosition = mathf.zero;
-            item.Index = _index;
-            return item;
+            IPoolItem obstacle = Create(_spawnRate.CreateObstacle(_index), _index, float2.zero);
+            if (_spawnRate.DropItem) Create(_spawnRate.CreateItem(), -1, mathf.up * 3.5f);
+            obstacle.Index = _index;
+            return obstacle;
         }
+
+        private IPoolItem Create(GameObject item, int id, float2 offset)
+        {
+            int index = _pool.FindIndex(x => !x.IsActive && x.Index == id);
+
+            IPoolItem obj = null;
+            if (index >= 0) { obj = _pool[index]; obj.IsActive = true; }
+            else { obj = Instantiate(item, _parent).GetComponent<IPoolItem>(); _pool.Add(obj); }
+
+            ActiveItems.Add(obj);
+            obj.LocalPosition = mathf.zero + offset;
+            return obj;
+        }
+        public void OnCollectScore() => _onCollectScore.Invoke();
     }
 }

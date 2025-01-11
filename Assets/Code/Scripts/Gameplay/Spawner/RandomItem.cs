@@ -1,15 +1,15 @@
-using UnityEngine.Pool;
+using UnityEngine;
 
 namespace Gameplay.Runner
 {
-    public class RandomItem : ItemBehaviour
+    public class RandomItem : RandomObstacle
     {
-        private Spawner _spawner;
+        private void Start() => Index = -1;
 
-        protected override void Awake() { base.Awake(); _spawner = GetComponentInParent<Spawner>(); }
-        private void LateUpdate()
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (Position.x > _spawner.Limit) return;
+            if (!collision.CompareTag("Player")) return;
+            _spawner?.OnCollectScore();
             _spawner.Release(this);
         }
     }
