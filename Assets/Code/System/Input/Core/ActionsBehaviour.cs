@@ -12,7 +12,6 @@ namespace UnityEngine.InputSystem
         protected virtual void OnEnable() => _inputs.Enable();
         protected virtual void OnDisable() => _inputs.Disable();
     }
-
     public abstract class InteractionBehaviour : ActionsBehaviour
     {
         [Flags] private enum UIInteraction { Nothing = 0, SelfOnly = 1, AllChildren = 2 }
@@ -31,6 +30,7 @@ namespace UnityEngine.InputSystem
 
             _system.RaycastAll(data, result);
 
+            result.RemoveAll(x => x.gameObject.layer == LayerMask.NameToLayer("Ignore Raycast"));
             if (_ignoreObjects.HasFlag(UIInteraction.SelfOnly)) result.RemoveAll(x => x.gameObject.Equals(gameObject));
             if (_ignoreObjects.HasFlag(UIInteraction.AllChildren)) result.RemoveAll(x => x.gameObject.transform.IsChildOf(transform));
             return result.Count > 0;

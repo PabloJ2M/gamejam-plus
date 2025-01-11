@@ -13,10 +13,9 @@ namespace UnityEngine.UI
         
         protected override void OnDisplay()
         {
+            ClearItems();
             var slots = _storage.Container.slots;
-
             foreach (var slot in slots) { var item = Pool.Get() as InventoryUI_Entry; item.Setup(slot.Value); }
-            OnRemoveExceed(slots.Count);
         }
     }
 }

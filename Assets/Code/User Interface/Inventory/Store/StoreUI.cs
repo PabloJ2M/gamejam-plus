@@ -9,10 +9,9 @@ namespace UnityEngine.UI
 
         protected override void OnDisplay()
         {
+            ClearItems();
             var items = _database.Items;
-
             for (int i = 0; i < items.Count; i++) { var item = Pool.Get() as StoreUI_Entry; item.Setup(items[i]); }
-            OnRemoveExceed(items.Count);
         }
 
         public void BuyItem(Item item)
