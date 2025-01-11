@@ -3,12 +3,11 @@ using UnityEngine.AI;
 
 public class CharacterMovement : MonoBehaviour
 {
-    private NavMeshAgent _agent;
     private SpriteRenderer _render;
+    private NavMeshAgent _agent;
     private Animator _animator;
 
     private void Start() => _agent.updateRotation = _agent.updateUpAxis = false;
-    public void MoveToPosition(Vector3 targetPosition) => _agent.SetDestination(targetPosition);
     
     private void Awake()
     {
