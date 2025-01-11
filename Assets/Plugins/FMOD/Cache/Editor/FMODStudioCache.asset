@@ -69,7 +69,7 @@ MonoBehaviour:
   Path: ../Astrowaifu - FMOD Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638721364015535246
+  lastModified: 638721371024730495
   FileSizes:
   - Name: Desktop
     Value: 1972
@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: ../Astrowaifu - FMOD Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638721364015515264
+  lastModified: 638721371024707659
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -217,7 +217,7 @@ MonoBehaviour:
   Path: ../Astrowaifu - FMOD Project/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638721364017019156
+  lastModified: 638721371027455866
   FileSizes:
   - Name: Desktop
     Value: 266784
@@ -292,7 +292,7 @@ MonoBehaviour:
   - {fileID: -4975226754208508821}
   StringsBanks:
   - {fileID: -5446960077168532730}
-  cacheTime: 638721364017019156
+  cacheTime: 638721371027455866
   cacheVersion: 131621
 --- !u!114 &669177722153528098
 MonoBehaviour:
@@ -633,7 +633,7 @@ MonoBehaviour:
   Path: ../Astrowaifu - FMOD Project/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638721364016399469
+  lastModified: 638721371025979601
   FileSizes:
   - Name: Desktop
     Value: 5337536
