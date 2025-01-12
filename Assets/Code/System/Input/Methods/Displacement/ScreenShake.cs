@@ -17,12 +17,12 @@ namespace UnityEngine.InputSystem
 
         public AdvancedOrientation Orientation { set => _orientation = value; }
 
-        protected override void OnUpdateSelection(Vector2 delta)
+        protected override void OnUpdateSelection(float2 delta)
         {
             float2 direction = _orientation.GetOrientation();
-            if (delta.magnitude < 5) return;
+            if (math.length(delta) < 5) return;
 
-            float value = math.dot(direction, delta.normalized);
+            float value = math.dot(direction, math.normalize(delta));
             if (value > _threshold && _inverseDirection) MatchDirection(true);
             if (value < -_threshold && !_inverseDirection) MatchDirection(false);
         }

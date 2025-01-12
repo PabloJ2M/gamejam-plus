@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine.Events;
 
 namespace UnityEngine.InputSystem
@@ -37,10 +38,11 @@ namespace UnityEngine.InputSystem
             _current = 0;
         }
 
-        protected override void OnUpdateSelection(Vector2 screenPosition)
+        protected override void OnUpdateSelection(float2 screenPosition)
         {
             if (_current >= _limit) return;
-            Vector2 worldPos = _camera.ScreenToWorldPoint(screenPosition);
+            Vector2 input = math.clamp(screenPosition, mathf.zero, new float2(Screen.width, Screen.height));
+            Vector2 worldPos = _camera.ScreenToWorldPoint(input);
             Vector2 direction = _lastPosition - worldPos;
 
             if (direction.magnitude < _distance) return;
