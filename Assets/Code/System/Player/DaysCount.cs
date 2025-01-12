@@ -12,15 +12,14 @@ namespace Player.Data
         private void Awake()
         {
             if (PlayerPrefs.HasKey(_id)) return;
-            PlayerPrefs.SetString(_id, DateTime.Now.ToLongDateString());
+            PlayerPrefs.SetString(_id, DateTime.Now.ToString("yyyy-MM-dd"));
         }
         private void Start()
         {
             string data = PlayerPrefs.GetString(_id);
-            DateTime.TryParse(data, out DateTime time);
-            TimeSpan result = DateTime.Now.Subtract(time);
+            DateTime time = DateTime.ParseExact(data, "yyyy-MM-dd", null);
 
-            _onDateUpdated.Invoke($"Días: {result.Days}");
+            _onDateUpdated.Invoke($"Días: {(DateTime.Now - time).Days}");
         }
     }
 }

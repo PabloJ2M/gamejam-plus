@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4558204097270814303}
   - component: {fileID: 7309430585539084842}
   - component: {fileID: 5326730626697204292}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: instance_prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

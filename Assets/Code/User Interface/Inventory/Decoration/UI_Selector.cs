@@ -19,8 +19,8 @@ namespace UnityEngine.DecorationSystem
         protected override void OnDeselect() => _handler?.OnDrop(IsPointerOverUI());
         protected override void OnSelect()
         {
-            if (_entry.CurrentItem is ItemDec item)
-                _handler?.OnDrag(item);
+            if (_entry.CurrentItem is not ItemDec item) return;
+            _handler?.OnDrag(item);
         }
     }
 }
