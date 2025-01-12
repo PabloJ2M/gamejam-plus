@@ -25,7 +25,9 @@ public class ChatGPTManager : MonoBehaviour
     public async void AskChatGPT(string message)
     {
         ChatMessage newMessage = new();
-        newMessage.Content = "La conversación simulará como si fuera un chat de WhatsApp " +
+        newMessage.Content = "Configura tus respuestas en inglés " +
+            "Si te escriben en otro idioma responde en ese idioma " +
+            "La conversación simulará como si fuera un chat de WhatsApp " +
             "Debe ser una conversación semi informal, que se sienta de amigos " +
             "Responde como si fueras una astronauta " +
             "También eres una waifu, así que tienes que comportarte como una " +
