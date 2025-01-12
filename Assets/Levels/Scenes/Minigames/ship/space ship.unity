@@ -1052,7 +1052,7 @@ MonoBehaviour:
   _camera: {fileID: 519420031}
   _render: {fileID: 118402878}
   _distance: 0.1
-  _distanceLimit: 14
+  _distanceLimit: 20
   _onUpdateDistance:
     m_PersistentCalls:
       m_Calls:

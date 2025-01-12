@@ -1,3 +1,5 @@
+using Unity.Mathematics;
+
 namespace UnityEngine.InputSystem
 {
     public abstract class DragBehaviour : TouchBehaviour
@@ -10,7 +12,10 @@ namespace UnityEngine.InputSystem
         protected void OnPointerUpdate(InputAction.CallbackContext ctx)
         {
             if (!_isDragging) return;
-            OnUpdateSelection(ctx.ReadValue<Vector2>());
+
+            float2 input = ctx.ReadValue<Vector2>();
+            input = math.clamp(input, mathf.zero, new float2(Screen.width, Screen.height));
+            OnUpdateSelection(input);
         }
 
         protected void ForceUpdate() => OnUpdateSelection(_inputs.UI.Point.ReadValue<Vector2>());
