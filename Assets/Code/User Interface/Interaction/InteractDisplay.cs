@@ -15,7 +15,7 @@ namespace Gameplay.Events
         protected override void Awake() { base.Awake(); _manager = GetComponentInParent<InteractManager>(); }
         private void Update() { if (_reference != null) _transform.position = _reference.WorldCoords; }
 
-        public void Hide() { _interaction.ForceDisable(); _canvas.Default(); _reference = null; Pool.Release(this); }
+        public void Hide() { _interaction?.ForceDisable(); _canvas?.Default(); _reference = null; Pool?.Release(this); }
         public void SetUp(IInteractable reference) { _reference = reference; _canvas.FadeIn(); }
         public void Select()
         {

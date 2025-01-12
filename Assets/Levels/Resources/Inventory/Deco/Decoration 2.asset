@@ -20,7 +20,7 @@ MonoBehaviour:
   _research: 3
   _health: 0
   _description: 
-  _front: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
+  _front: {fileID: 8831524967467744588, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _back: {fileID: 0}
   _left: {fileID: 0}
   _right: {fileID: 0}

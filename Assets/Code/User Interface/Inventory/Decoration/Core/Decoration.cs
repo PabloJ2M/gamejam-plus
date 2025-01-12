@@ -11,9 +11,13 @@ namespace UnityEngine.DecorationSystem
         public Vector2 Position { get => transform.position; set => transform.position = value; }
 
         protected override void Awake() { base.Awake(); _render = GetComponent<SpriteRenderer>(); }
-        public void Setup(ItemDec item) { _item = item; _render.sprite = item.GetDirection(0); }
-
         protected override void OnSelect() => GetComponentInParent<Manager>().OnPickUp(this);
         protected override void OnDeselect() => GetComponentInParent<Manager>().OnDropItem(IsPointerOverUI());
+
+        public void Setup(ItemDec item)
+        {
+            _item = item;
+            _render.sprite = item.GetDirection(0);
+        }
     }
 }

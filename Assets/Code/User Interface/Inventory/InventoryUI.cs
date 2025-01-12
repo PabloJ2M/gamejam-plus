@@ -8,8 +8,11 @@ namespace UnityEngine.UI
 
         public SlotStorage Storage => _storage;
 
-        private void Start() => _storage.Load();
-        public void RefreshUI() { OnDisplay(); _storage.Save(); }
+        private void Start() { _storage.Load(); RefreshUI(); }
+        private void OnDisable() => _storage.Save();
+
+        protected override void OnEnable() { }
+        public void RefreshUI() => OnDisplay();
         
         protected override void OnDisplay()
         {

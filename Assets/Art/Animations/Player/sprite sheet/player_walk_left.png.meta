@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: ee8e02111eb6fe84ba33e4225e3c876c
+guid: 5d412bd9859e6784dbcaf81400cdd4df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -523862422438474014
-    second: Lado - Idle-Sheet_0
+      213: 6449499993663582306
+    second: Caminar Lado - Sheet_0
   - first:
-      213: 8555744392484448932
-    second: Lado - Idle-Sheet_1
+      213: -8039564813602346838
+    second: Caminar Lado - Sheet_1
   - first:
-      213: -7800856530045518318
-    second: Lado - Idle-Sheet_2
+      213: 1926560298399273018
+    second: Caminar Lado - Sheet_2
   - first:
-      213: 1615005638117355466
-    second: Lado - Idle-Sheet_3
+      213: -7340919296711318698
+    second: Caminar Lado - Sheet_3
   - first:
-      213: -3911192670068206662
-    second: Lado - Idle-Sheet_4
+      213: 8430106706763243544
+    second: Caminar Lado - Sheet_4
   - first:
-      213: 8477055140355542639
-    second: Lado - Idle-Sheet_5
+      213: 1891116016550169813
+    second: Caminar Lado - Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,137 +137,150 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lado - Idle-Sheet_0
+      name: player_walk_left_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 33
+        width: 48
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2ee016ff6eddab8f0800000000000000
-      internalID: -523862422438474014
+      spriteID: 4d8beb28803142146bb01d446c5cd022
+      internalID: -1639536860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lado - Idle-Sheet_1
+      name: player_walk_left_1
       rect:
         serializedVersion: 2
-        x: 57
+        x: 48
         y: 0
-        width: 34
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4aa6317d13c1cb670800000000000000
-      internalID: 8555744392484448932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lado - Idle-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 0
-        width: 33
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 21eb9de015acdb390800000000000000
-      internalID: -7800856530045518318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Lado - Idle-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 0
-        width: 32
+        width: 48
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: acfec3a3217a96610800000000000000
-      internalID: 1615005638117355466
+      spriteID: bf6b67216fc7f8242b734b0476ac2e0d
+      internalID: 1996851644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lado - Idle-Sheet_4
+      name: player_walk_left_2
       rect:
         serializedVersion: 2
-        x: 201
+        x: 96
         y: 0
-        width: 33
+        width: 48
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ab3197c2df6a8b9c0800000000000000
-      internalID: -3911192670068206662
+      spriteID: 8b91792032f9d4247880df04829be82a
+      internalID: -2039459600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lado - Idle-Sheet_5
+      name: player_walk_left_3
       rect:
         serializedVersion: 2
-        x: 249
+        x: 144
         y: 0
-        width: 33
+        width: 48
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f6e8a4e9cbc84a570800000000000000
-      internalID: 8477055140355542639
+      spriteID: e462847da86de3b4697a87d68493b92b
+      internalID: -1414151078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_walk_left_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92477f907de17f24f915b3800f3ece39
+      internalID: -565910415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_walk_left_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197f5c1a678957b408547862b0d07b62
+      internalID: 1119255912
       vertices: []
       indices: 
       edges: []
@@ -276,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 51b5b759328337f4794166bca6ebcad2
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Lado - Idle-Sheet_0: -523862422438474014
-      Lado - Idle-Sheet_1: 8555744392484448932
-      Lado - Idle-Sheet_2: -7800856530045518318
-      Lado - Idle-Sheet_3: 1615005638117355466
-      Lado - Idle-Sheet_4: -3911192670068206662
-      Lado - Idle-Sheet_5: 8477055140355542639
+      player_walk_left_0: -1639536860
+      player_walk_left_1: 1996851644
+      player_walk_left_2: -2039459600
+      player_walk_left_3: -1414151078
+      player_walk_left_4: -565910415
+      player_walk_left_5: 1119255912
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

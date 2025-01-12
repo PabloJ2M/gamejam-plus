@@ -6,7 +6,7 @@ namespace UnityEngine.InventorySystem
     [CustomEditor(typeof(Item))]
     public class ItemEditor : Editor
     {
-        private const BindingFlags _flags = BindingFlags.NonPublic | BindingFlags.Instance;
+        protected const BindingFlags _flags = BindingFlags.NonPublic | BindingFlags.Instance;
 
         public override void OnInspectorGUI()
         {
@@ -24,8 +24,14 @@ namespace UnityEngine.InventorySystem
             FieldInfo maxField = item.GetType().GetField("_max", _flags);
             maxField?.SetValue(item, Mathf.Clamp(EditorGUILayout.IntField("Max Slot:", (int)maxField?.GetValue(item)), 0, int.MaxValue));
 
-            FieldInfo costField = item.GetType().GetField("_cost", _flags);
-            costField?.SetValue(item, Mathf.Clamp(EditorGUILayout.IntField("Cost:", (int)costField?.GetValue(item)), 0, int.MaxValue));
+            FieldInfo resourceField = item.GetType().GetField("_resources", _flags);
+            resourceField?.SetValue(item, (int)EditorGUILayout.Slider("Resources:", (int)resourceField?.GetValue(item), 0, 24));
+
+            FieldInfo researchField = item.GetType().GetField("_research", _flags);
+            researchField?.SetValue(item, (int)EditorGUILayout.Slider("Research:", (int)researchField?.GetValue(item), 0, 24));
+
+            FieldInfo healthField = item.GetType().GetField("_health", _flags);
+            healthField?.SetValue(item, (int)EditorGUILayout.Slider("Health:", (int)healthField?.GetValue(item), 0, 24));
 
             EditorGUILayout.Space(10);
             if (GUILayout.Button("Get Random ID")) item?.SetRandomID();

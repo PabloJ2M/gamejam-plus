@@ -7,7 +7,7 @@ namespace UnityEngine.InventorySystem
     [Serializable] public class SlotGrid
     {
         /// <summary>int: Slot Index, Slot: Slot Value</summary>
-        public Dictionary<int, Slot> slots = new();
+        public SerializableDictionary<int, Slot> slots = new();
 
         public void Add(Item item, int amount)
         {

@@ -18,9 +18,9 @@ namespace Player.Data
         {
             string data = PlayerPrefs.GetString(_id);
             DateTime.TryParse(data, out DateTime time);
-            TimeSpan result = time.Subtract(DateTime.Now);
+            TimeSpan result = DateTime.Now.Subtract(time);
 
-            _onDateUpdated.Invoke($"Días: {-result.Days}");
+            _onDateUpdated.Invoke($"Días: {result.Days}");
         }
     }
 }

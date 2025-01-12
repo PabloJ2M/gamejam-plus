@@ -1,25 +1,25 @@
 fileFormatVersion: 2
-guid: 5d412bd9859e6784dbcaf81400cdd4df
+guid: c0e4980956deee746aa521ef4e38fe85
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6449499993663582306
-    second: Caminar Lado - Sheet_0
+      213: -9173571799594445188
+    second: Caminar Arriba - Sheet_0
   - first:
-      213: -8039564813602346838
-    second: Caminar Lado - Sheet_1
+      213: 7913451845101635647
+    second: Caminar Arriba - Sheet_1
   - first:
-      213: 1926560298399273018
-    second: Caminar Lado - Sheet_2
+      213: -9084026431574804430
+    second: Caminar Arriba - Sheet_2
   - first:
-      213: -7340919296711318698
-    second: Caminar Lado - Sheet_3
+      213: 1853886884041701828
+    second: Caminar Arriba - Sheet_3
   - first:
-      213: 8430106706763243544
-    second: Caminar Lado - Sheet_4
+      213: 6547305710150728508
+    second: Caminar Arriba - Sheet_4
   - first:
-      213: 1891116016550169813
-    second: Caminar Lado - Sheet_5
+      213: 649367255306866317
+    second: Caminar Arriba - Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -137,137 +137,150 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Caminar Lado - Sheet_0
+      name: player_walk_back_1
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 33
+        width: 48
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 260b335c21a318950800000000000000
-      internalID: 6449499993663582306
+      spriteID: 7c4b4fc1c6ca46342822e44215d32ce2
+      internalID: 1632050212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Caminar Lado - Sheet_1
+      name: player_walk_back_2
       rect:
         serializedVersion: 2
-        x: 57
+        x: 48
         y: 0
-        width: 34
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa8a080c56abd6090800000000000000
-      internalID: -8039564813602346838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Caminar Lado - Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 0
-        width: 33
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a30957052648cba10800000000000000
-      internalID: 1926560298399273018
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Caminar Lado - Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 153
-        y: 0
-        width: 33
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 65326b22bc0df1a90800000000000000
-      internalID: -7340919296711318698
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Caminar Lado - Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 201
-        y: 0
-        width: 34
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 810e24b9261cdf470800000000000000
-      internalID: 8430106706763243544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Caminar Lado - Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 0
-        width: 34
+        width: 48
         height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5dc468b5ff79e3a10800000000000000
-      internalID: 1891116016550169813
+      spriteID: 26fe0ea60aa159240a2354d83902a938
+      internalID: -51236327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_walk_back_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff26ff25561fd6f4dae7aae0577c19f2
+      internalID: -841225502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_walk_back_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbbbf4518b553241b774ef00fafc7cc
+      internalID: 1173221762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_walk_back_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c60a9f4bace59fb48a00e126d8d6a4c0
+      internalID: -221620717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_walk_back_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49effbdc94dd17345abca51aab5e5457
+      internalID: 654647398
       vertices: []
       indices: 
       edges: []
@@ -276,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 00f7396256ef01649b2f15e68defab88
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +299,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Caminar Lado - Sheet_0: 6449499993663582306
-      Caminar Lado - Sheet_1: -8039564813602346838
-      Caminar Lado - Sheet_2: 1926560298399273018
-      Caminar Lado - Sheet_3: -7340919296711318698
-      Caminar Lado - Sheet_4: 8430106706763243544
-      Caminar Lado - Sheet_5: 1891116016550169813
+      player_walk_back_1: 1632050212
+      player_walk_back_2: -51236327
+      player_walk_back_3: -841225502
+      player_walk_back_4: 1173221762
+      player_walk_back_5: -221620717
+      player_walk_back_6: 654647398
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
