@@ -151,10 +151,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 781302557}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -87.5, y: -20}
-  m_SizeDelta: {x: -225, y: 70}
+  m_AnchoredPosition: {x: 0, y: -30}
+  m_SizeDelta: {x: -50, y: -55}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &120716649
 MonoBehaviour:
@@ -203,15 +203,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
+  m_fontSize: 72
   m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -735,7 +735,7 @@ Transform:
   m_GameObject: {fileID: 479023034}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: -2.5, z: 0}
+  m_LocalPosition: {x: 12, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1032,11 +1032,11 @@ RectTransform:
   - {fileID: 120716648}
   m_Father: {fileID: 1612054709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 600, y: 250}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 600, y: 145}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &781302559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1057,8 +1057,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6557979737238368547, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -5099881042655999187, guid: c3b3e8d8fc342db489981e3fe085780e, type: 3}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.5
 --- !u!222 &781302560
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1151,7 +1151,7 @@ SpriteRenderer:
   m_SortingLayerID: 491037401
   m_SortingLayer: 3
   m_SortingOrder: -100
-  m_Sprite: {fileID: 2986976766903606605, guid: 41377430ebe2b7d4db23a768da2aa72f, type: 3}
+  m_Sprite: {fileID: 3800836882911778756, guid: fbb1faf140d22604ca2e6c508f5fb3ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1638,7 +1638,7 @@ SpriteRenderer:
   m_SortingLayerID: 491037401
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 2109478131110102286, guid: c46b12b768c4316419744d2b774399fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2434,7 +2434,7 @@ Transform:
   m_GameObject: {fileID: 2101601361}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2474,17 +2474,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.35}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 40, y: 2}
+    pivot: {x: 0.5, y: 1}
+    oldSize: {x: 6.96875, y: 0.65625}
+    newSize: {x: 40, y: 0.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 40, y: 2}
+  m_Size: {x: 40, y: 0.7}
   m_EdgeRadius: 0
 --- !u!212 &2101601364
 SpriteRenderer:
@@ -2530,12 +2530,12 @@ SpriteRenderer:
   m_SortingLayerID: 491037401
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: c98e07a1e3487e64c94a2f04fc1ad832, type: 3}
-  m_Color: {r: 0.5660378, g: 0.3758504, b: 0, a: 1}
+  m_Sprite: {fileID: 8725119772159530929, guid: c46b12b768c4316419744d2b774399fb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 40, y: 2}
+  m_Size: {x: 40, y: 0.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
