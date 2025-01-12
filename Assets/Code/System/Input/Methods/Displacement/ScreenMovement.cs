@@ -1,4 +1,5 @@
 using UnityEngine.Events;
+using Unity.Mathematics;
 
 namespace UnityEngine.InputSystem
 {
@@ -8,7 +9,7 @@ namespace UnityEngine.InputSystem
         [SerializeField] private bool _inverse;
         [SerializeField] private UnityEvent<Vector3> _onValueChanged;
 
-        protected override void OnUpdateSelection(Vector2 delta)
+        protected override void OnUpdateSelection(float2 delta)
         {
             Vector2 scroll = _inverse ? -delta : delta;
             _onValueChanged.Invoke(_speed * scroll * Time.deltaTime);

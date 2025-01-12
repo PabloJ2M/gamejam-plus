@@ -1,4 +1,5 @@
 using System;
+using Newtonsoft.Json;
 
 namespace UnityEngine.InventorySystem
 {
@@ -13,7 +14,7 @@ namespace UnityEngine.InventorySystem
         public SlotGrid Container => _container;
 
         //-----change for better data saving-----
-        public void Save() { }
-        public void Load() { }
+        public void Save() => PlayerPrefs.SetString(_savePath, JsonConvert.SerializeObject(_container));
+        public void Load() => _container = JsonConvert.DeserializeObject(PlayerPrefs.GetString(_savePath)) as SlotGrid;
     }
 }
