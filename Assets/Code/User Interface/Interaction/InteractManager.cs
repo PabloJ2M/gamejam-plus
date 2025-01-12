@@ -14,7 +14,7 @@ namespace Gameplay.Events
         protected override void Awake() { base.Awake(); instance = this; }
         protected override void OnDisplay() { }
 
-        public void ConfirmInteraction(IInteractable action) { _confirmation = action; _confirmView.SetActive(true); }
+        public void ConfirmInteraction(IInteractable action) { _confirmation = action; if (_confirmation != null) _confirmView.SetActive(true); }
         public void ExecuteConfirmation() { if (_confirmation == null) return; _confirmation.Action?.Invoke(); CancelConfirmation(); }
         public void CancelConfirmation() { _confirmation = null; _confirmView.SetActive(false); }
         

@@ -1510,7 +1510,7 @@ Camera:
   far clip plane: 20
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -25479,7 +25479,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16, y: 15}
+  m_Size: {x: 17, y: 15}
   m_EdgeRadius: 0
 --- !u!1 &1373122647
 GameObject:
@@ -26618,7 +26618,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 16, y: 15}
+  m_Size: {x: 17, y: 15}
   m_EdgeRadius: 0
 --- !u!1 &1704087832
 GameObject:
@@ -27414,7 +27414,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 5
+    OrthographicSize: 4.5
     NearClipPlane: 0.01
     FarClipPlane: 20
     Dutch: 0
@@ -27461,7 +27461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BoundingShape2D: {fileID: 1140619851}
   Damping: 0
-  SlowingDistance: 1
+  SlowingDistance: 0
   OversizeWindow:
     Enabled: 0
     MaxWindowSize: 0
