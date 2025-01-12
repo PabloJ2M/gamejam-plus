@@ -14,9 +14,9 @@ namespace UnityEngine.InputSystem
         protected override void Awake() { base.Awake(); _self = GetComponent<RectTransform>(); }
         protected override void OnSelect() { base.OnSelect(); _center = RectTransformUtility.WorldToScreenPoint(_camera, _self.position); }
 
-        protected override void OnUpdateSelection(Vector2 screenPosition)
+        protected override void OnUpdateSelection(float2 screenPosition)
         {
-            float2 direction = (float2)screenPosition - _center;
+            float2 direction = screenPosition - _center;
 
             float angle = math.atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             angle = (angle + 360) % 360;

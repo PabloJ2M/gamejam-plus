@@ -33,7 +33,11 @@ namespace UnityEngine.DecorationSystem
         public void RemoveItem(Deco item) => container.Items.Remove(item);
         public bool CanPlaceItem(Vector2Int position) => !container.Items.Exists(x => x.position == position);
 
-        public void Save() => PlayerPrefs.SetString(_data, JsonUtility.ToJson(container));
+        public void Save()
+        {
+            PlayerPrefs.SetString(_data, JsonUtility.ToJson(container));
+            PlayerPrefs.Save();
+        }
         public void Load()
         {
             string json = PlayerPrefs.GetString(_data);

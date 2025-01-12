@@ -5,7 +5,12 @@ namespace UI.Effects
 {
     public enum Direction { Top, Right, Left, Bottom }
 
-    public abstract class Tweening<T> : MonoBehaviour
+    public interface ITween
+    {
+        public void Play(bool value);
+    }
+
+    public abstract class Tweening<T> : MonoBehaviour, ITween
     {
         [Header("Animation")]
         [SerializeField] protected AnimationCurve _curve;

@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine.Events;
 
 namespace UnityEngine.InputSystem
@@ -12,7 +13,7 @@ namespace UnityEngine.InputSystem
         [SerializeField] private UnityEvent<float> _onUpdateDistance;
 
         private Vector2 _lastPosition;
-        private float _limit;
+        private float _current, _limit;
 
         protected override void Start()
         {
@@ -32,21 +33,24 @@ namespace UnityEngine.InputSystem
         public void ClearTrack()
         {
             _onUpdateDistance.Invoke(1f);
+            _lastPosition = Vector2.zero;
             _render.positionCount = 0;
+            _current = 0;
         }
 
-        protected override void OnUpdateSelection(Vector2 screenPosition)
+        protected override void OnUpdateSelection(float2 screenPosition)
         {
-            float traveled = _render.positionCount * _distance;
-            if (traveled >= _limit) return;
-
-            Vector2 worldPos = _camera.ScreenToWorldPoint(screenPosition);
+            if (_current >= _limit) return;
+            Vector2 input = math.clamp(screenPosition, mathf.zero, new float2(Screen.width, Screen.height));
+            Vector2 worldPos = _camera.ScreenToWorldPoint(input);
             Vector2 direction = _lastPosition - worldPos;
+
             if (direction.magnitude < _distance) return;
+            if (_lastPosition != Vector2.zero) _current += direction.magnitude;
 
             _render.positionCount++;
             _render.SetPosition(_render.positionCount - 1, worldPos);
-            _onUpdateDistance.Invoke(1f - (traveled / _limit));
+            _onUpdateDistance.Invoke(1f - (_current / _limit));
             _lastPosition = worldPos;
         }
     }

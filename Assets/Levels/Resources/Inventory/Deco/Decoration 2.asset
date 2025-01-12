@@ -15,7 +15,7 @@ MonoBehaviour:
   _id: 125256
   _max: 64
   _name: item 2
-  _image: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
+  _image: {fileID: 8831524967467744588, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _resources: 5
   _research: 3
   _health: 0

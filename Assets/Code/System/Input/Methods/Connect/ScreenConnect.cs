@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine.Events;
 
 namespace UnityEngine.InputSystem
@@ -20,11 +21,12 @@ namespace UnityEngine.InputSystem
         protected override void OnDeselect() { base.OnDeselect(); _isDragging = false; if (!_isLocked) _renderer.positionCount = 0; }
         public void UnlockDrag() { _isLocked = false; _renderer.positionCount = 0; }
 
-        protected override void OnUpdateSelection(Vector2 screenPosition)
+        protected override void OnUpdateSelection(float2 screenPosition)
         {
             int count = _renderer.positionCount;
             if (_isLocked || count > _container.childCount) return;
-            _renderer.SetPosition(count - 1, _camera.ScreenToWorldPoint(screenPosition));
+            
+            _renderer.SetPosition(count - 1, _camera.ScreenToWorldPoint((Vector2)screenPosition));
         }
         public void AddPoint(ScreenPoint newPoint)
         {

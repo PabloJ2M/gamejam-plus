@@ -6,7 +6,7 @@ namespace Gameplay.Movement
 {
     public class RoomManager : MonoBehaviour
     {
-        [SerializeField] private Transform _player;
+        [SerializeField] private NavMeshAgentCore _player;
         [SerializeField] private Blink _tramsition;
 
         private CinemachineCamera _vCamera;
@@ -14,7 +14,6 @@ namespace Gameplay.Movement
         private WaitUntil _wait;
 
         public bool Success { private get; set; }
-
 
         private void Awake() => _wait = new(() => Success);
         private void Start()
@@ -30,14 +29,12 @@ namespace Gameplay.Movement
             _vCamera.enabled = false;
             yield return _wait;
 
-            _player.position = area.Position;
-
+            _player.Position(area.Position);
             _confiner.BoundingShape2D = area.Area;
             _confiner.InvalidateBoundingShapeCache();
 
             yield return null;
             _vCamera.enabled = true;
-            
         }
     }
 }
