@@ -1407,7 +1407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66ce28156335c644baac79d204c5c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenePath: Assets/Levels/Scenes/credits.unity
+  _scenePath: Assets/Levels/Scenes/main/credits.unity
 --- !u!114 &1614087471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1933,7 +1933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66ce28156335c644baac79d204c5c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenePath: Assets/Levels/Scenes/1_gameplay.unity
+  _scenePath: Assets/Levels/Scenes/main/1_gameplay.unity
 --- !u!114 &1729098780
 MonoBehaviour:
   m_ObjectHideFlags: 0

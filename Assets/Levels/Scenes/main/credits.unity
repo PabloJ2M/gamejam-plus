@@ -580,7 +580,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 794.95, y: 50}
+  m_SizeDelta: {x: 1758.99, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &358901758
 MonoBehaviour:
@@ -1243,7 +1243,7 @@ GameObject:
   - component: {fileID: 509413102}
   - component: {fileID: 509413101}
   m_Layer: 5
-  m_Name: tls
+  m_Name: AstroDevs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Masterminds TLS
+  m_text: ASTRODEVS
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
   m_sharedMaterial: {fileID: 4688546598861446586, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
@@ -1827,7 +1827,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 837.02, y: 50}
+  m_SizeDelta: {x: 1254.04, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790374234
 MonoBehaviour:
@@ -1849,7 +1849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Italo Yupanqui & Mauricio Flores
+  m_text: Italo Yupanqui, Mauricio Flores & Jorge Montes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
   m_sharedMaterial: {fileID: 4688546598861446586, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
@@ -1964,7 +1964,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1200.68, y: 50}
+  m_SizeDelta: {x: 1616.95, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811679053
 MonoBehaviour:
@@ -2229,7 +2229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66ce28156335c644baac79d204c5c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenePath: Assets/Levels/Scenes/0_menu.unity
+  _scenePath: Assets/Levels/Scenes/main/0_menu.unity
 --- !u!1 &923481478
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,7 +3200,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 361.55, y: 50}
+  m_SizeDelta: {x: 1323.45, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1398391698
 MonoBehaviour:
@@ -3222,7 +3222,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Nicol\xE1s reyes"
+  m_text: "Nicol\xE1s reyes, Salvador Rodriguez & Francis Perez"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
   m_sharedMaterial: {fileID: 4688546598861446586, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
@@ -3558,7 +3558,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Salvador Rodriguez & Francis P\xE9rez"
+  m_text: Salvador Rodriguez & Francis Perez
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
   m_sharedMaterial: {fileID: 4688546598861446586, guid: 5d90307ae6be3534e83365524c17a869, type: 2}
@@ -3708,7 +3708,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1615236912
@@ -4747,7 +4747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e66ce28156335c644baac79d204c5c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scenePath: Assets/Levels/Scenes/0_menu.unity
+  _scenePath: Assets/Levels/Scenes/main/0_menu.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
