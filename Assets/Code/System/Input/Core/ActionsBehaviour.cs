@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 
@@ -22,15 +21,22 @@ namespace UnityEngine.InputSystem
 
         protected override void Awake() { base.Awake(); _system = EventSystem.current; }
 
-        private List<RaycastResult> Results()
+        private List<RaycastResult> BaseResults()
         {
-            if (!_system || _ignoreObjects.Equals(UIInteraction.Nothing)) return new();
+            if (!_system) return new();
 
             PointerEventData data = new(_system) { position = _inputs.UI.Point.ReadValue<Vector2>() };
             List<RaycastResult> result = new();
             _system.RaycastAll(data, result);
 
             result.RemoveAll(x => x.gameObject.layer == LayerMask.NameToLayer("Ignore Raycast"));
+            return result;
+        }
+        private List<RaycastResult> ClearResults()
+        {
+            if (_ignoreObjects.Equals(UIInteraction.Nothing)) return new();
+
+            var result = BaseResults();
             if (_ignoreObjects.HasFlag(UIInteraction.SelfOnly)) result.RemoveAll(x => x.gameObject.Equals(gameObject));
             if (_ignoreObjects.HasFlag(UIInteraction.AllChildren)) result.RemoveAll(x => x.gameObject.transform.IsChildOf(transform));
             return result;
@@ -38,15 +44,9 @@ namespace UnityEngine.InputSystem
 
         protected bool IsPointerOverObject(GameObject element)
         {
-            var list = Results();
+            var list = BaseResults();
             return list.FindIndex(x => x.gameObject == element) >= 0;
         }
-        protected bool IsPointerOverUI() => Results().Count > 0;
-        protected bool IsPointerOverUI(params GameObject[] args)
-        {
-            var list = Results();
-            list.RemoveAll(x => args.Contains(x.gameObject));
-            return list.Count > 0;
-        }
+        protected bool IsPointerOverUI() => ClearResults().Count > 0;
     }
 }
