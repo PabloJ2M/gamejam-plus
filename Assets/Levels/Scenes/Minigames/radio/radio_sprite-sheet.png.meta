@@ -502,8 +502,8 @@ TextureImporter:
         y: 19
         width: 26
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -560,6 +560,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: radio_sprite-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 86
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0df002fa5d6af4d92ecb01679f719a
+      internalID: 981260644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -591,6 +613,7 @@ TextureImporter:
       Botones_Tile_7: -146980508718563256
       Botones_Tile_8: 2166747483986657570
       Botones_Tile_9: -5831791654424207844
+      radio_sprite-sheet_0: 981260644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
