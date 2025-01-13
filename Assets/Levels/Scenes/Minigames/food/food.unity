@@ -631,6 +631,18 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1038313439}
+          m_TargetAssemblyTypeName: SaveScoreToResources, Assembly-CSharp
+          m_MethodName: SaveResources
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 502992134}
           m_TargetAssemblyTypeName: UnityEngine.SceneManagement.SceneLoader, Assembly-CSharp
           m_MethodName: RemoveScene
@@ -1450,6 +1462,7 @@ GameObject:
   - component: {fileID: 1038313437}
   - component: {fileID: 1038313436}
   - component: {fileID: 1038313438}
+  - component: {fileID: 1038313439}
   m_Layer: 5
   m_Name: score
   m_TagString: Untagged
@@ -1529,6 +1542,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _format: '{0}'
   _textUI: {fileID: 1816878815}
+--- !u!114 &1038313439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038313434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 268edc5bf0af83b4c86b156cb6e3938e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 1038313438}
+  resourcesToSave: 00000000
 --- !u!1 &1091091374
 GameObject:
   m_ObjectHideFlags: 0
