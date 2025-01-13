@@ -8,6 +8,6 @@ namespace Events.Gameplay
         private Animation _animation;
 
         private void Awake() => _animation = GetComponent<Animation>();
-        public void StartAnimation() => _animation.Play();
+        [ContextMenu("Play")] public void StartAnimation() => _animation.Play();
     }
 }
