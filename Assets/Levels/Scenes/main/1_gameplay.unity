@@ -24829,7 +24829,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1286205563}
           m_TargetAssemblyTypeName: UnityEngine.SceneManagement.SceneLoader, Assembly-CSharp
-          m_MethodName: SwipeScene
+          m_MethodName: AddScene
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
