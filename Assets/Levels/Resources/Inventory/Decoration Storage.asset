@@ -13,4 +13,18 @@ MonoBehaviour:
   m_Name: Decoration Storage
   m_EditorClassIdentifier: 
   container:
-    items: []
+    items:
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 1, y: 1}
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 2, y: 1}
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 1, y: 1}
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 1, y: 1}
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 1, y: 1}
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 1, y: 1}
+    - item: {fileID: 11400000, guid: 4e3031ea8b71b6e48b3ea829b8abcc2d, type: 2}
+      position: {x: 2, y: 2}

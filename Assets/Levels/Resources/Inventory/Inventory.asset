@@ -13,3 +13,7 @@ MonoBehaviour:
   m_Name: Inventory
   m_EditorClassIdentifier: 
   _database: {fileID: 11400000, guid: 75aa1f0a65dcc2c419ff502cb8ef9406, type: 2}
+  _container:
+    slots:
+      m_Keys: 
+      m_Values: []

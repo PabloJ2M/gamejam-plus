@@ -5047,6 +5047,10 @@ MonoBehaviour:
   _storage: {fileID: 11400000, guid: 1cbbcc426175723418bb341f054cc2a6, type: 2}
   _parent: {fileID: 454811241}
   _prefab: {fileID: 5326730626697204292, guid: 1327cc6bd2439a740a6537830ade6ca4, type: 3}
+  _threshold: 0.1
+  _detection:
+    serializedVersion: 2
+    m_Bits: 4
   _inventory: {fileID: 1351674525}
   _handler: {fileID: 1351674527}
 --- !u!114 &548630753

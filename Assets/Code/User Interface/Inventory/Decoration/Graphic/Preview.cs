@@ -31,6 +31,7 @@ namespace UnityEngine.DecorationSystem
         public void SetPosition()
         {
             _shadow.color = _manager.IsAvailable() ? normal : error;
+            _transform.localScale = _manager.GetArea();
             _transform.position = _manager.WorldPoint;
         }
     }
