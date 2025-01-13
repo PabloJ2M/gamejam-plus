@@ -1,9 +1,12 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 
 namespace UnityEngine.InputSystem
 {
+    [Flags] public enum UIInteraction { Nothing = 0, SelfOnly = 1, AllChildren = 2 }
+
     public abstract class ActionsBehaviour : MonoBehaviour
     {
         protected Actions _inputs;
@@ -14,8 +17,7 @@ namespace UnityEngine.InputSystem
     }
     public abstract class InteractionBehaviour : ActionsBehaviour
     {
-        [Flags] private enum UIInteraction { Nothing = 0, SelfOnly = 1, AllChildren = 2 }
-        [SerializeField] private UIInteraction _ignoreObjects;
+        [SerializeField] protected UIInteraction _ignoreObjects;
 
         protected EventSystem _system;
 
@@ -29,23 +31,27 @@ namespace UnityEngine.InputSystem
             List<RaycastResult> result = new();
             _system.RaycastAll(data, result);
 
-            result.RemoveAll(x => x.gameObject.layer == LayerMask.NameToLayer("Ignore Raycast"));
+            result.RemoveAll(x => x.gameObject.layer == LayerMask.NameToLayer("TransparentFX"));
             return result;
         }
         private List<RaycastResult> ClearResults()
         {
             if (_ignoreObjects.Equals(UIInteraction.Nothing)) return new();
-
-            var result = BaseResults();
+            var result = BaseResults().Where(r => r.gameObject.layer != LayerMask.NameToLayer("Ignore Raycast")).ToList();
+            
             if (_ignoreObjects.HasFlag(UIInteraction.SelfOnly)) result.RemoveAll(x => x.gameObject.Equals(gameObject));
             if (_ignoreObjects.HasFlag(UIInteraction.AllChildren)) result.RemoveAll(x => x.gameObject.transform.IsChildOf(transform));
             return result;
         }
 
-        protected bool IsPointerOverObject(GameObject element)
+        public bool IsPointerOverObject(GameObject element)
         {
-            var list = BaseResults();
-            return list.FindIndex(x => x.gameObject == element) >= 0;
+            var results = BaseResults();
+            if (results.Count == 0) return false;
+
+            var list = results.OrderByDescending(r => r.sortingLayer).ThenByDescending(r => r.sortingOrder).ThenByDescending(r => r.depth);
+            print(list.First().gameObject.name);
+            return list.First().gameObject == element;
         }
         protected bool IsPointerOverUI() => ClearResults().Count > 0;
     }

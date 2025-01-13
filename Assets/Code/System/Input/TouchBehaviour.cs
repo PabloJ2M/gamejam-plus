@@ -1,5 +1,5 @@
-using System.Threading.Tasks;
 using UnityEngine.EventSystems;
+using Phase = UnityEngine.TouchPhase;
 
 namespace UnityEngine.InputSystem
 {
@@ -10,15 +10,16 @@ namespace UnityEngine.InputSystem
 
         protected virtual void Start() => _inputs.UI.Click.performed += OnSelectStatus;
         protected virtual void OnDestroy() => _inputs.UI.Click.performed -= OnSelectStatus;
-        protected virtual void Update() { if (Input.touchCount != 0) _isOverElement = IsPointerOverObject(gameObject); }
 
-        protected async void OnSelectStatus(InputAction.CallbackContext ctx)
+        protected void OnSelectStatus(InputAction.CallbackContext ctx)
         {
             bool isPressed = ctx.control.IsPressed();
-            await Task.Yield();
+
+            if (Input.touchCount != 0) {
+                _isOverElement = Input.touches[0].phase == Phase.Began ? IsPointerOverObject(gameObject) : false;
+            }
             
             if ((isPressed && !_isOverElement) || (!isPressed && !_isSelected)) return;
-
             if (isPressed) OnSelect();
             else OnDeselect();
 
