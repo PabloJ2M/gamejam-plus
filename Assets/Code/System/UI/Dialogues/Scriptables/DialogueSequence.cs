@@ -3,10 +3,10 @@ using UnityEngine;
 namespace UI.Dialogues
 {
     [CreateAssetMenu(fileName = "dialogues", menuName = "System/Dialogues")]
-    public class DialogueSequence : Dialogue
+    public class DialogueSequence : ScriptableObject
     {
-        [SerializeField] private DialogueSingle[] _dialogues;
+        [SerializeField] private Dialogue[] _dialogues;
 
-        public DialogueSingle[] Dialogues => _dialogues;
+        public Dialogue[] Dialogues => _dialogues;
     }
 }

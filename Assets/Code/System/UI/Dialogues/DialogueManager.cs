@@ -13,46 +13,50 @@ namespace UI.Dialogues
 
         [SerializeField] private UnityEvent<bool> _onDisplay;
 
-        private Queue<DialogueSingle> _listOfDialogues = new();
-        private WaitForSeconds _textDelay, _waitDelay;
-        private Coroutine _animation;
-        private bool _skip;
+        private Queue<DialogueSequence> _listOfDialogues = new();
+        private WaitForSeconds _textDelay;
+        private bool _isAnimated, _skip, _next;
 
         public Action<string> onHeaderChange, onTextChange;
 
-        protected override void Awake() { base.Awake(); _textDelay = new(_charDelay); _waitDelay = new(_lastDelay); }
+        protected override void Awake() { base.Awake(); _textDelay = new(_charDelay); }
 
-        public void SkipDialogue() => _skip = true;
-        public void AddDialogue(DialogueSingle dialogue) => _listOfDialogues.Enqueue(dialogue);
-        public void AddDialogue(DialogueSequence dialogues) { foreach (var item in dialogues.Dialogues) AddDialogue(item); }
-        public void StartDialogue(Action action, Action onComplete) { if (_animation == null) _animation = StartCoroutine(DisplayDialogues(action, onComplete)); }
+        public void SkipDialogue() { if (!_skip) _skip = true; else _next = true; }
+        public void AddDialogue(DialogueSequence dialogue) => _listOfDialogues.Enqueue(dialogue);
+        public void StartDialogue(Action action, Action onComplete) => StartCoroutine(DisplayDialogues(action, onComplete));
 
         private IEnumerator DisplayDialogues(Action onStart, Action onComplete)
         {
-            _onDisplay.Invoke(true);
-            onStart?.Invoke();
+            if (_isAnimated) yield break;
 
             while (_listOfDialogues.Count > 0)
             {
+                _onDisplay.Invoke(true);
+                onStart?.Invoke();
+
                 var dialogue = _listOfDialogues.Dequeue();
-                string messageComplete = string.Format(dialogue.Text, SetText.Instance.textNew);
-                onHeaderChange?.Invoke(dialogue.Header);
-                string text = string.Empty;
-
-                for (int i = 0; i < messageComplete.Length; i++)
+                foreach (var line in dialogue.Dialogues)
                 {
-                    text += messageComplete[i];
-                    onTextChange?.Invoke(text);
-                    if (!_skip) yield return _textDelay;
-                }
+                    string messageComplete = string.Format(line.Text, SetUserName.Instance.username);
+                    onHeaderChange?.Invoke(line.Header);
+                    string text = string.Empty;
 
-                yield return _waitDelay;
-                _skip = false;
+                    for (int i = 0; i < messageComplete.Length; i++)
+                    {
+                        text += messageComplete[i];
+                        onTextChange?.Invoke(text);
+                        if (!_skip) yield return _textDelay;
+                    }
+
+                    yield return new WaitUntil(() => _next);
+                    _next = _skip = false;
+                }
+                
+                onComplete?.Invoke();
             }
 
-            _animation = null;
             _onDisplay.Invoke(false);
-            onComplete?.Invoke();
+            _isAnimated = false;
         }
     }
 }

@@ -20,6 +20,10 @@ namespace UnityEngine.UI
             Vector3 data = ResourceManager.GetResource();
             if (data.x < item.Welfare || data.y < item.Maintenance || data.z < item.Intelligence) return;
 
+            ResourceManager.RemoveResource(ResourceType.Welfare, item.Welfare);
+            ResourceManager.RemoveResource(ResourceType.Maintenance, item.Maintenance);
+            ResourceManager.RemoveResource(ResourceType.Intelligence, item.Intelligence);
+
             _inventory.Storage.Container?.Add(item, 1);
             _inventory?.RefreshUI();
         }
