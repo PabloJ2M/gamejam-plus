@@ -58,5 +58,6 @@ namespace Gameplay.GuitarHero
 
         public void MissedTrack() => _onFailure.Invoke();
         public void SuccessTrack() => _onSuccess.Invoke();
+        public void Restart() { _isCompleted = false; _time = _offset; _index = 0; }
     }
 }
