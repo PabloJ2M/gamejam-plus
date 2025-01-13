@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: c881b7e74b3322c46a93e93605a8c5c2
+guid: 650959f15c94dd04c96956c02cdcfafd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6855218837941648915
-    second: puerta_0
+      213: 4909772223451574001
+    second: Banderas_0
+  - first:
+      213: 7604771200750474346
+    second: Banderas_1
+  - first:
+      213: -6278958402658813788
+    second: Banderas_2
+  - first:
+      213: -3817927813742870854
+    second: Banderas_3
+  - first:
+      213: -4929453394522745731
+    second: Banderas_4
+  - first:
+      213: 1300428695072040591
+    second: Banderas_5
+  - first:
+      213: -7843814042181399661
+    second: Banderas_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,13 +170,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: puerta_0
+      name: Banderas_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 94
-        width: 32
-        height: 32
+        x: 82
+        y: 79
+        width: 63
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,250 +185,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de10ce299ce5dd0a0800000000000000
-      internalID: -6855218837941648915
+      spriteID: 1fe29eaf2d3032440800000000000000
+      internalID: 4909772223451574001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puerta_1
+      name: Banderas_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 94
-        width: 32
-        height: 32
+        x: 162
+        y: 79
+        width: 63
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 274c018b7298f274a8dff60378eddc1c
-      internalID: -1302453072
+      spriteID: a645ad28d13998960800000000000000
+      internalID: 7604771200750474346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puerta_2
+      name: Banderas_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 94
-        width: 32
-        height: 32
+        x: 2
+        y: 0
+        width: 63
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c555fd1cec12d6e4d9d27a442925fcd3
-      internalID: 1251291182
+      spriteID: 4a83112a998acd8a0800000000000000
+      internalID: -6278958402658813788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puerta_3
+      name: Banderas_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 94
-        width: 32
-        height: 32
+        x: 82
+        y: 0
+        width: 63
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 675e035cbb89c5840a96f14728155332
-      internalID: 394010657
+      spriteID: abeb5c3b1eef30bc0800000000000000
+      internalID: -3817927813742870854
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puerta_4
+      name: Banderas_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 62
-        width: 32
-        height: 32
+        x: 162
+        y: 0
+        width: 63
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: fe02fe8be2666c64283d77f6068ff30b
-      internalID: -479058569
+      spriteID: d74d0aa4140179bb0800000000000000
+      internalID: -4929453394522745731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puerta_5
+      name: Banderas_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 62
-        width: 32
-        height: 32
+        x: 242
+        y: 0
+        width: 63
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: dea8fd5b0728c4b4c9c8db2128d33b34
-      internalID: -141819002
+      spriteID: f866e79120d0c0210800000000000000
+      internalID: 1300428695072040591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: puerta_6
+      name: Banderas_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 62
-        width: 32
-        height: 32
+        x: 319
+        y: 0
+        width: 62
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 055289978fbb4d34fbb80fb9e1743df0
-      internalID: -307712571
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puerta_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 62
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d627faba04aa143498f718ce9047d500
-      internalID: -2074309669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puerta_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05d05b680f754064ab1d9573b19e8d10
-      internalID: -1606093649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puerta_9
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e738da2e258522429af6c37c021da40
-      internalID: -238796271
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puerta_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f2f63f2065f7fa4d9353f6afe23d34e
-      internalID: -1082349008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: puerta_11
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 30
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 796a0a7fad4606342ba2704ef2155f28
-      internalID: 1221138284
+      spriteID: 39b8e8bdfac252390800000000000000
+      internalID: -7843814042181399661
       vertices: []
       indices: 
       edges: []
@@ -419,7 +327,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: df7bc58f90f74ee47b64b8906204e522
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -429,18 +337,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      puerta_0: -6855218837941648915
-      puerta_1: -1302453072
-      puerta_10: -1082349008
-      puerta_11: 1221138284
-      puerta_2: 1251291182
-      puerta_3: 394010657
-      puerta_4: -479058569
-      puerta_5: -141819002
-      puerta_6: -307712571
-      puerta_7: -2074309669
-      puerta_8: -1606093649
-      puerta_9: -238796271
+      Banderas_0: 4909772223451574001
+      Banderas_1: 7604771200750474346
+      Banderas_2: -6278958402658813788
+      Banderas_3: -3817927813742870854
+      Banderas_4: -4929453394522745731
+      Banderas_5: 1300428695072040591
+      Banderas_6: -7843814042181399661
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
