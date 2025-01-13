@@ -17,8 +17,8 @@ namespace UI.Dialogues
         [ContextMenu("Start Dialogues")]
         public void TriggerDialogue()
         {
-            if (_dialogue is DialogueSingle) _manager.AddDialogue(_dialogue as DialogueSingle);
-            if (_dialogue is DialogueSequence) _manager.AddDialogue(_dialogue as DialogueSequence);
+            if (_dialogue is DialogueSingle single) _manager.AddDialogue(single);
+            if (_dialogue is DialogueSequence sequence) _manager.AddDialogue(sequence);
             _manager.StartDialogue(_onBegin.Invoke, PerformeSequence);
         }
         private void PerformeSequence()
