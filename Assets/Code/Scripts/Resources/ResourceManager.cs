@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Player.Data
@@ -6,6 +7,8 @@ namespace Player.Data
 
     public class ResourceManager : MonoBehaviour
     {
+        public static event Action onResourcesUpdated;
+
         public static Vector3 GetResource() => 
             new (GetResource(ResourceType.Welfare), GetResource(ResourceType.Maintenance), GetResource(ResourceType.Intelligence));
 
@@ -16,6 +19,8 @@ namespace Player.Data
             float resource = GetResource(type);
             resource = Mathf.Max(0f, resource + amount);
             PlayerPrefs.SetFloat(type.ToString(), resource);
+
+            onResourcesUpdated.Invoke();
         }
 
         public static void LogResources()

@@ -12,7 +12,11 @@ namespace UnityEngine.UI
         {
             ClearItems();
             var items = _database.Items;
-            for (int i = 0; i < items.Count; i++) { var item = Pool.Get() as StoreUI_Entry; item.Setup(items[i]); }
+            for (int i = 0; i < items.Count; i++)
+            {
+                var item = Pool.Get() as StoreUI_Entry;
+                item.Setup(items[i]);
+            }
         }
 
         public void BuyItem(Item item)
