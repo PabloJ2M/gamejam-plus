@@ -6,7 +6,9 @@ namespace UnityEngine.DecorationSystem
     public class ItemDec : Item
     {
         [SerializeField] private Sprite _back, _left, _right;
+        [SerializeField] private Vector2 _overrideSize = Vector2.one;
 
+        public Vector2 GetSize() => _overrideSize;
         public Sprite GetDirection(int index)
         {
             switch (index % 4) {

@@ -37,8 +37,6 @@ namespace UnityEngine.InventorySystem
             if (GUILayout.Button("Get Random ID")) item?.SetRandomID();
 
             if (!GUI.changed) return;
-
-            EditorGUIUtility.SetIconForObject(item, item.Image ? item.Image.texture : null);
             EditorUtility.SetDirty(target);
         }
     }

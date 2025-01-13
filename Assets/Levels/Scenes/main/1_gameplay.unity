@@ -1752,7 +1752,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0
   far clip plane: 20
   field of view: 34
   orthographic: 1
@@ -6077,6 +6077,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  _onEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  _onDisable:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &730178452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28029,7 +28035,7 @@ MonoBehaviour:
   Lens:
     FieldOfView: 34
     OrthographicSize: 4.5
-    NearClipPlane: 0.01
+    NearClipPlane: 0
     FarClipPlane: 20
     Dutch: 0
     ModeOverride: 0
@@ -28641,6 +28647,7 @@ GameObject:
   - component: {fileID: 1838895286}
   - component: {fileID: 1838895293}
   - component: {fileID: 1838895292}
+  - component: {fileID: 1838895294}
   m_Layer: 0
   m_Name: ground
   m_TagString: Untagged
@@ -33519,6 +33526,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1838895294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838895285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f42496fe4ddeff4290d78de27e65f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!4 &1845788586 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4499250903023421509, guid: b4324812005590e4b8df9efddaa4e332, type: 3}

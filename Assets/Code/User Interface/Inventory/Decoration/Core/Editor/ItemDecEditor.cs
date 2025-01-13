@@ -21,6 +21,12 @@ namespace UnityEngine.DecorationSystem
 
             FieldInfo rightField = item.GetType().GetField("_right", _flags);
             rightField?.SetValue(item, (Sprite)EditorGUILayout.ObjectField("Right:", (Sprite)rightField?.GetValue(item), typeof(Sprite), false));
+
+            FieldInfo sizeField = item.GetType().GetField("_overrideSize", _flags);
+            sizeField?.SetValue(item, EditorGUILayout.Vector2Field("Override Size: ", (Vector2)sizeField?.GetValue(item)));
+
+            if (!GUI.changed) return;
+            EditorUtility.SetDirty(target);
         }
     }
 }
