@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace UI.Dialogues
 {
-    [CreateAssetMenu(fileName = "dialogues", menuName = "System/Dialogues")]
+    [CreateAssetMenu(fileName = "dialogues", menuName = "system/dialogues")]
     public class DialogueSequence : ScriptableObject
     {
         [SerializeField] private Dialogue[] _dialogues;

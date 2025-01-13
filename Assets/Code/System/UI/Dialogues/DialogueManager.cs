@@ -13,16 +13,17 @@ namespace UI.Dialogues
 
         [SerializeField] private UnityEvent<bool> _onDisplay;
 
-        private Queue<DialogueSequence> _listOfDialogues = new();
+        private Queue<(DialogueSequence, Vector2)> _listOfDialogues = new();
         private WaitForSeconds _textDelay;
         private bool _isAnimated, _skip, _next;
 
         public Action<string> onHeaderChange, onTextChange;
+        public Action<Vector2> onDisplayIndicator;
 
         protected override void Awake() { base.Awake(); _textDelay = new(_charDelay); }
 
         public void SkipDialogue() { if (!_skip) _skip = true; else _next = true; }
-        public void AddDialogue(DialogueSequence dialogue) => _listOfDialogues.Enqueue(dialogue);
+        public void AddDialogue(DialogueSequence dialogue, Vector2 coords) => _listOfDialogues.Enqueue((dialogue, coords));
         public void StartDialogue(Action action, Action onComplete) => StartCoroutine(DisplayDialogues(action, onComplete));
 
         private IEnumerator DisplayDialogues(Action onStart, Action onComplete)
@@ -35,7 +36,9 @@ namespace UI.Dialogues
                 onStart?.Invoke();
 
                 var dialogue = _listOfDialogues.Dequeue();
-                foreach (var line in dialogue.Dialogues)
+                onDisplayIndicator.Invoke(dialogue.Item2);
+
+                foreach (var line in dialogue.Item1.Dialogues)
                 {
                     string messageComplete = string.Format(line.Text, SetUserName.Instance.username);
                     onHeaderChange?.Invoke(line.Header);
@@ -53,6 +56,7 @@ namespace UI.Dialogues
                 }
                 
                 onComplete?.Invoke();
+                yield return new WaitForSeconds(1);
             }
 
             _onDisplay.Invoke(false);
