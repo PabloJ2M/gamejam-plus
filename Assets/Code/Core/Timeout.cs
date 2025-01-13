@@ -19,22 +19,32 @@ public static class Timeout
         return savedTime <= DateTime.Now;
     }
 
-    public static int GetExpirationLeft(string id)
+    public static int GetExpirationLeftSeconds(string id)
     {
-        bool isExpired = IsExpirationDate(id, out DateTime savedTime);
-        return isExpired ? 0 : DateTime.Now.Subtract(savedTime).Seconds;
+        bool hasExpired = IsExpirationDate(id, out DateTime savedTime);
+        return hasExpired ? 0 : (DateTime.Now - savedTime).Seconds;
     }
-    public static int GetExpirationLength(string id)
+    public static int GetExpirationLeftHours(string id)
     {
-        bool isExpired = IsExpirationDate(id, out DateTime savedTime);
-        return !isExpired ? 0 : DateTime.Now.Subtract(savedTime).Hours;
+        bool hasExpired = IsExpirationDate(id, out DateTime savedTime);
+        return hasExpired ? 0 : (DateTime.Now - savedTime).Hours;
+    }
+
+    public static int GetExpirationLengthMinutes(string id)
+    {
+        bool hasExpired = IsExpirationDate(id, out DateTime savedTime);
+        return !hasExpired ? 0 : (DateTime.Now - savedTime).Minutes;
+    }
+    public static int GetExpirationLengthDays(string id)
+    {
+        bool hasExpired = IsExpirationDate(id, out DateTime savedTime);
+        return !hasExpired ? 0 : (DateTime.Now - savedTime).Days;
     }
 
     public static void SetExpirationDate(string id) => SetExpirationDate(id, 1);
     public static void SetExpirationDate(string id, int hours) => SetExpirationDate(id, hours, -1);
-    public static void SetExpirationDate(string id, int hours, int minutes)
-    {
-        DateTime time = DateTime.Now.AddHours(hours).AddMinutes(minutes);
-        PlayerPrefs.SetString($"{id}_timeout", time.ToString());
-    }
+    public static void SetExpirationDate(string id, int hours, int minutes) => SaveExpirationDate(id, DateTime.Now.AddHours(hours).AddMinutes(minutes));
+
+    public static void SaveExpirationDate(string id) => SaveExpirationDate(id, DateTime.Now);
+    public static void SaveExpirationDate(string id, DateTime time) => PlayerPrefs.SetString($"{id}_timeout", time.ToString());
 }

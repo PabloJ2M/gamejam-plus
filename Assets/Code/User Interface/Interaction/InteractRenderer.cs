@@ -9,6 +9,7 @@ namespace Gameplay.Events
     {
         [SerializeField] private bool _needConfirmation;
         [SerializeField] private UnityEvent _onInteract;
+        private bool _isLocked, _isSeened, _isRendered;
 
         public int ID => GetInstanceID();
         public Vector2 WorldCoords => transform.position + Vector3.up;
@@ -18,7 +19,24 @@ namespace Gameplay.Events
         private InteractManager _interaction;
 
         private void Awake() => _interaction = InteractManager.instance;
-        private void OnBecameVisible() => _interaction.AddInteraction(this);
-        private void OnBecameInvisible() => _interaction.RemoveInteraction(this);
+        private void OnBecameVisible() => RenderStatus(true);
+        private void OnBecameInvisible() => RenderStatus(false);
+
+        private void RenderStatus(bool value)
+        {
+            _isSeened = value;
+            if (_isLocked || _isRendered == value) return;
+
+            if (value) _interaction.AddInteraction(this);
+            else _interaction.RemoveInteraction(this);
+            _isRendered = value;
+        }
+
+        public void OnStatus(bool value)
+        {
+            _isLocked = value;
+            if (value) { _isRendered = false; _interaction.RemoveInteraction(this); }
+            else if (_isSeened && !_isRendered) { _isRendered = true; _interaction.AddInteraction(this); }
+        }
     }
 }

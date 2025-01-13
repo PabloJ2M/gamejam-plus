@@ -757,6 +757,7 @@ GameObject:
   - component: {fileID: 196518369}
   - component: {fileID: 196518370}
   - component: {fileID: 196518367}
+  - component: {fileID: 196518371}
   - component: {fileID: 196518368}
   m_Layer: 0
   m_Name: stars
@@ -863,6 +864,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 196518371}
+        m_TargetAssemblyTypeName: Player.Data.EnergyListener, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &196518368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +951,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &196518371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196518364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e66a251c08b714d89739932c6a59cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStatusChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 196518367}
+        m_TargetAssemblyTypeName: Gameplay.Events.InteractRenderer, Assembly-CSharp
+        m_MethodName: OnStatus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &228638177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1051,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 242857222}
+  - component: {fileID: 242857224}
+  - component: {fileID: 242857223}
   m_Layer: 5
   m_Name: power
   m_TagString: Untagged
@@ -1039,6 +1081,70 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: -80}
   m_SizeDelta: {x: -350, y: 40}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &242857223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242857221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcdbe2d641cbebc43aab911245bdc63f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _totalEnergy: 10
+  _energyCost: 1
+  _energyPerMinute: 5
+--- !u!114 &242857224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242857221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 0}
+  m_HandleRect: {fileID: 2128560810}
+  m_Direction: 0
+  m_Value: 1
+  m_Size: 1
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &263360451
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,6 +4972,7 @@ GameObject:
   - component: {fileID: 588408623}
   - component: {fileID: 588408624}
   - component: {fileID: 588408621}
+  - component: {fileID: 588408625}
   - component: {fileID: 588408622}
   m_Layer: 0
   m_Name: space ship
@@ -4972,6 +5079,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 588408625}
+        m_TargetAssemblyTypeName: Player.Data.EnergyListener, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &588408622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5047,6 +5166,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &588408625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588408618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e66a251c08b714d89739932c6a59cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStatusChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 588408621}
+        m_TargetAssemblyTypeName: Gameplay.Events.InteractRenderer, Assembly-CSharp
+        m_MethodName: OnStatus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -5365,6 +5511,7 @@ GameObject:
   - component: {fileID: 658047028}
   - component: {fileID: 658047029}
   - component: {fileID: 658047026}
+  - component: {fileID: 658047030}
   - component: {fileID: 658047027}
   m_Layer: 0
   m_Name: runner
@@ -5471,6 +5618,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 658047030}
+        m_TargetAssemblyTypeName: Player.Data.EnergyListener, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &658047027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5546,6 +5705,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &658047030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658047023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e66a251c08b714d89739932c6a59cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStatusChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 658047026}
+        m_TargetAssemblyTypeName: Gameplay.Events.InteractRenderer, Assembly-CSharp
+        m_MethodName: OnStatus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &667991419 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4499250903023421509, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
@@ -19549,7 +19735,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 1.5
 --- !u!222 &1140196529
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19687,7 +19873,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -199.99995, y: -50}
+  m_AnchoredPosition: {x: -199.99994, y: -50}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1157688394
@@ -26414,6 +26600,7 @@ GameObject:
   - component: {fileID: 1691070824}
   - component: {fileID: 1691070825}
   - component: {fileID: 1691070822}
+  - component: {fileID: 1691070826}
   - component: {fileID: 1691070823}
   m_Layer: 0
   m_Name: teeth
@@ -26520,6 +26707,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1691070826}
+        m_TargetAssemblyTypeName: Player.Data.EnergyListener, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1691070823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26595,6 +26794,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1691070826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691070819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e66a251c08b714d89739932c6a59cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStatusChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1691070822}
+        m_TargetAssemblyTypeName: Gameplay.Events.InteractRenderer, Assembly-CSharp
+        m_MethodName: OnStatus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1702936565
 GameObject:
   m_ObjectHideFlags: 0
@@ -26836,6 +27062,7 @@ GameObject:
   - component: {fileID: 1708153205}
   - component: {fileID: 1708153206}
   - component: {fileID: 1708153203}
+  - component: {fileID: 1708153207}
   - component: {fileID: 1708153204}
   m_Layer: 0
   m_Name: radio
@@ -26942,6 +27169,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1708153207}
+        m_TargetAssemblyTypeName: Player.Data.EnergyListener, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1708153204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27017,6 +27256,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1708153207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708153200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e66a251c08b714d89739932c6a59cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStatusChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1708153203}
+        m_TargetAssemblyTypeName: Gameplay.Events.InteractRenderer, Assembly-CSharp
+        m_MethodName: OnStatus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1712443571
 GameObject:
   m_ObjectHideFlags: 0
@@ -33578,6 +33844,7 @@ GameObject:
   - component: {fileID: 1972783867}
   - component: {fileID: 1972783868}
   - component: {fileID: 1972783865}
+  - component: {fileID: 1972783869}
   - component: {fileID: 1972783866}
   m_Layer: 0
   m_Name: food
@@ -33684,6 +33951,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1972783869}
+        m_TargetAssemblyTypeName: Player.Data.EnergyListener, Assembly-CSharp
+        m_MethodName: OnInteract
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1972783866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33759,6 +34038,33 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1972783869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972783862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e66a251c08b714d89739932c6a59cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStatusChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1972783865}
+        m_TargetAssemblyTypeName: Gameplay.Events.InteractRenderer, Assembly-CSharp
+        m_MethodName: OnStatus
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1991412134
 GameObject:
   m_ObjectHideFlags: 0
@@ -34130,7 +34436,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2067425502}
-  - component: {fileID: 2067425503}
   m_Layer: 5
   m_Name: progress
   m_TagString: Untagged
@@ -34158,55 +34463,6 @@ RectTransform:
   m_AnchoredPosition: {x: 45, y: 0}
   m_SizeDelta: {x: -50, y: 0}
   m_Pivot: {x: 0, y: 0.5}
---- !u!114 &2067425503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2067425501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 0
-  m_TargetGraphic: {fileID: 0}
-  m_HandleRect: {fileID: 2128560810}
-  m_Direction: 0
-  m_Value: 0
-  m_Size: 1
-  m_NumberOfSteps: 0
-  m_OnValueChanged:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2077636501
 GameObject:
   m_ObjectHideFlags: 0
