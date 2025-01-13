@@ -1,9 +1,7 @@
-using Unity.Mathematics;
-using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
+using Unity.Mathematics;
 
-namespace Gameplay.HUD
+namespace UnityEngine.UI.Display
 {
     public class Health : MonoBehaviour
     {

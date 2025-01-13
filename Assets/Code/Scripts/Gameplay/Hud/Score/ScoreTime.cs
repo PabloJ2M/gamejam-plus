@@ -1,6 +1,4 @@
-using UnityEngine;
-
-namespace UI.Display
+namespace UnityEngine.UI.Display
 {
     public class ScoreTime : Score
     {

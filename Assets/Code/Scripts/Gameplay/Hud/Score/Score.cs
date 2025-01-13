@@ -1,7 +1,6 @@
-using UnityEngine;
 using TMPro;
 
-namespace UI.Display
+namespace UnityEngine.UI.Display
 {
     public class Score : MonoBehaviour
     {
