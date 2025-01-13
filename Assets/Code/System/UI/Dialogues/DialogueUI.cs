@@ -10,6 +10,7 @@ namespace UI.Dialogues
         [SerializeField] private RectTransform _indicator;
 
         private DialogueManager _manager;
+        private RectTransform _canvas;
         private Camera _camera;
 
         private void Awake() => _manager = DialogueManager.Instance;
@@ -17,6 +18,7 @@ namespace UI.Dialogues
 
         private void OnEnable()
         {
+            _canvas = GetComponentInParent<Canvas>().GetComponent<RectTransform>();
             _manager.onDisplayIndicator += OnDisplayIndicator;
             _manager.onHeaderChange += OnHeaderChange;
             _manager.onTextChange += OnTextChange;
@@ -24,7 +26,8 @@ namespace UI.Dialogues
 
         private void OnDisplayIndicator(Vector2 coords)
         {
-            _indicator.localPosition = _camera.WorldToScreenPoint(coords);
+            Vector2 screen = _camera.WorldToScreenPoint(coords);
+            _indicator.position = screen;
             _indicator.gameObject.SetActive(coords != Vector2.zero);
         }
         private void OnHeaderChange(string value) => _headerText?.SetText(value);
