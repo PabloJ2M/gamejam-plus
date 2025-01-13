@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cda5ccb0dcc8734ab563567d927c0b6, type: 3}
-  m_Name: decoration 1
+  m_Name: decoration 4
   m_EditorClassIdentifier: 
-  _id: 125248
+  _id: 94492
   _max: 64
-  _name: item 1
-  _image: {fileID: 1857056967673615299, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _welfare: 4
+  _name: item 4
+  _image: {fileID: 8386764617170813428, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
+  _welfare: 7
   _maintenance: 8
-  _intelligence: 3
+  _intelligence: 0
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}
   _right: {fileID: 0}
-  _overrideSize: {x: 1, y: 1}
+  _overrideSize: {x: 1, y: 2}

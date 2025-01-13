@@ -24,14 +24,14 @@ namespace UnityEngine.InventorySystem
             FieldInfo maxField = item.GetType().GetField("_max", _flags);
             maxField?.SetValue(item, Mathf.Clamp(EditorGUILayout.IntField("Max Slot:", (int)maxField?.GetValue(item)), 0, int.MaxValue));
 
-            FieldInfo resourceField = item.GetType().GetField("_resources", _flags);
-            resourceField?.SetValue(item, (int)EditorGUILayout.Slider("Resources:", (int)resourceField?.GetValue(item), 0, 24));
+            FieldInfo resourceField = item.GetType().GetField("_welfare", _flags);
+            resourceField?.SetValue(item, (int)EditorGUILayout.Slider("Welfare:", (int)resourceField?.GetValue(item), 0, 24));
 
-            FieldInfo researchField = item.GetType().GetField("_research", _flags);
-            researchField?.SetValue(item, (int)EditorGUILayout.Slider("Research:", (int)researchField?.GetValue(item), 0, 24));
+            FieldInfo researchField = item.GetType().GetField("_maintenance", _flags);
+            researchField?.SetValue(item, (int)EditorGUILayout.Slider("Maintenance:", (int)researchField?.GetValue(item), 0, 24));
 
-            FieldInfo healthField = item.GetType().GetField("_health", _flags);
-            healthField?.SetValue(item, (int)EditorGUILayout.Slider("Health:", (int)healthField?.GetValue(item), 0, 24));
+            FieldInfo healthField = item.GetType().GetField("_intelligence", _flags);
+            healthField?.SetValue(item, (int)EditorGUILayout.Slider("Intelligence:", (int)healthField?.GetValue(item), 0, 24));
 
             EditorGUILayout.Space(10);
             if (GUILayout.Button("Get Random ID")) item?.SetRandomID();

@@ -2,7 +2,7 @@ using UnityEngine.InventorySystem;
 
 namespace UnityEngine.DecorationSystem
 {
-    [CreateAssetMenu(fileName = "Decoration", menuName = "System/Decoration/Decoration", order = 1)]
+    [CreateAssetMenu(fileName = "decoration", menuName = "system/decoration/decoration", order = 1)]
     public class ItemDec : Item
     {
         [SerializeField] private Sprite _back, _left, _right;

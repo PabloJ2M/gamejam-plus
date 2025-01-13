@@ -2,7 +2,7 @@ using System;
 
 namespace UnityEngine.InventorySystem
 {
-    [CreateAssetMenu(fileName = "Storage", menuName = "System/Inventory/Storage", order = 1)]
+    [CreateAssetMenu(fileName = "storage", menuName = "system/inventory/storage", order = 1)]
     [Serializable] public class SlotStorage : ScriptableObject
     {
         [SerializeField] private Database _database;

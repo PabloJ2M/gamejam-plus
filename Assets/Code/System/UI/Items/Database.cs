@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace UnityEngine.InventorySystem
 {
-    [CreateAssetMenu(fileName = "Database", menuName = "System/Inventory/Database", order = 0)]
+    [CreateAssetMenu(fileName = "database", menuName = "system/inventory/database", order = 0)]
     public class Database : ScriptableObject
     {
         [SerializeField] private List<Item> _items = new();

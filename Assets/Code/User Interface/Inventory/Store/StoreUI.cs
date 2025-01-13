@@ -1,4 +1,5 @@
 using UnityEngine.InventorySystem;
+using Player.Data;
 
 namespace UnityEngine.UI
 {
@@ -16,7 +17,8 @@ namespace UnityEngine.UI
 
         public void BuyItem(Item item)
         {
-            //permitir compra si tiene suficiente dinero
+            Vector3 data = ResourceManager.GetResource();
+            if (data.x < item.Welfare || data.y < item.Maintenance || data.z < item.Intelligence) return;
 
             _inventory.Storage.Container?.Add(item, 1);
             _inventory?.RefreshUI();

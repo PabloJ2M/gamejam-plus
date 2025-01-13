@@ -21,7 +21,7 @@ namespace UnityEngine.DecorationSystem
         public List<Deco> Items => items;
     }
 
-    [CreateAssetMenu(fileName = "decoration storage", menuName = "System/Decoration/Storage", order = 0)]
+    [CreateAssetMenu(fileName = "decoration storage", menuName = "system/decoration/storage", order = 0)]
     public class DecorationStorage : ScriptableObject
     {
         [SerializeField] private DecorationContainer container;

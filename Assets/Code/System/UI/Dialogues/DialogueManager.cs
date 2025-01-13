@@ -25,11 +25,12 @@ namespace UI.Dialogues
         public void SkipDialogue() => _skip = true;
         public void AddDialogue(DialogueSingle dialogue) => _listOfDialogues.Enqueue(dialogue);
         public void AddDialogue(DialogueSequence dialogues) { foreach (var item in dialogues.Dialogues) AddDialogue(item); }
-        public void StartDialogue() { if (_animation == null) _animation = StartCoroutine(DisplayDialogues()); }
+        public void StartDialogue(Action action, Action onComplete) { if (_animation == null) _animation = StartCoroutine(DisplayDialogues(action, onComplete)); }
 
-        private IEnumerator DisplayDialogues()
+        private IEnumerator DisplayDialogues(Action onStart, Action onComplete)
         {
             _onDisplay.Invoke(true);
+            onStart?.Invoke();
 
             while (_listOfDialogues.Count > 0)
             {
@@ -50,6 +51,7 @@ namespace UI.Dialogues
 
             _animation = null;
             _onDisplay.Invoke(false);
+            onComplete?.Invoke();
         }
     }
 }
