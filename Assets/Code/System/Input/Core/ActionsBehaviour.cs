@@ -36,6 +36,11 @@ namespace UnityEngine.InputSystem
             return result;
         }
 
+        protected bool IsPointerOverObject(GameObject element)
+        {
+            var list = Results();
+            return list.FindIndex(x => x.gameObject == element) >= 0;
+        }
         protected bool IsPointerOverUI() => Results().Count > 0;
         protected bool IsPointerOverUI(params GameObject[] args)
         {

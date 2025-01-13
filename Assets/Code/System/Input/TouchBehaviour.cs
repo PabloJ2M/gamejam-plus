@@ -1,4 +1,5 @@
 using UnityEngine.EventSystems;
+//using Phase = UnityEngine.TouchPhase;
 
 namespace UnityEngine.InputSystem
 {
@@ -20,6 +21,15 @@ namespace UnityEngine.InputSystem
 
             _isSelected = isPressed;
         }
+        //protected virtual void Update()
+        //{
+        //    if (Input.touchCount == 0) return;
+
+        //    Touch touch = Input.GetTouch(0);
+        //    bool isElement = IsPointerOverObject(gameObject); print(isElement);
+        //    if (touch.phase == Phase.Began && isElement) { OnSelect(); _isOverElement = _isSelected = true; }
+        //    else if ((touch.phase == Phase.Ended || touch.phase == Phase.Canceled) && _isSelected) { OnDeselect(); _isSelected = _isSelected = false; }
+        //}
 
         protected abstract void OnSelect();
         protected abstract void OnDeselect();

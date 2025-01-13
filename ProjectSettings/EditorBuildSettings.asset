@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Levels/Scenes/minigames/ship/space ship.unity
     guid: ce182e19d37fce0458c896a62cc54c58
   - enabled: 1
+    path: Assets/Levels/Scenes/Chat-IA.unity
+    guid: 06db46afd6932b14f88f507e261a3baf
+  - enabled: 1
     path: Assets/Levels/Scenes/options.unity
     guid: 749f82b2850234647804c4b83cced438
   - enabled: 1
