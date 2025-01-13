@@ -5,7 +5,7 @@ namespace UnityEngine.DecorationSystem
     [CreateAssetMenu(fileName = "Decoration", menuName = "System/Decoration/Decoration", order = 1)]
     public class ItemDec : Item
     {
-        [SerializeField] private Sprite _front, _back, _left, _right;
+        [SerializeField] private Sprite _back, _left, _right;
 
         public Sprite GetDirection(int index)
         {
@@ -13,7 +13,7 @@ namespace UnityEngine.DecorationSystem
                 case 1: return _right;
                 case 2: return _left;
                 case 3: return _back;
-                default: return _front;
+                default: return Image;
             }
         }
     }

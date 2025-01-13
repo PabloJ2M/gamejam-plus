@@ -12,17 +12,23 @@ EditorBuildSettings:
     path: Assets/Levels/Scenes/main/1_gameplay.unity
     guid: 8310e3d1d1abe084ea94a526642a2a4d
   - enabled: 1
-    path: Assets/Levels/Scenes/Minigames/starts/stars.unity
+    path: Assets/Levels/Scenes/minigames/starts/stars.unity
     guid: ca63fd154ee6c5844a6bc46caa8dd5cb
   - enabled: 1
-    path: Assets/Levels/Scenes/Minigames/food/food.unity
+    path: Assets/Levels/Scenes/minigames/food/food.unity
     guid: da73654855b5e5c47b762238d5e20fb0
   - enabled: 1
-    path: Assets/Levels/Scenes/Minigames/football.unity
-    guid: 585b2926c2442f04aa19673e16dea7ca
-  - enabled: 1
-    path: Assets/Levels/Scenes/Minigames/teeth/teeth.unity
+    path: Assets/Levels/Scenes/minigames/teeth/teeth.unity
     guid: 45a7fa33745c6fe4fbb3a10bfa8a8169
+  - enabled: 1
+    path: Assets/Levels/Scenes/minigames/radio/radio.unity
+    guid: 4a791d286a294d24c8d9c11fe27ed376
+  - enabled: 1
+    path: Assets/Levels/Scenes/minigames/runner/runner.unity
+    guid: efd3263d768dd23408cac89185c2b36c
+  - enabled: 1
+    path: Assets/Levels/Scenes/minigames/ship/space ship.unity
+    guid: ce182e19d37fce0458c896a62cc54c58
   - enabled: 1
     path: Assets/Levels/Scenes/options.unity
     guid: 749f82b2850234647804c4b83cced438

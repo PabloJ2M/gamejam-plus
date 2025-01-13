@@ -1,0 +1,1052 @@
+fileFormatVersion: 2
+guid: 565b9870daf0828449068353624dff2f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2332284867411876920
+    second: Tile_Brush_RW_0
+  - first:
+      213: -1544308729490031577
+    second: Tile_Brush_RW_1
+  - first:
+      213: 8308585410104975017
+    second: Tile_Brush_RW_2
+  - first:
+      213: -4981417930909365876
+    second: Tile_Brush_RW_3
+  - first:
+      213: -4461609736292723162
+    second: Tile_Brush_RW_4
+  - first:
+      213: 5240259494145257726
+    second: Tile_Brush_RW_5
+  - first:
+      213: -2192126413081299543
+    second: Tile_Brush_RW_6
+  - first:
+      213: 7933628933318742905
+    second: Tile_Brush_RW_7
+  - first:
+      213: -4428962509211742887
+    second: Tile_Brush_RW_8
+  - first:
+      213: -4262412403024760494
+    second: Tile_Brush_RW_9
+  - first:
+      213: -4040895796333571283
+    second: Tile_Brush_RW_10
+  - first:
+      213: -2593929453702267910
+    second: Tile_Brush_RW_11
+  - first:
+      213: -9167287807824386010
+    second: Tile_Brush_RW_12
+  - first:
+      213: -2189526323220006813
+    second: Tile_Brush_RW_13
+  - first:
+      213: 2635323391718766873
+    second: Tile_Brush_RW_14
+  - first:
+      213: 3692519770330591762
+    second: Tile_Brush_RW_15
+  - first:
+      213: 2425779771723949621
+    second: Tile_Brush_RW_16
+  - first:
+      213: 1870804753365868221
+    second: Tile_Brush_RW_17
+  - first:
+      213: 5109898333935511408
+    second: Tile_Brush_RW_18
+  - first:
+      213: -5772952403961209489
+    second: Tile_Brush_RW_19
+  - first:
+      213: -7900729211990673299
+    second: Tile_Brush_RW_20
+  - first:
+      213: 6441035459138800469
+    second: Tile_Brush_RW_21
+  - first:
+      213: 8882104196578173684
+    second: Tile_Brush_RW_22
+  - first:
+      213: 5971642099702718650
+    second: Tile_Brush_RW_23
+  - first:
+      213: 5966445038398926210
+    second: Tile_Brush_RW_24
+  - first:
+      213: 513199798316565158
+    second: Tile_Brush_RW_25
+  - first:
+      213: 8037735676449480687
+    second: Tile_Brush_RW_26
+  - first:
+      213: 7921640697858513919
+    second: Tile_Brush_RW_27
+  - first:
+      213: 3807452226610356620
+    second: Tile_Brush_RW_28
+  - first:
+      213: 3877981533155781600
+    second: Tile_Brush_RW_29
+  - first:
+      213: -8135907243820752629
+    second: Tile_Brush_RW_30
+  - first:
+      213: 6207096296924193588
+    second: Tile_Brush_RW_31
+  - first:
+      213: 3817011460544235337
+    second: Tile_Brush_RW_32
+  - first:
+      213: 7674326721255854320
+    second: Tile_Brush_RW_33
+  - first:
+      213: 3144046241037810591
+    second: Tile_Brush_RW_34
+  - first:
+      213: 8422883264188755427
+    second: Tile_Brush_RW_35
+  - first:
+      213: 1663862746954666911
+    second: Tile_Brush_RW_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tile_Brush_RW_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 432
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c9a1ddab0fd5020800000000000000
+      internalID: 2332284867411876920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 425
+        width: 80
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72c36338463819ae0800000000000000
+      internalID: -1544308729490031577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 347
+        width: 93
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aedc43e8660e4370800000000000000
+      internalID: 8308585410104975017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_3
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 347
+        width: 86
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89c266d8c27edab0800000000000000
+      internalID: -4981417930909365876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_4
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 363
+        width: 61
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62619dd559d2512c0800000000000000
+      internalID: -4461609736292723162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 362
+        width: 78
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0756fee3429b840800000000000000
+      internalID: 5240259494145257726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 316
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5b98544a00491e0800000000000000
+      internalID: -2192126413081299543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_7
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 296
+        width: 82
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 973993e0b79e91e60800000000000000
+      internalID: 7933628933318742905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 307
+        width: 86
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 11, y: 7, z: 11, w: 7}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d49e2401a2982c0800000000000000
+      internalID: -4428962509211742887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 196
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2517d7fa08ed8d4c0800000000000000
+      internalID: -4262412403024760494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_10
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 196
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d231b2dceaadbe7c0800000000000000
+      internalID: -4040895796333571283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 275
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb37a3b7e2800cd0800000000000000
+      internalID: -2593929453702267910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_12
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 272
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628abd42f4047c080800000000000000
+      internalID: -9167287807824386010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_13
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 272
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368ba1ed86d3d91e0800000000000000
+      internalID: -2189526323220006813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_14
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 267
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919bca789ac829420800000000000000
+      internalID: 2635323391718766873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 271
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21279a4da277e3330800000000000000
+      internalID: 3692519770330591762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_16
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 195
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5362fec99d91aa120800000000000000
+      internalID: 2425779771723949621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 208
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 31, y: 10, z: 31, w: 10}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbe1c70e20f66f910800000000000000
+      internalID: 1870804753365868221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 187
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077269816710ae640800000000000000
+      internalID: 5109898333935511408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_19
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 187
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d97a0006a52efa0800000000000000
+      internalID: -5772952403961209489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 187
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d687ebc34a8fa5290800000000000000
+      internalID: -7900729211990673299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_21
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 187
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bc9afbf97236950800000000000000
+      internalID: 6441035459138800469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_22
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 187
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f26c0715b2934b70800000000000000
+      internalID: 8882104196578173684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_23
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 155
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab06c8eb9d88fd250800000000000000
+      internalID: 5971642099702718650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_24
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 155
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28de8ad96221dc250800000000000000
+      internalID: 5966445038398926210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_25
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 155
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a2067d5f704f1700800000000000000
+      internalID: 513199798316565158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_26
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 155
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef51411306cb8f60800000000000000
+      internalID: 8037735676449480687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 155
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb522a7e325fed60800000000000000
+      internalID: 7921640697858513919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_28
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 79
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81616a90a9c6d430800000000000000
+      internalID: 3807452226610356620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_31
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 86
+        width: 67
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4332fc80239042650800000000000000
+      internalID: 6207096296924193588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_32
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 101
+        width: 57
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947855133bfb8f430800000000000000
+      internalID: 3817011460544235337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_34
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 11
+        width: 45
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bf57af565e1ab20800000000000000
+      internalID: 3144046241037810591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_35
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 28
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3edad82d3b714e470800000000000000
+      internalID: 8422883264188755427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Brush_RW_36
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 28
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f931d335a5a371710800000000000000
+      internalID: 1663862746954666911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 054a280eecbd8cd4c807b0ab72a0ea29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tile_Brush_RW_0: 2332284867411876920
+      Tile_Brush_RW_1: -1544308729490031577
+      Tile_Brush_RW_10: -4040895796333571283
+      Tile_Brush_RW_11: -2593929453702267910
+      Tile_Brush_RW_12: -9167287807824386010
+      Tile_Brush_RW_13: -2189526323220006813
+      Tile_Brush_RW_14: 2635323391718766873
+      Tile_Brush_RW_15: 3692519770330591762
+      Tile_Brush_RW_16: 2425779771723949621
+      Tile_Brush_RW_17: 1870804753365868221
+      Tile_Brush_RW_18: 5109898333935511408
+      Tile_Brush_RW_19: -5772952403961209489
+      Tile_Brush_RW_2: 8308585410104975017
+      Tile_Brush_RW_20: -7900729211990673299
+      Tile_Brush_RW_21: 6441035459138800469
+      Tile_Brush_RW_22: 8882104196578173684
+      Tile_Brush_RW_23: 5971642099702718650
+      Tile_Brush_RW_24: 5966445038398926210
+      Tile_Brush_RW_25: 513199798316565158
+      Tile_Brush_RW_26: 8037735676449480687
+      Tile_Brush_RW_27: 7921640697858513919
+      Tile_Brush_RW_28: 3807452226610356620
+      Tile_Brush_RW_29: 3877981533155781600
+      Tile_Brush_RW_3: -4981417930909365876
+      Tile_Brush_RW_30: -8135907243820752629
+      Tile_Brush_RW_31: 6207096296924193588
+      Tile_Brush_RW_32: 3817011460544235337
+      Tile_Brush_RW_33: 7674326721255854320
+      Tile_Brush_RW_34: 3144046241037810591
+      Tile_Brush_RW_35: 8422883264188755427
+      Tile_Brush_RW_36: 1663862746954666911
+      Tile_Brush_RW_4: -4461609736292723162
+      Tile_Brush_RW_5: 5240259494145257726
+      Tile_Brush_RW_6: -2192126413081299543
+      Tile_Brush_RW_7: 7933628933318742905
+      Tile_Brush_RW_8: -4428962509211742887
+      Tile_Brush_RW_9: -4262412403024760494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

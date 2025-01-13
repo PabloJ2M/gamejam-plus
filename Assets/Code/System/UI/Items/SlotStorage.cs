@@ -13,7 +13,18 @@ namespace UnityEngine.InventorySystem
         public SlotGrid Container => _container;
 
         //-----change for better data saving-----
-        public void Save() { }
-        public void Load() { }
+        public void Save()
+        {
+            string data = JsonUtility.ToJson(_container); Debug.Log(data);
+            if (!string.IsNullOrEmpty(data)) PlayerPrefs.SetString(_savePath, data);
+        }
+        public void Load()
+        {
+            if (!PlayerPrefs.HasKey(_savePath)) return;
+            string data = PlayerPrefs.GetString(_savePath); Debug.Log(data);
+            
+            if (string.IsNullOrEmpty(data)) return;
+            _container = JsonUtility.FromJson<SlotGrid>(data);
+        }
     }
 }

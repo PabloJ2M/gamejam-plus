@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 125256
   _max: 64
-  _name: 
-  _image: {fileID: 0}
-  _cost: 0
+  _name: item 2
+  _image: {fileID: 8831524967467744588, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
+  _resources: 5
+  _research: 3
+  _health: 0
   _description: 
-  _front: {fileID: 0}
+  _front: {fileID: 8831524967467744588, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _back: {fileID: 0}
   _left: {fileID: 0}
   _right: {fileID: 0}

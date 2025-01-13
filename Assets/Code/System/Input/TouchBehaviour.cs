@@ -24,6 +24,7 @@ namespace UnityEngine.InputSystem
         protected abstract void OnSelect();
         protected abstract void OnDeselect();
 
+        public void ForceDisable() { _isOverElement = _isSelected = false; }
         public void OnPointerEnter(PointerEventData eventData) => _isOverElement = true;
         public void OnPointerExit(PointerEventData eventData) => _isOverElement = false;
     }

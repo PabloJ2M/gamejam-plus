@@ -41,5 +41,12 @@ namespace UnityEngine.UI
                 default: return mathf.zero;
             }
         }
+
+        public static void Fade(this Image image, float alpha)
+        {
+            Color color = image.color;
+            color.a = alpha;
+            image.color = color;
+        }
     }
 }

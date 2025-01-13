@@ -1,5 +1,3 @@
-using UnityEngine.Events;
-
 namespace UnityEngine.UI
 {
     [RequireComponent(typeof(Toggle))]
@@ -8,7 +6,6 @@ namespace UnityEngine.UI
         [SerializeField] private ActivationGroup _group;
         [SerializeField] private Sprite _switchIcon;
         [SerializeField] private bool _invert;
-        [SerializeField] private UnityEvent<bool> _onValueChanged;
 
         public bool IsActive => _toggle.isOn;
 
@@ -38,13 +35,12 @@ namespace UnityEngine.UI
         {
             _invert = Random.value > 0.5f;
             _toggle.isOn = Random.value > 0.8f;
-            OnPerfome(_toggle.isOn);
+            _toggle.onValueChanged.Invoke(_toggle.isOn);
         }
         private void OnPerfome(bool value)
         {
             if (!_invert) _graphic.sprite = !value ? _default : _switchIcon;
             else _graphic.sprite = value ? _default : _switchIcon;
-            _onValueChanged.Invoke(value);
             _group?.UpdateToggleStatus();
         }
     }

@@ -1,3 +1,5 @@
+using Unity.Mathematics;
+
 namespace UnityEngine.InputSystem
 {
     public class DeltaBehaviour : DragBehaviour
@@ -13,6 +15,6 @@ namespace UnityEngine.InputSystem
             _inputs.UI.Delta.performed -= OnPointerUpdate;
         }
 
-        protected override void OnUpdateSelection(Vector2 delta) { }
+        protected override void OnUpdateSelection(float2 delta) { }
     }
 }
