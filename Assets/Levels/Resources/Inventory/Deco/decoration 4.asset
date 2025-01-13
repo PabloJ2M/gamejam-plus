@@ -23,4 +23,4 @@ MonoBehaviour:
   _back: {fileID: 0}
   _left: {fileID: 0}
   _right: {fileID: 0}
-  _overrideSize: {x: 1, y: 2}
+  _overrideSize: {x: 1, y: 1}
