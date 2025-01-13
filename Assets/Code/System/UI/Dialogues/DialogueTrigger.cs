@@ -8,7 +8,7 @@ namespace UI.Dialogues
         [SerializeField] private Dialogue _dialogue;
         [SerializeField] private DialogueTrigger _sequence;
 
-        [SerializeField] private UnityEvent _onBegin;
+        [SerializeField] private UnityEvent _onBegin, _onComplete;
 
         private DialogueManager _manager;
 
@@ -23,6 +23,7 @@ namespace UI.Dialogues
         }
         private void PerformeSequence()
         {
+            _onComplete.Invoke();
             if (!_sequence) return;
             _sequence.TriggerDialogue();
         }
