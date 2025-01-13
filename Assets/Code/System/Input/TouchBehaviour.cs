@@ -1,9 +1,8 @@
 using UnityEngine.EventSystems;
-using Phase = UnityEngine.TouchPhase;
 
 namespace UnityEngine.InputSystem
 {
-    public abstract class TouchBehaviour : InteractionBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public abstract class TouchBehaviour : InteractionBehaviour, IPointerDownHandler
     {
         protected bool _isOverElement;
         protected bool _isSelected;
@@ -14,24 +13,20 @@ namespace UnityEngine.InputSystem
         protected void OnSelectStatus(InputAction.CallbackContext ctx)
         {
             bool isPressed = ctx.control.IsPressed();
+            if (isPressed || !_isSelected) return;
 
-            if (Input.touchCount != 0) {
-                _isOverElement = Input.touches[0].phase == Phase.Began ? IsPointerOverObject(gameObject) : false;
-            }
-            
-            if ((isPressed && !_isOverElement) || (!isPressed && !_isSelected)) return;
-            if (isPressed) OnSelect();
-            else OnDeselect();
-
-            _isSelected = isPressed;
+            _isSelected = false;
+            OnDeselect();
+        }
+        public virtual void OnPointerDown(PointerEventData eventData)
+        {
+            _isSelected = true;
+            OnSelect();
         }
 
         protected abstract void OnSelect();
         protected abstract void OnDeselect();
 
-        public void ForceDisable() { _isOverElement = _isSelected = false; }
-
-        public void OnPointerEnter(PointerEventData eventData) => _isOverElement = true;
-        public void OnPointerExit(PointerEventData eventData) => _isOverElement = false;
+        public void ForceDisable() => _isSelected = false;
     }
 }
