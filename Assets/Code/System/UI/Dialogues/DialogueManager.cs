@@ -14,6 +14,8 @@ namespace UI.Dialogues
         [SerializeField] private UnityEvent<bool> _onDisplay;
 
         private Queue<(DialogueSequence, Vector2)> _listOfDialogues = new();
+        private Queue<Action> _listOfActions = new();
+
         private WaitForSeconds _textDelay;
         private bool _isAnimated, _skip, _next;
 
@@ -24,16 +26,15 @@ namespace UI.Dialogues
 
         public void SkipDialogue() { if (!_skip) _skip = true; else _next = true; }
         public void AddDialogue(DialogueSequence dialogue, Vector2 coords) => _listOfDialogues.Enqueue((dialogue, coords));
-        public void StartDialogue(Action action, Action onComplete) => StartCoroutine(DisplayDialogues(action, onComplete));
+        public void StartDialogue(Action onComplete) { _listOfActions.Enqueue(onComplete); StartCoroutine(DisplayDialogues()); }
 
-        private IEnumerator DisplayDialogues(Action onStart, Action onComplete)
+        private IEnumerator DisplayDialogues()
         {
-            if (_isAnimated) yield break;
+            if (_isAnimated || _listOfDialogues.Count == 0) yield break;
+            _isAnimated = true;
 
-            while (_listOfDialogues.Count > 0)
-            {
+            do {
                 _onDisplay.Invoke(true);
-                onStart?.Invoke();
 
                 var dialogue = _listOfDialogues.Dequeue();
                 onDisplayIndicator.Invoke(dialogue.Item2);
@@ -54,10 +55,10 @@ namespace UI.Dialogues
                     yield return new WaitUntil(() => _next);
                     _next = _skip = false;
                 }
-                
-                onComplete?.Invoke();
-                yield return new WaitForSeconds(1);
+
+                _listOfActions.Dequeue()?.Invoke();
             }
+            while (_listOfActions.Count > 0);
 
             _onDisplay.Invoke(false);
             _isAnimated = false;

@@ -9,20 +9,22 @@ namespace UI.Dialogues
         [SerializeField] private DialogueTrigger _sequence;
         [SerializeField] private bool _useIndicator;
 
-        [SerializeField] private UnityEvent _onBegin, _onComplete;
+        [SerializeField] private UnityEvent _onComplete;
 
         [ContextMenu("Start Dialogues")]
         public void TriggerDialogue()
         {
             DialogueManager manager = DialogueManager.Instance;
             manager?.AddDialogue(_dialogue, _useIndicator ? transform.position : Vector2.zero);
-            manager?.StartDialogue(_onBegin.Invoke, PerformeSequence);
+            manager?.StartDialogue(PerformeSequence);
+
+            if (!_sequence) return;
+            _sequence.TriggerDialogue();
         }
+
         private void PerformeSequence()
         {
             _onComplete.Invoke();
-            if (!_sequence) return;
-            _sequence.TriggerDialogue();
         }
     }
 }
