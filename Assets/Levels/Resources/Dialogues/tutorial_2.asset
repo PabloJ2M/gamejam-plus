@@ -13,6 +13,4 @@ MonoBehaviour:
   m_Name: tutorial_2
   m_EditorClassIdentifier: 
   _header: 
-  _text: In my spaceship you will find different activities of my daily life in which
-    you will be able to help me while you discover how I live my day to day life
-    in the special spaceship.
+  _text: "I\u2019m {0}, your space astronaut always at your service!"
