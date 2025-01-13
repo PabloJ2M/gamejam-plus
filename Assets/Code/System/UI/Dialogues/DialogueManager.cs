@@ -34,12 +34,13 @@ namespace UI.Dialogues
             while (_listOfDialogues.Count > 0)
             {
                 var dialogue = _listOfDialogues.Dequeue();
+                string messageComplete = string.Format(dialogue.Text, SetText.Instance.textNew);
                 onHeaderChange?.Invoke(dialogue.Header);
                 string text = string.Empty;
 
-                for (int i = 0; i < dialogue.Text.Length; i++)
+                for (int i = 0; i < messageComplete.Length; i++)
                 {
-                    text += dialogue.Text[i];
+                    text += messageComplete[i];
                     onTextChange?.Invoke(text);
                     if (!_skip) yield return _textDelay;
                 }
