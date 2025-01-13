@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: tutorial_3
   m_EditorClassIdentifier: 
   _header: 
-  _text: Join me in this space adventure!
+  _text: "Together, we\u2019ll explore the daily life in space and customize our
+    new home!"
