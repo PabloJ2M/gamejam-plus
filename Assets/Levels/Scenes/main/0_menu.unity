@@ -1006,6 +1006,8 @@ GameObject:
   - component: {fileID: 921033453}
   - component: {fileID: 921033455}
   - component: {fileID: 921033454}
+  - component: {fileID: 921033457}
+  - component: {fileID: 921033456}
   m_Layer: 5
   m_Name: buttons
   m_TagString: Untagged
@@ -1071,6 +1073,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921033452}
   m_CullTransparentMesh: 1
+--- !u!114 &921033456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921033452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1794380351
+      Data2: 1143583778
+      Data3: 1029608359
+      Data4: -17787567
+    Path: event:/SFX/General/SFX_UI_General_Boton
+  Event: 
+  EventPlayTrigger: 14
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &921033457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921033452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1007759929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1869,6 @@ GameObject:
   - component: {fileID: 1729098777}
   - component: {fileID: 1729098776}
   - component: {fileID: 1729098779}
-  - component: {fileID: 1729098780}
   m_Layer: 5
   m_Name: start button
   m_TagString: Untagged
@@ -1957,18 +2003,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scenePath: Assets/Levels/Scenes/main/1_gameplay.unity
---- !u!114 &1729098780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1729098774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47063d5c789b2ff4d8e2c77aaf928b04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1780603428
 GameObject:
   m_ObjectHideFlags: 0
