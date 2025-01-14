@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{9ef4450c-bc00-4eab-a2d3-ec3a46f8aa65}">
+		<property name="assetPath">
+			<value>SFX/Radio de Comunicacion/SFX_Minjuego_RadioDeComunicacion_GreenLight.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.18562358276643992</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3ac518d-0304-4719-a243-8a64a101766d}</destination>
+		</relationship>
+	</object>
+</objects>

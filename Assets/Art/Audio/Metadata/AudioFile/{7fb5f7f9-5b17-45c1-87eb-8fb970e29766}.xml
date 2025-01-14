@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{7fb5f7f9-5b17-45c1-87eb-8fb970e29766}">
 		<property name="assetPath">
-			<value>MUS/Mini Games/MUS_RitmoDental.ogg</value>
+			<value>MUS/Minijuegos/MUS_RitmoDental.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

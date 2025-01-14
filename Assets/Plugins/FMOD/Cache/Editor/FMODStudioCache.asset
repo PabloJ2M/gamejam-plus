@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1125
+--- !u!114 &-7673654365016163452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUS/Minijuegos/MUS_FuchibolEspacial
+  m_EditorClassIdentifier: 
+  Path: event:/MUS/Minijuegos/MUS_FuchibolEspacial
+  Guid:
+    Data1: 2059647738
+    Data2: 1093048144
+    Data3: -693941876
+    Data4: 232681306
+  Banks:
+  - {fileID: -3103965757304500843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 33982
 --- !u!114 &-7508426651357287902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,33 +81,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1353
---- !u!114 &-6172669169127400809
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Lobby/Diegetic_Rocola/Rocola_Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Lobby/Diegetic_Rocola/Rocola_Music
-  Guid:
-    Data1: 140541887
-    Data2: 1206944608
-    Data3: -1628001904
-    Data4: 917552103
-  Banks:
-  - {fileID: -3103965757304500843}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 114663
 --- !u!114 &-5972015272233426196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +162,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2856
+--- !u!114 &-3387625418977858816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUS/Lobby/Extradiegetic_BM/MUS_Menu
+  m_EditorClassIdentifier: 
+  Path: event:/MUS/Lobby/Extradiegetic_BM/MUS_Menu
+  Guid:
+    Data1: 969756305
+    Data2: 1195457675
+    Data3: 2002817458
+    Data4: 186455956
+  Banks:
+  - {fileID: -3103965757304500843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128000
 --- !u!114 &-3103965757304500843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,12 +204,12 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638722189517867252
+  lastModified: 638723963842835313
   FileSizes:
   - Name: Desktop
-    Value: 5337536
+    Value: 5229600
   Exists: 1
---- !u!114 &-2755576851299183904
+--- !u!114 &-2736533282696515759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -192,41 +219,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Lobby/Extradiegetic_BM/MUS_Menu
+  m_Name: event:/MUS/Lobby/Diegetic_Rocola/Rocola_Music
   m_EditorClassIdentifier: 
-  Path: event:/Music/Lobby/Extradiegetic_BM/MUS_Menu
+  Path: event:/MUS/Lobby/Diegetic_Rocola/Rocola_Music
   Guid:
-    Data1: 969756305
-    Data2: 1195457675
-    Data3: 2002817458
-    Data4: 186455956
-  Banks:
-  - {fileID: -3103965757304500843}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 128000
---- !u!114 &-2362852039953065499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Mini Games/MUS_FuchibolEspacial
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Mini Games/MUS_FuchibolEspacial
-  Guid:
-    Data1: 2059647738
-    Data2: 1093048144
-    Data3: -693941876
-    Data4: 232681306
+    Data1: 140541887
+    Data2: 1206944608
+    Data3: -1628001904
+    Data4: 917552103
   Banks:
   - {fileID: -3103965757304500843}
   IsStream: 1
@@ -235,7 +235,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 33982
+  Length: 114663
+--- !u!114 &-1529231846578326245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUS/Menu/MUS_Menu
+  m_EditorClassIdentifier: 
+  Path: event:/MUS/Menu/MUS_Menu
+  Guid:
+    Data1: -1736122778
+    Data2: 1250974995
+    Data3: -164816718
+    Data4: 290555187
+  Banks:
+  - {fileID: -3103965757304500843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 52000
 --- !u!114 &-1292516216988429897
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -308,13 +335,6 @@ MonoBehaviour:
   - {fileID: -3103965757304500843}
   - {fileID: 5398012474876713449}
   EditorEvents:
-  - {fileID: 4203974474555802035}
-  - {fileID: 7955515146872671539}
-  - {fileID: 8466481939638588730}
-  - {fileID: -2755576851299183904}
-  - {fileID: -6172669169127400809}
-  - {fileID: 4665832856364805026}
-  - {fileID: -2362852039953065499}
   - {fileID: -1089800348031391070}
   - {fileID: -3675814030771859932}
   - {fileID: -5972015272233426196}
@@ -328,12 +348,19 @@ MonoBehaviour:
   - {fileID: -7508426651357287902}
   - {fileID: 4923990619125901818}
   - {fileID: 3392205315983390415}
+  - {fileID: 7092354020784721825}
+  - {fileID: 4764151919703099914}
+  - {fileID: -1529231846578326245}
+  - {fileID: -3387625418977858816}
+  - {fileID: -2736533282696515759}
+  - {fileID: 616435146727045637}
+  - {fileID: -7673654365016163452}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6361149415393716071}
   StringsBanks:
   - {fileID: 4364773906049272220}
-  cacheTime: 638722189517898995
+  cacheTime: 638723963845377032
   cacheVersion: 131621
 --- !u!114 &153791379043660812
 MonoBehaviour:
@@ -362,6 +389,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2238
+--- !u!114 &616435146727045637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUS/Minijuegos/MUS_FrenesiDeHidratacion
+  m_EditorClassIdentifier: 
+  Path: event:/MUS/Minijuegos/MUS_FrenesiDeHidratacion
+  Guid:
+    Data1: -1202427447
+    Data2: 1217230200
+    Data3: -1045463674
+    Data4: 814627528
+  Banks:
+  - {fileID: -3103965757304500843}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32865
 --- !u!114 &1052446135548264141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -470,33 +524,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4432
---- !u!114 &4203974474555802035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Mini Games/MUS_EstudiandoConstelaciones
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Mini Games/MUS_EstudiandoConstelaciones
-  Guid:
-    Data1: 911486467
-    Data2: 1288843857
-    Data3: 1440426420
-    Data4: -39483956
-  Banks:
-  - {fileID: -3103965757304500843}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 46567
 --- !u!114 &4364773906049272220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,12 +539,12 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638722189517366436
+  lastModified: 638723963802086700
   FileSizes:
   - Name: Desktop
-    Value: 1972
+    Value: 2030
   Exists: 1
---- !u!114 &4665832856364805026
+--- !u!114 &4764151919703099914
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -527,23 +554,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Mini Games/MUS_FrenesiDeHidratacion
+  m_Name: event:/MUS/Minijuegos/MUS_RitmoDental
   m_EditorClassIdentifier: 
-  Path: event:/Music/Mini Games/MUS_FrenesiDeHidratacion
+  Path: event:/MUS/Minijuegos/MUS_RitmoDental
   Guid:
-    Data1: -1202427447
-    Data2: 1217230200
-    Data3: -1045463674
-    Data4: 814627528
+    Data1: -850104298
+    Data2: 1237993361
+    Data3: 919729332
+    Data4: 1644648081
   Banks:
   - {fileID: -3103965757304500843}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 6320816605255398657}
   MinDistance: 1
   MaxDistance: 20
-  Length: 32865
+  Length: 32640
 --- !u!114 &4923990619125901818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,10 +614,34 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638722189517898995
+  lastModified: 638723963845377032
   FileSizes:
   - Name: Desktop
     Value: 266784
+  Exists: 1
+--- !u!114 &6320816605255398657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUS_RitmoDental/Phase 3 Transition
+  m_EditorClassIdentifier: 
+  Name: Phase 3 Transition
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2451121434
+    data2: 2739649367
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &6361149415393716071
 MonoBehaviour:
@@ -606,12 +658,12 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638722189517356517
+  lastModified: 638723963802051411
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
---- !u!114 &7955515146872671539
+--- !u!114 &7092354020784721825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -621,14 +673,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Mini Games/MUS_RitmoDental
+  m_Name: event:/MUS/Minijuegos/MUS_EstudiandoConstelaciones
   m_EditorClassIdentifier: 
-  Path: event:/Music/Mini Games/MUS_RitmoDental
+  Path: event:/MUS/Minijuegos/MUS_EstudiandoConstelaciones
   Guid:
-    Data1: -850104298
-    Data2: 1237993361
-    Data3: 919729332
-    Data4: 1644648081
+    Data1: 911486467
+    Data2: 1288843857
+    Data3: 1440426420
+    Data4: -39483956
   Banks:
   - {fileID: -3103965757304500843}
   IsStream: 1
@@ -637,31 +689,4 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 42985
---- !u!114 &8466481939638588730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Menu/MUS_Menu
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Menu/MUS_Menu
-  Guid:
-    Data1: -1736122778
-    Data2: 1250974995
-    Data3: -164816718
-    Data4: 290555187
-  Banks:
-  - {fileID: -3103965757304500843}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 52000
+  Length: 46567
