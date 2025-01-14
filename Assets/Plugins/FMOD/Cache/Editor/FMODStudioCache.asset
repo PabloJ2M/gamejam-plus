@@ -204,7 +204,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638723963842835313
+  lastModified: 638723985229119195
   FileSizes:
   - Name: Desktop
     Value: 5229600
@@ -360,7 +360,7 @@ MonoBehaviour:
   - {fileID: 6361149415393716071}
   StringsBanks:
   - {fileID: 4364773906049272220}
-  cacheTime: 638723963845377032
+  cacheTime: 638723985229119195
   cacheVersion: 131621
 --- !u!114 &153791379043660812
 MonoBehaviour:
@@ -539,7 +539,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638723963802086700
+  lastModified: 638723985228914549
   FileSizes:
   - Name: Desktop
     Value: 2030
@@ -614,7 +614,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638723963845377032
+  lastModified: 638722189517898995
   FileSizes:
   - Name: Desktop
     Value: 266784
@@ -658,7 +658,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638723963802051411
+  lastModified: 638722189517356517
   FileSizes:
   - Name: Desktop
     Value: 1036

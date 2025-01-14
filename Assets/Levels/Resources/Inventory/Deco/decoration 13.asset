@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 133096
   _max: 64
-  _name: Panel de Control
+  _name: Control Panel
   _image: {fileID: -2909950497320030934, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 0
   _maintenance: 16

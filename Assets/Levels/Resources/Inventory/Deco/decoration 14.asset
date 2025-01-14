@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 133110
   _max: 64
-  _name: Switch Rojo y Azul
+  _name: Switch Red and Blue
   _image: {fileID: 5198639960912483317, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 10
   _maintenance: 6

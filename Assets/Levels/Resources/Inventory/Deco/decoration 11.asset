@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 132968
   _max: 64
-  _name: Televisor
+  _name: TV
   _image: {fileID: 5381258272088866372, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 0
   _maintenance: 8

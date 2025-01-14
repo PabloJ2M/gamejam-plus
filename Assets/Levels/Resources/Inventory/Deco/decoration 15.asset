@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 133124
   _max: 64
-  _name: Switch Rosa y Verde
+  _name: Switch Pink and Green
   _image: {fileID: -6286872811317544535, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 10
   _maintenance: 6
