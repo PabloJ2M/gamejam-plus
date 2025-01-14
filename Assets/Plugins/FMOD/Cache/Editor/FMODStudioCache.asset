@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7989456719081824608
+--- !u!114 &-7956921411716732446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ritmo Dental/SFX_Tragar
+  m_Name: event:/SFX/Cepillado/SFX_Correcto
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Ritmo Dental/SFX_Tragar
+  Path: event:/SFX/Cepillado/SFX_Correcto
   Guid:
-    Data1: 882536490
-    Data2: 1246593670
-    Data3: -1433252190
-    Data4: 526474990
+    Data1: 181157341
+    Data2: 1134465026
+    Data3: -2050426969
+    Data4: 2004074917
   Banks:
   - {fileID: 5398012474876713449}
   IsStream: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1125
+  Length: 1791
 --- !u!114 &-7673654365016163452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1353
+--- !u!114 &-7333189955537830758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cepillado/SFX_Resplandecer
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cepillado/SFX_Resplandecer
+  Guid:
+    Data1: -62953118
+    Data2: 1300257146
+    Data3: 1010245264
+    Data4: -1465046711
+  Banks:
+  - {fileID: 5398012474876713449}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2238
 --- !u!114 &-7020232368503537690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +258,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638724013986677111
+  lastModified: 638724019872035320
   FileSizes:
   - Name: Desktop
     Value: 6979392
@@ -263,6 +290,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 114663
+--- !u!114 &-1948769648411945874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Cepillado/SFX_CepillarDientes
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Cepillado/SFX_CepillarDientes
+  Guid:
+    Data1: -1882567778
+    Data2: 1189211299
+    Data3: -403420228
+    Data4: 1408227186
+  Banks:
+  - {fileID: 5398012474876713449}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 903
 --- !u!114 &-1529231846578326245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,33 +344,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52000
---- !u!114 &-1292516216988429897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ritmo Dental/SFX_CepillarDientes
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Ritmo Dental/SFX_CepillarDientes
-  Guid:
-    Data1: -1882567778
-    Data2: 1189211299
-    Data3: -403420228
-    Data4: 1408227186
-  Banks:
-  - {fileID: 5398012474876713449}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 903
 --- !u!114 &-1089800348031391070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,14 +420,10 @@ MonoBehaviour:
   - {fileID: -3675814030771859932}
   - {fileID: -5972015272233426196}
   - {fileID: 2571398067685305240}
-  - {fileID: -7989456719081824608}
   - {fileID: 1052446135548264141}
-  - {fileID: 153791379043660812}
   - {fileID: -4453373780726705311}
-  - {fileID: -1292516216988429897}
   - {fileID: 2797442400248361267}
   - {fileID: -7508426651357287902}
-  - {fileID: 4923990619125901818}
   - {fileID: 3392205315983390415}
   - {fileID: 7092354020784721825}
   - {fileID: 4764151919703099914}
@@ -414,40 +437,17 @@ MonoBehaviour:
   - {fileID: 4510706783145369109}
   - {fileID: 6140958043609665449}
   - {fileID: 405213803494611517}
+  - {fileID: 5083518897933202576}
+  - {fileID: -7333189955537830758}
+  - {fileID: -1948769648411945874}
+  - {fileID: -7956921411716732446}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6361149415393716071}
   StringsBanks:
   - {fileID: 4364773906049272220}
-  cacheTime: 638724013986983982
+  cacheTime: 638724019872363201
   cacheVersion: 131621
---- !u!114 &153791379043660812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ritmo Dental/SFX_Resplandecer
-  m_EditorClassIdentifier: 
-  Path: event:/SFX/Ritmo Dental/SFX_Resplandecer
-  Guid:
-    Data1: -62953118
-    Data2: 1300257146
-    Data3: 1010245264
-    Data4: -1465046711
-  Banks:
-  - {fileID: 5398012474876713449}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2238
 --- !u!114 &405213803494611517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -625,10 +625,10 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638724013977081715
+  lastModified: 638724019867545227
   FileSizes:
   - Name: Desktop
-    Value: 2324
+    Value: 2322
   Exists: 1
 --- !u!114 &4510706783145369109
 MonoBehaviour:
@@ -685,7 +685,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 32640
---- !u!114 &4923990619125901818
+--- !u!114 &5083518897933202576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -695,14 +695,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/Ritmo Dental/SFX_Correcto
+  m_Name: event:/SFX/Cepillado/SFX_Tragar
   m_EditorClassIdentifier: 
-  Path: event:/SFX/Ritmo Dental/SFX_Correcto
+  Path: event:/SFX/Cepillado/SFX_Tragar
   Guid:
-    Data1: 181157341
-    Data2: 1134465026
-    Data3: -2050426969
-    Data4: 2004074917
+    Data1: 882536490
+    Data2: 1246593670
+    Data3: -1433252190
+    Data4: 526474990
   Banks:
   - {fileID: 5398012474876713449}
   IsStream: 0
@@ -711,7 +711,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1791
+  Length: 1125
 --- !u!114 &5398012474876713449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,7 +727,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638724013986983982
+  lastModified: 638724019872363201
   FileSizes:
   - Name: Desktop
     Value: 266784
@@ -798,7 +798,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638724013977053838
+  lastModified: 638724019867525410
   FileSizes:
   - Name: Desktop
     Value: 1036
