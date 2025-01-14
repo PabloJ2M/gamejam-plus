@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 95466
   _max: 64
-  _name: item 10
+  _name: Bola Disco
   _image: {fileID: 610380639672526456, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _welfare: 9
-  _maintenance: 4
-  _intelligence: 6
+  _welfare: 6
+  _maintenance: 8
+  _intelligence: 4
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}
