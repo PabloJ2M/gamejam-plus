@@ -794,6 +794,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2101601365}
+        m_TargetAssemblyTypeName: Parallax, Assembly-CSharp
+        m_MethodName: set_SpeedMultiply
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1677804605}
         m_TargetAssemblyTypeName: Gameplay.Events.Jump, Assembly-CSharp
         m_MethodName: set_Velocity
@@ -1177,13 +1189,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 491037401
   m_SortingLayer: 3
-  m_SortingOrder: -100
-  m_Sprite: {fileID: -2695091558313070812, guid: c1fcecffc6442834eaf3e16f55a2de69, type: 3}
+  m_SortingOrder: -200
+  m_Sprite: {fileID: -1622487589591351417, guid: 7697e9179e416d84caa4a0ded4350d48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 40, y: 11}
+  m_Size: {x: 40, y: 9.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1198,7 +1210,7 @@ Transform:
   m_GameObject: {fileID: 802060016}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.31, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1634,7 +1646,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!4 &1608558129
 Transform:
   m_ObjectHideFlags: 0
@@ -2449,7 +2461,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!1 &1963469688
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,6 +2619,7 @@ GameObject:
   - component: {fileID: 2101601362}
   - component: {fileID: 2101601364}
   - component: {fileID: 2101601363}
+  - component: {fileID: 2101601365}
   m_Layer: 7
   m_Name: details
   m_TagString: Untagged
@@ -2666,8 +2679,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0.35}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 1}
-    oldSize: {x: 6.96875, y: 0.65625}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8, y: 0.32}
     newSize: {x: 40, y: 0.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 2
@@ -2698,7 +2711,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 034b91466bf0f44449c2c3eb5fee3caf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2719,7 +2732,7 @@ SpriteRenderer:
   m_SortingLayerID: 491037401
   m_SortingLayer: 3
   m_SortingOrder: -10
-  m_Sprite: {fileID: 8725119772159530929, guid: c46b12b768c4316419744d2b774399fb, type: 3}
+  m_Sprite: {fileID: -8539766987999289257, guid: 9c700b9b52197974fa4b5414d99bcb28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2730,6 +2743,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2101601365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101601361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29af91256ae1854daefce65034be389, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _velocity: 1
+  _speed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

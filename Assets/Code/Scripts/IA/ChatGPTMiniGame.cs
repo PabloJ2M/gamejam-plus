@@ -13,7 +13,7 @@ public class ChatGPTMiniGame : MonoBehaviour
 
     private void Start()
     {
-        OpenAIApi = new OpenAIApi("insert-ur-key");
+        OpenAIApi = new OpenAIApi("tu api key");
     }
     public void NewComuncation()
     {

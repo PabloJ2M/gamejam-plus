@@ -16,10 +16,10 @@ MonoBehaviour:
   - _header: 
     _text: Welcome to the Space Station!
   - _header: 
-    _text: "I\u2019m {0}, your space astronaut always at your service!"
+    _text: I am {0}, your space astronaut always at your service!
   - _header: 
-    _text: "Together, we\u2019ll explore the daily life in space and customize our
-      new home!"
+    _text: Together, we will explore the daily life in space and customize our new
+      home!
   - _header: 
     _text: Oh, I almost forgot!
   - _header: 
