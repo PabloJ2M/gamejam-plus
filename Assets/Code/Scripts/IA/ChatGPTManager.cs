@@ -13,7 +13,7 @@ public class ChatGPTManager : MonoBehaviour
 
     private void Start()
     {
-        OpenAIApi = new OpenAIApi("insert-your-key");
+        OpenAIApi = new OpenAIApi("tu api key");
     }
 
     public void OnButtonPress()

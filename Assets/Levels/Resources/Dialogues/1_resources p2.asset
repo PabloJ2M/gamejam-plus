@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogues:
   - _header: 
-    _text: "First, there\u2019s the well-being resource, which takes care of everything
-      related to our health and hygiene."
+    _text: First, there is the well-being resource, which takes care of everything
+      related to our health and hygiene.

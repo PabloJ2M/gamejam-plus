@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogues:
   - _header: 
-    _text: "Great job with the camera! Now, let\u2019s talk about the resources."
+    _text: Great job with the camera! Now, lets talk about the resources.
   - _header: 
     _text: On the space station, we have three types of resources you should be familiar
       with.

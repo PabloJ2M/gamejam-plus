@@ -4,7 +4,7 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     [SerializeField, Range(0, 1)] private float _velocity;
-    [SerializeField, Range(0, 1)] private float _speed = 1;
+    [SerializeField, Range(0, 10)] private float _speed = 1;
     private Vector2 _direction = Vector2.right;
     private Material _material;
     private float _multiply = 1;

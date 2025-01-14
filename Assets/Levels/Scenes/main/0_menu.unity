@@ -1871,18 +1871,6 @@ MonoBehaviour:
           m_StringArgument: 1_gameplay
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1729098780}
-        m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
-        m_MethodName: PlayButtonSound
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: da6fe24580e78c24dbf08a0564a1a795, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1729098777
 MonoBehaviour:
   m_ObjectHideFlags: 0

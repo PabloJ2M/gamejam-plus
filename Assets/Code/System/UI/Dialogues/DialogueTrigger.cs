@@ -15,6 +15,8 @@ namespace UI.Dialogues
         public void TriggerDialogue()
         {
             DialogueManager manager = DialogueManager.Instance;
+            if (!manager) return;
+
             manager?.AddDialogue(_dialogue, _useIndicator ? transform.position : Vector2.zero);
             manager?.StartDialogue(PerformeSequence);
 
