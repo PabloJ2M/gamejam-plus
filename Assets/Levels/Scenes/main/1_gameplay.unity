@@ -850,21 +850,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _source: {fileID: 0}
   _fade: {fileID: 8971592881596815849, guid: 6386d7fdb09e45541aadf58ef032d232, type: 3}
+  _ignore:
+  - Assets/Levels/Scenes/main/2_tutorial.unity
   _onSceneOverlap:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 735840289}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 519420036}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
@@ -17125,7 +17115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Enter a name for AstroWaifu\xF1"
+  m_text: Enter a name for AstroWaifu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1517892c4f42634458fd2b4855767215, type: 2}
   m_sharedMaterial: {fileID: 5097231738043291567, guid: 1517892c4f42634458fd2b4855767215, type: 2}
@@ -21668,7 +21658,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -199.99982, y: -50}
+  m_AnchoredPosition: {x: -199.99983, y: -50}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1157688394
@@ -36578,7 +36568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b297a1a6c1467f4198524e7530a6ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _isEditor: 0
+  _isEditor: 1
 --- !u!114 &1916792210
 MonoBehaviour:
   m_ObjectHideFlags: 0
