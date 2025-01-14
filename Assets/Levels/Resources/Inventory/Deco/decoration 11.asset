@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cda5ccb0dcc8734ab563567d927c0b6, type: 3}
-  m_Name: decoration 9
+  m_Name: decoration 11
   m_EditorClassIdentifier: 
-  _id: 95462
+  _id: 132968
   _max: 64
-  _name: Dispensador de Agua
-  _image: {fileID: 8206614941374992703, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _welfare: 4
-  _maintenance: 9
-  _intelligence: 0
+  _name: Televisor
+  _image: {fileID: 5381258272088866372, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
+  _welfare: 0
+  _maintenance: 8
+  _intelligence: 4
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}
   _right: {fileID: 0}
-  _overrideSize: {x: 1, y: 1}
+  _overrideSize: {x: 2, y: 1}

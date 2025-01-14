@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 125248
   _max: 64
-  _name: item 1
+  _name: Figura anime de Astro Waifu
   _image: {fileID: 1857056967673615299, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 4
-  _maintenance: 8
-  _intelligence: 3
+  _maintenance: 2
+  _intelligence: 0
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}

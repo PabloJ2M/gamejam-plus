@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 92550
   _max: 64
-  _name: item 3
+  _name: Pesas Deportivas
   _image: {fileID: 6840682904411090980, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _welfare: 12
-  _maintenance: 7
-  _intelligence: 13
+  _welfare: 9
+  _maintenance: 6
+  _intelligence: 11
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}
