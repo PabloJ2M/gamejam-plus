@@ -163,10 +163,10 @@
 	</object>
 	<object class="TransitionSourceSound" id="{f7390c55-10d1-4273-b3eb-22c90afeb7d1}">
 		<property name="length">
-			<value>0.95999999999999996</value>
+			<value>1.9199999999999999</value>
 		</property>
 		<relationship name="fadeOutCurve">
-			<destination>{b55a830f-05fe-48ee-b3b2-7299bd0a9578}</destination>
+			<destination>{d72065c4-b871-411a-9190-1f510eb14419}</destination>
 		</relationship>
 	</object>
 	<object class="TransitionDestinationSound" id="{0ad4f7e0-d78e-4bd4-93ad-d6678cdc8364}">
@@ -315,12 +315,12 @@
 	</object>
 	<object class="MixerBusPanner" id="{9c0d7ad9-bc19-440a-86dd-90aa92725335}" />
 	<object class="MixerBusFader" id="{c5fa8d8d-8258-4c59-ad31-f644680800db}" />
-	<object class="TransitionSourceFadeOutCurve" id="{b55a830f-05fe-48ee-b3b2-7299bd0a9578}">
+	<object class="TransitionSourceFadeOutCurve" id="{d72065c4-b871-411a-9190-1f510eb14419}">
 		<relationship name="startPoint">
-			<destination>{40f967ab-671a-4f9f-acba-41a651e1b949}</destination>
+			<destination>{e4be9f92-d58b-435b-b3ac-61a6c04c1cd4}</destination>
 		</relationship>
 		<relationship name="endPoint">
-			<destination>{dfca32a1-f675-4cc6-9fba-2d07c714a1e8}</destination>
+			<destination>{5b33029b-67a2-4019-b96d-f57276526259}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{e667765c-9765-4d03-84dd-c62efaae1e1a}">
@@ -361,9 +361,9 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{7cd8674e-a344-4ab8-8137-495dbe447389}" />
-	<object class="AutomationPoint" id="{40f967ab-671a-4f9f-acba-41a651e1b949}">
+	<object class="AutomationPoint" id="{e4be9f92-d58b-435b-b3ac-61a6c04c1cd4}">
 		<property name="position">
-			<value>0.17372613617719446</value>
+			<value>0</value>
 		</property>
 		<property name="value">
 			<value>1</value>
@@ -372,9 +372,9 @@
 			<value>0.25471893</value>
 		</property>
 	</object>
-	<object class="AutomationPoint" id="{dfca32a1-f675-4cc6-9fba-2d07c714a1e8}">
+	<object class="AutomationPoint" id="{5b33029b-67a2-4019-b96d-f57276526259}">
 		<property name="position">
-			<value>0.95999999999999996</value>
+			<value>1.9199999999999999</value>
 		</property>
 		<property name="value">
 			<value>0</value>
