@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 95446
   _max: 64
-  _name: Dispensador de Alimentos
+  _name: Food Dispenser
   _image: {fileID: 2966057141010974407, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 9
   _maintenance: 0

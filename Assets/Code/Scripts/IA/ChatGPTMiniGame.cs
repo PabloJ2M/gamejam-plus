@@ -5,7 +5,6 @@ using TMPro;
 
 public class ChatGPTMiniGame : MonoBehaviour
 {
-
     private OpenAIApi OpenAIApi = new();
     [SerializeField] private TextMeshProUGUI textMeshProUGUI;
     [SerializeField] private TextMeshProUGUI text_AgencySpace;
@@ -13,7 +12,7 @@ public class ChatGPTMiniGame : MonoBehaviour
 
     private void Start()
     {
-        OpenAIApi = new OpenAIApi("tu api key");
+        OpenAIApi = new OpenAIApi("");
     }
     public void NewComuncation()
     {

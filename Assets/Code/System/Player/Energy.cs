@@ -20,7 +20,7 @@ namespace Player.Data
         {
             base.Awake();
             _bar = GetComponent<Scrollbar>();
-            _bar.size = PlayerPrefs.GetInt(_id) / _totalEnergy;
+            _bar.size = PlayerPrefs.GetInt(_id, (int)_totalEnergy) / _totalEnergy;
         }
 
         private void Start()

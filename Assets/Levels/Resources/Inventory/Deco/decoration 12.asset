@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 133082
   _max: 64
-  _name: Panel de Comunicaciones
+  _name: Communications Panel
   _image: {fileID: -7499571915610040905, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 0
   _maintenance: 15

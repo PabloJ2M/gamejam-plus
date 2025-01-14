@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: 94492
   _max: 64
-  _name: Caminadora
+  _name: Treadmill
   _image: {fileID: 8386764617170813428, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _welfare: 10
   _maintenance: 8
