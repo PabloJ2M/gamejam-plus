@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
 	<object class="EncodableAsset" id="{855c3ab7-cb5b-4dce-8f19-9a96f87f0213}">
+		<property name="color">
+			<value>Blue</value>
+		</property>
 		<property name="assetPath">
 			<value>SFX/Radio de Comunicacion/</value>
 		</property>
