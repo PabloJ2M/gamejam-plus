@@ -7,6 +7,7 @@ namespace UnityEngine.InputSystem
     {
         [SerializeField] private Sprite _normal, _pressed;
         [SerializeField, Range(0, 1)] private float _speed;
+        [SerializeField] private UnityEvent<float> _onValueChange;
         [SerializeField] private UnityEvent _onSuccess, _onFailure;
 
         private Image _image;
@@ -21,6 +22,7 @@ namespace UnityEngine.InputSystem
         {
             if (!_isSelected) return;
             _slider.SetValueWithoutNotify(_slider.value + _speed * Time.fixedDeltaTime);
+            _onValueChange.Invoke(_slider.value);
         }
     }
 }
