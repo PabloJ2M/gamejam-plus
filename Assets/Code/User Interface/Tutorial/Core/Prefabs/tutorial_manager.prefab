@@ -59,7 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _container: {fileID: 11400000, guid: c8e8fa1f7853b7c498bc0fba4695c92a, type: 2}
   _startDelay: 1
-  _inBetweenDelay: 0.5
+  _inBetweenDelay: 0
   _onComplete:
     m_PersistentCalls:
       m_Calls: []

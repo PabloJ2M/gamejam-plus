@@ -14,6 +14,8 @@ namespace UnityEngine.Tutorial
         public string[] Messages => _messages;
 
         public InteractionType Interaction { get => _interaction; set => _interaction = value; }
+
+        public Action onDisplayAnimation;
         public Func<RectTransform> onDisplayIndicator;
         public Action onInteractHandler;
     }

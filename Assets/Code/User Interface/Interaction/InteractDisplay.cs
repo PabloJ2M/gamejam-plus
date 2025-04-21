@@ -21,7 +21,7 @@ namespace Gameplay.Events
             _interaction?.ForceDisable();
             _canvas?.Default();
             _reference = null;
-            if (Pool != null) Pool.Release(this);
+            if (Pool != null) Pool?.Release(this);
         }
         public void Select()
         {

@@ -4,7 +4,7 @@ namespace UnityEngine.SceneManagement
     {
         private const string SavedID = "Tutorial";
 
-        private void Start()
+        public void PlayButton()
         {
             if (PlayerPrefs.GetInt(SavedID, 0) != 0) return;
             PlayerPrefs.SetInt(SavedID, 1);

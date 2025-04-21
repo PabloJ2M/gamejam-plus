@@ -31,6 +31,8 @@ namespace UnityEngine.Tutorial.UI
             }
 
             if (step.Interaction != InteractionType.WaitInteraction) _controller.Continue = true;
+            else step.onDisplayAnimation?.Invoke();
+
             _onDisplay.Invoke(false);
         }
         private IEnumerator WriteAnimation(string message)

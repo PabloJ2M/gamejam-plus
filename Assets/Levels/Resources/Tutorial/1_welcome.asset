@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interaction: 0
   _messages:
-  - Hola xD
-  - Esto es un tutorial xD
+  - Welcome to Space Station!
+  - I'm {0}, your space astronaut always at your service!
+  - Together, we'll explore the daily life in space and customize our new home!
