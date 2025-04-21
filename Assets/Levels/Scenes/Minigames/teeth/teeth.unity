@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 11150413}
   - component: {fileID: 11150414}
   - component: {fileID: 11150415}
+  - component: {fileID: 11150416}
   m_Layer: 8
   m_Name: slider bar
   m_TagString: Untagged
@@ -248,6 +249,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &11150416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11150412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -350683504
+      Data2: 1179712305
+      Data3: -2014098555
+      Data4: -292203504
+    Path: event:/SFX/General/Correct
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &63165194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1176,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2046865489}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &392437992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1312,6 +1356,7 @@ GameObject:
   - component: {fileID: 519420034}
   - component: {fileID: 519420030}
   - component: {fileID: 519420035}
+  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: main camera
   m_TagString: MainCamera
@@ -1394,7 +1439,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0
+  near clip plane: 0.01
   far clip plane: 20
   field of view: 34
   orthographic: 1
@@ -1494,6 +1539,20 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &519420036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &525146493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4748,6 +4807,7 @@ GameObject:
   - component: {fileID: 2046865485}
   - component: {fileID: 2046865487}
   - component: {fileID: 2046865488}
+  - component: {fileID: 2046865489}
   m_Layer: 0
   m_Name: virtual camera
   m_TagString: Untagged
@@ -4781,7 +4841,7 @@ MonoBehaviour:
   Lens:
     FieldOfView: 34
     OrthographicSize: 5
-    NearClipPlane: 0
+    NearClipPlane: 0.01
     FarClipPlane: 20
     Dutch: 0
     ModeOverride: 0
@@ -4844,6 +4904,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _amount: 5
   _speed: 5
+--- !u!114 &2046865489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2046865483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -121031768
+      Data2: 1216132494
+      Data3: 1913354387
+      Data4: 69928024
+    Path: event:/SFX/Frenesi de Hidratacion/SFX_Error
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2138329890
 GameObject:
   m_ObjectHideFlags: 0

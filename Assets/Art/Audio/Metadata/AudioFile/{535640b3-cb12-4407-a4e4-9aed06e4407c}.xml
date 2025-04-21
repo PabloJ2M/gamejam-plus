@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{535640b3-cb12-4407-a4e4-9aed06e4407c}">
 		<property name="assetPath">
-			<value>SFX/Frenesi de Hidratacion/SFX_Error.wav</value>
+			<value>SFX/General/SFX_Incorrecto.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

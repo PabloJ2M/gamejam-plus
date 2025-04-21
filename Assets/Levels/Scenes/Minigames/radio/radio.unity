@@ -230,12 +230,20 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1896038025}
   m_SourcePrefab: {fileID: 100100000, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
 --- !u!224 &15356772 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3859121097256175066, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
   m_PrefabInstance: {fileID: 6468503900084755072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &27795035 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+  m_PrefabInstance: {fileID: 319816714}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &77406151
 GameObject:
@@ -560,6 +568,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3859121097256175066, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
   m_PrefabInstance: {fileID: 319816714}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &252560743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27795035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 527836974
+      Data2: 1105446029
+      Data3: 836738733
+      Data4: -1755103546
+    Path: event:/SFX/Radio de Comunicacion/Switch
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &312733568
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +842,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 252560743}
   m_SourcePrefab: {fileID: 100100000, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
 --- !u!1 &361758463
 GameObject:
@@ -872,6 +914,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &378241317 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+  m_PrefabInstance: {fileID: 468111516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &411675713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,7 +1108,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1518566555}
   m_SourcePrefab: {fileID: 100100000, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
 --- !u!1 &489582883
 GameObject:
@@ -1891,7 +1941,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1961730901}
   m_SourcePrefab: {fileID: 100100000, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
 --- !u!224 &835109034 stripped
 RectTransform:
@@ -2018,6 +2071,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMeshProUGUI: {fileID: 2065030647}
   text_AgencySpace: {fileID: 1576712139}
+--- !u!1 &937712469 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+  m_PrefabInstance: {fileID: 6468503900084755072}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &937712474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937712469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 527836974
+      Data2: 1105446029
+      Data3: 836738733
+      Data4: -1755103546
+    Path: event:/SFX/Radio de Comunicacion/Switch
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!224 &959144099 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6112038374832198457, guid: d6f748e7a59f8044d9e1f59cef140238, type: 3}
@@ -2099,6 +2188,11 @@ MonoBehaviour:
   m_Spacing: {x: 100, y: 50}
   m_Constraint: 2
   m_ConstraintCount: 2
+--- !u!1 &1043268257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+  m_PrefabInstance: {fileID: 6602509}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1150633155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2890,6 +2984,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3859121097256175066, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
   m_PrefabInstance: {fileID: 468111516}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1518566555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378241317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 527836974
+      Data2: 1105446029
+      Data3: 836738733
+      Data4: -1755103546
+    Path: event:/SFX/Radio de Comunicacion/Switch
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!224 &1543015808 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9142253461729699647, guid: 62d246c7f176e214fba9b7a4363463b4, type: 3}
@@ -3270,6 +3395,37 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3859121097256175066, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
   m_PrefabInstance: {fileID: 6602509}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1896038025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043268257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 527836974
+      Data2: 1105446029
+      Data3: 836738733
+      Data4: -1755103546
+    Path: event:/SFX/Radio de Comunicacion/Switch
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1936502010
 GameObject:
   m_ObjectHideFlags: 0
@@ -3436,6 +3592,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &1961730896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+  m_PrefabInstance: {fileID: 806818628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1961730901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961730896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 527836974
+      Data2: 1105446029
+      Data3: 836738733
+      Data4: -1755103546
+    Path: event:/SFX/Radio de Comunicacion/Switch
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1984172366
 GameObject:
   m_ObjectHideFlags: 0
@@ -4176,7 +4368,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6591438112277588369, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 937712474}
   m_SourcePrefab: {fileID: 100100000, guid: 60f0ada63f462ee4baf7007fd37dc7bc, type: 3}
 --- !u!1001 &7435517088103492988
 PrefabInstance:

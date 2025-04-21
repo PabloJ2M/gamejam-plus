@@ -316,6 +316,7 @@ GameObject:
   - component: {fileID: 56767748}
   - component: {fileID: 56767749}
   - component: {fileID: 56767750}
+  - component: {fileID: 56767751}
   m_Layer: 8
   m_Name: target icon
   m_TagString: Untagged
@@ -543,6 +544,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &56767751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56767744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -350683504
+      Data2: 1179712305
+      Data3: -2014098555
+      Data4: -292203504
+    Path: event:/SFX/General/Correct
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &86544167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1291,7 @@ GameObject:
   - component: {fileID: 645463657}
   - component: {fileID: 645463656}
   - component: {fileID: 645463655}
+  - component: {fileID: 645463658}
   m_Layer: 8
   m_Name: player
   m_TagString: Untagged
@@ -1357,6 +1390,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645463651}
   m_CullTransparentMesh: 1
+--- !u!114 &645463658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645463651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -844937318
+      Data2: 1297621488
+      Data3: 1440796553
+      Data4: -733974028
+    Path: event:/SFX/Ruta de Exploracion/Combustible
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 20
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &715240838
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,6 +2086,7 @@ GameObject:
   - component: {fileID: 1127997643}
   - component: {fileID: 1127997641}
   - component: {fileID: 1127997642}
+  - component: {fileID: 1127997644}
   m_Layer: 7
   m_Name: obstacle
   m_TagString: Untagged
@@ -2171,6 +2236,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1127997644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127997637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -51305019
+      Data2: 1204656406
+      Data3: 2057383861
+      Data4: 535095090
+    Path: event:/SFX/Ruta de Exploracion/Choque Asteroide
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1128053951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3100,7 @@ GameObject:
   - component: {fileID: 1669416640}
   - component: {fileID: 1669416636}
   - component: {fileID: 1669416639}
+  - component: {fileID: 1669416641}
   m_Layer: 7
   m_Name: obstacle
   m_TagString: Untagged
@@ -3153,6 +3250,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1669416641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669416634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -51305019
+      Data2: 1204656406
+      Data3: 2057383861
+      Data4: 535095090
+    Path: event:/SFX/Ruta de Exploracion/Choque Asteroide
+  Event: 
+  EventPlayTrigger: 5
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1729654769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3301,6 +3429,7 @@ GameObject:
   - component: {fileID: 1766144326}
   - component: {fileID: 1766144325}
   - component: {fileID: 1766144327}
+  - component: {fileID: 1766144328}
   m_Layer: 8
   m_Name: simulate
   m_TagString: Untagged
@@ -3422,6 +3551,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1766144328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766144323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1794380351
+      Data2: 1143583778
+      Data3: 1029608359
+      Data4: -17787567
+    Path: event:/SFX/General/SFX_UI_General_Boton
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1780603428
 GameObject:
   m_ObjectHideFlags: 0

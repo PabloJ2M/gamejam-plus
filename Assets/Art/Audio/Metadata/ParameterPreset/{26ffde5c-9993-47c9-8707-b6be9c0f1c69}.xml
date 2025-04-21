@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{26ffde5c-9993-47c9-8707-b6be9c0f1c69}">
+		<property name="name">
+			<value>RitmoDental_CorrectoIncorrecto</value>
+		</property>
+		<relationship name="folder">
+			<destination>{4278bdab-2ebf-4ad9-a8f3-1fbd7f91d9da}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cb32ca5e-d41e-4c5f-86ae-77015d767d5a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cb32ca5e-d41e-4c5f-86ae-77015d767d5a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

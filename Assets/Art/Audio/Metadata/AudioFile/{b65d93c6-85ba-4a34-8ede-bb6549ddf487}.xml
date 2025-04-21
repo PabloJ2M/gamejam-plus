@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{b65d93c6-85ba-4a34-8ede-bb6549ddf487}">
 		<property name="assetPath">
-			<value>SFX/Ritmo Dental/SFX_Correcto.wav</value>
+			<value>SFX/General/SFX_Correcto.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

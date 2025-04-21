@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{47947ead-8d64-4edf-b044-f95900093101}">
 		<property name="name">
-			<value>SFX_Minjuego_RadioDeComunic</value>
+			<value>Ruido Blanco</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{66a32844-6db1-412f-8e9a-29b3a4c5e021}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{5bd05c9b-c05f-434a-9781-c5539eb59582}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{2d0ad0ef-6a57-484d-8ee5-52456c6a8350}">
