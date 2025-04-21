@@ -1,18 +1,19 @@
 using UnityEngine;
+using UnityEngine.Pool;
 using UnityEngine.Splines;
 using Unity.Mathematics;
 using Random = UnityEngine.Random;
 
 namespace UI.Effects
 {
-    public class TrackSplineRandomizer : MonoBehaviour
+    public class TrackSplineRandomizer : ItemBehaviour
     {
         [SerializeField] private SplineContainer _spline;
         [SerializeField, Range(0, 1)] private float _threshold;
 
         private RectTransform _area;
 
-        private void Awake() => _area = GetComponent<RectTransform>();
+        protected override void Awake() { base.Awake(); _area = _transform as RectTransform; }
         private void Start() => CalculateSpline();
 
         [ContextMenu("Randomize Spline")] public void CalculateSpline()
@@ -22,14 +23,12 @@ namespace UI.Effects
 
             float2 min = _area.rect.min;
             float2 max = _area.rect.max;
-            float3 worldMin = _area.TransformPoint(new(min.x, min.y, 0));
-            float3 worldMax = _area.TransformPoint(new(max.x, max.y, 0));
 
-            float3 top = new(Random.Range(worldMin.x, worldMax.x), worldMax.y, 0);
-            float3 bottom = new(Random.Range(worldMin.x, worldMax.x), worldMin.y, 0);
+            float3 top = new(Random.Range(min.x, max.x), max.y, 0);
+            float3 bottom = new(Random.Range(min.x, max.x), min.y, 0);
 
-            float margin = math.abs(worldMax.y - worldMin.y) * _threshold;
-            float3 middle = new(Random.Range(worldMin.x, worldMax.x), Random.Range(worldMin.y + margin, worldMax.y - margin), 0);
+            float margin = math.abs(max.y - min.y) * _threshold;
+            float3 middle = new(Random.Range(min.x, max.x), Random.Range(min.y + margin, max.y - margin), 0);
 
             _spline.Spline[0] = new(top);
             _spline.Spline[1] = new(middle);
