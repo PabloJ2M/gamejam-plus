@@ -4,6 +4,7 @@ namespace UnityEngine.InputSystem
 {
     public abstract class DragBehaviour : TouchBehaviour
     {
+        protected float2 _input;
         protected bool _isDragging;
 
         protected override void Start() { base.Start(); _inputs.UI.Point.performed += OnPointerUpdate; }
@@ -13,8 +14,8 @@ namespace UnityEngine.InputSystem
         {
             if (!_isDragging) return;
 
-            float2 input = ctx.ReadValue<Vector2>();
-            OnUpdateSelection(input);
+            _input = ctx.ReadValue<Vector2>();
+            OnUpdateSelection(_input);
         }
 
         protected void ForceUpdate() => OnUpdateSelection(_inputs.UI.Point.ReadValue<Vector2>());

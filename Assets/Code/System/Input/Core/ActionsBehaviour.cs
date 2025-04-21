@@ -50,7 +50,6 @@ namespace UnityEngine.InputSystem
             if (results.Count == 0) return false;
 
             var list = results.OrderByDescending(r => r.sortingLayer).ThenByDescending(r => r.sortingOrder).ThenByDescending(r => r.depth);
-            print(list.First().gameObject.name);
             return list.First().gameObject == element;
         }
         protected bool IsPointerOverUI() => ClearResults().Count > 0;
