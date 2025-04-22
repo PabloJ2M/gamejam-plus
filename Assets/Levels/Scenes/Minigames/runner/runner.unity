@@ -1372,9 +1372,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1188887561}
-  - {fileID: 1612054709}
   - {fileID: 1824797135}
   - {fileID: 569344358}
+  - {fileID: 1612054709}
   m_Father: {fileID: 1963469689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1935,7 +1935,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1874397409}
+      - m_Target: {fileID: 1824797138}
         m_TargetAssemblyTypeName: UnityEngine.UI.Display.Health, Assembly-CSharp
         m_MethodName: ReduceValue
         m_Mode: 4
@@ -2194,6 +2194,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1824797138}
+          m_TargetAssemblyTypeName: UnityEngine.UI.BarUI, Assembly-CSharp
+          m_MethodName: ResetValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 781302561}
           m_TargetAssemblyTypeName: UI.Display.Score, Assembly-CSharp
           m_MethodName: RestoreScore
@@ -2361,7 +2373,6 @@ GameObject:
   - component: {fileID: 1874397406}
   - component: {fileID: 1874397408}
   - component: {fileID: 1874397407}
-  - component: {fileID: 1874397409}
   m_Layer: 8
   m_Name: amount
   m_TagString: Untagged
@@ -2426,25 +2437,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874397405}
   m_CullTransparentMesh: 1
---- !u!114 &1874397409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874397405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebcc565a4cee5d43b70ba2222ceb442, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _image: {fileID: 0}
-  _default: 0
-  _min: 0
-  _max: 0
-  _onBarEmpty:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1950189754
 GameObject:
   m_ObjectHideFlags: 0
