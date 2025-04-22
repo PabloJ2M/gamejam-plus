@@ -22,6 +22,6 @@ namespace UnityEngine.InputSystem
         protected abstract void OnUpdateSelection(float2 screenPosition);
 
         protected override void OnSelect() => _isDragging = true;
-        protected override void OnDeselect() => _isDragging = false;
+        protected override void OnDeselect() { _isDragging = false; _input = float2.zero; }
     }
 }
