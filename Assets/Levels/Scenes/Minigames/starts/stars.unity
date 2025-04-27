@@ -536,13 +536,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1601395836}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
 --- !u!224 &229315621 stripped
 RectTransform:
@@ -1043,7 +1041,7 @@ MonoBehaviour:
   _loop: 0
   _playOnAwake: 0
   _ignoreTimeScale: 0
-  _affectRaycast: 1
+  _affectRaycast: 0
   _affectInteraction: 1
   _onFadeIn:
     m_PersistentCalls:
@@ -1126,6 +1124,18 @@ MonoBehaviour:
       - m_Target: {fileID: 442897504}
         m_TargetAssemblyTypeName: UI.Effects.Fade, Assembly-CSharp
         m_MethodName: FadeIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 707007986}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1581,7 +1591,7 @@ MonoBehaviour:
       Data4: -806125045
     Path: event:/SFX/Estudiando Constelaciones/SFX_NuevaConstelacion
   Event: 
-  EventPlayTrigger: 1
+  EventPlayTrigger: 12
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -2239,13 +2249,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1588706843}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
 --- !u!224 &1272252407 stripped
 RectTransform:
@@ -2564,13 +2572,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1972209579}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
 --- !u!224 &1488971121 stripped
 RectTransform:
@@ -2793,78 +2799,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546542545}
   m_CullTransparentMesh: 1
---- !u!1 &1588706839 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-  m_PrefabInstance: {fileID: 1272252406}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1588706843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1588706839}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1188487923
-      Data2: 1193785320
-      Data3: 1298715787
-      Data4: -430384788
-    Path: event:/SFX/Estudiando Constelaciones/SFX_ConexionEstrellas
-  Event: 
-  EventPlayTrigger: 19
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!1 &1601395832 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-  m_PrefabInstance: {fileID: 229315620}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1601395836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1601395832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1188487923
-      Data2: 1193785320
-      Data3: 1298715787
-      Data4: -430384788
-    Path: event:/SFX/Estudiando Constelaciones/SFX_ConexionEstrellas
-  Event: 
-  EventPlayTrigger: 19
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1620568258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2996,11 +2930,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &1773882563 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-  m_PrefabInstance: {fileID: 1811400304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1780603428
 GameObject:
   m_ObjectHideFlags: 0
@@ -3128,50 +3057,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1811400309}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
 --- !u!224 &1811400305 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1547894489364244841, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
   m_PrefabInstance: {fileID: 1811400304}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1811400309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1773882563}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1188487923
-      Data2: 1193785320
-      Data3: 1298715787
-      Data4: -430384788
-    Path: event:/SFX/Estudiando Constelaciones/SFX_ConexionEstrellas
-  Event: 
-  EventPlayTrigger: 19
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1 &1916600247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3315,42 +3211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 1957032032}
   resourcesToSave: 02000000
---- !u!1 &1972209575 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5060834991120692818, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
-  m_PrefabInstance: {fileID: 1488971120}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1972209579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1972209575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 1188487923
-      Data2: 1193785320
-      Data3: 1298715787
-      Data4: -430384788
-    Path: event:/SFX/Estudiando Constelaciones/SFX_ConexionEstrellas
-  Event: 
-  EventPlayTrigger: 19
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -366,11 +366,38 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638808240757415441
+  lastModified: 638809650773687831
   FileSizes:
   - Name: Desktop
-    Value: 465440
+    Value: 505600
   Exists: 1
+--- !u!114 &-5399329401265413746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Runner/Impacto
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Runner/Impacto
+  Guid:
+    Data1: -616224489
+    Data2: 1117026810
+    Data3: 114713270
+    Data4: 2131350346
+  Banks:
+  - {fileID: -5402832557573063971}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-4166608046866065190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -397,7 +424,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3727
+  Length: 2827
 --- !u!114 &-3748242192562078825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -530,6 +557,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 32000
+--- !u!114 &-2269848102797845134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Runner/Salto
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Runner/Salto
+  Guid:
+    Data1: 688472972
+    Data2: 1262001334
+    Data3: -1636476796
+    Data4: 377302999
+  Banks:
+  - {fileID: -5402832557573063971}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 449
 --- !u!114 &-1995361135415661434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -572,10 +626,10 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638808240756716951
+  lastModified: 638809650772333281
   FileSizes:
   - Name: Desktop
-    Value: 2716
+    Value: 2860
   Exists: 1
 --- !u!114 &-1377769049714688366
 MonoBehaviour:
@@ -708,12 +762,15 @@ MonoBehaviour:
   - {fileID: 8199382630369858698}
   - {fileID: -3561748884510426221}
   - {fileID: -5600963078827774363}
+  - {fileID: -5399329401265413746}
+  - {fileID: 1688282016970172597}
+  - {fileID: -2269848102797845134}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4657823951122199280}
   StringsBanks:
   - {fileID: -1664212124066919506}
-  cacheTime: 638808240757415441
+  cacheTime: 638809650773687831
   cacheVersion: 131621
 --- !u!114 &116136200167934832
 MonoBehaviour:
@@ -784,7 +841,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638808240757394755
+  lastModified: 638809650773089722
   FileSizes:
   - Name: Desktop
     Value: 6979392
@@ -816,6 +873,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5918
+--- !u!114 &1688282016970172597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Runner/Recoleccion
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Runner/Recoleccion
+  Guid:
+    Data1: -1873919976
+    Data2: 1338584882
+    Data3: 1317261981
+    Data4: -1281049888
+  Banks:
+  - {fileID: -5402832557573063971}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2216
 --- !u!114 &3338229457856889805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -858,7 +942,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638722189517356517
+  lastModified: 638809650772277406
   FileSizes:
   - Name: Desktop
     Value: 1036
