@@ -4,14 +4,14 @@ namespace UnityEngine.U2D.Animation
     public class SpriteSkinStatic : MonoBehaviour
     {
         private SpriteRenderer _renderer;
-        private SpriteSkin _skin;
+        //private SpriteSkin _skin;
 
-        private Transform _bone;
+        [SerializeField] private Transform _bone;
         private Sprite _default;
         private Vector2 _offset;
 
-        private void Awake() { _renderer = GetComponent<SpriteRenderer>(); _skin = GetComponent<SpriteSkin>(); }
-        private void Start() { _default = _renderer.sprite; _bone = _skin.boneTransforms[0]; _offset = -(_bone.position - transform.position); }
+        private void Awake() { _renderer = GetComponent<SpriteRenderer>(); }
+        private void Start() { _default = _renderer.sprite;  _offset = -(_bone.position - transform.position); }
 
         private void Update()
         {
