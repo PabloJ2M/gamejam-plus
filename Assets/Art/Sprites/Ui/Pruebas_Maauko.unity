@@ -641,14 +641,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: character_test
       objectReference: {fileID: 0}
-    - target: {fileID: 5127178580224340182, guid: df96b5a9f1332764bb51feb382a0a384, type: 3}
-      propertyPath: m_BoneTransforms.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6864816576582922382, guid: df96b5a9f1332764bb51feb382a0a384, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

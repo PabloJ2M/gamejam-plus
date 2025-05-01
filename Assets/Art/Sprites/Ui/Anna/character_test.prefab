@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: character_test
       objectReference: {fileID: 0}
+    - target: {fileID: -8643219377931427758, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      propertyPath: m_Layer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8356063326999963556, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -22,11 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 4.19
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -104,6 +108,10 @@ PrefabInstance:
       propertyPath: m_AlwaysUpdate
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1029068417266794682, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      propertyPath: m_BoneTransforms.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 766811205916860005, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -144,6 +152,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+    - target: {fileID: 7627932513705295646, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7627932513705295646, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -231,6 +243,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Library: []
   m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: 36f8d01bd4a7e3544bd129c0897e30eb, type: 3}
+--- !u!4 &5248587898598842665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9100047068698488505, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
+  m_PrefabInstance: {fileID: 3935977277770059664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7214428899508920251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3278151420687888341, guid: c885c58b3fa9a9742b39250cdb9d6cc1, type: 3}
@@ -248,3 +265,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e460f1e7c6fe2874085654cb02fdf17f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _bone: {fileID: 5248587898598842665}
