@@ -6,8 +6,8 @@ namespace UnityEngine.SceneManagement
 
         public void PlayButton()
         {
-            if (PlayerPrefs.GetInt(SavedID, 0) != 0) return;
-            PlayerPrefs.SetInt(SavedID, 1);
+            if (PlayerPrefs.HasKey(SavedID)) return;
+            PlayerPrefs.SetInt(SavedID, 0);
             AddScene();
         }
     }
