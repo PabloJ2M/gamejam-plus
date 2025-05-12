@@ -1,3 +1,4 @@
+using UnityEngine.Events;
 using UnityEngine.InventorySystem;
 using Player.Data;
 
@@ -7,6 +8,7 @@ namespace UnityEngine.UI
     {
         [SerializeField] private InventoryUI _inventory;
         [SerializeField] private Database _database;
+        [SerializeField] private UnityEvent _OnFail, _OnSuccess;
 
         protected override void OnDisplay()
         {
@@ -22,7 +24,8 @@ namespace UnityEngine.UI
         public void BuyItem(Item item)
         {
             Vector3 data = ResourceManager.GetResource();
-            if (data.x < item.Hearts || data.y < item.Coins) return;
+            if (data.x < item.Hearts || data.y < item.Coins){ _OnFail.Invoke(); return; }
+            _OnSuccess.Invoke();
 
             ResourceManager.RemoveResource(ResourceType.Hearts, item.Hearts);
             ResourceManager.RemoveResource(ResourceType.Coins, item.Coins);

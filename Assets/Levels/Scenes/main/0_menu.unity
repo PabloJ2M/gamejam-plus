@@ -738,13 +738,14 @@ GameObject:
   - component: {fileID: 803373401}
   - component: {fileID: 803373400}
   - component: {fileID: 803373399}
+  - component: {fileID: 803373403}
   m_Layer: 5
   m_Name: options button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &803373398
 RectTransform:
   m_ObjectHideFlags: 0
@@ -760,9 +761,9 @@ RectTransform:
   - {fileID: 1632883976}
   m_Father: {fileID: 265540517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960.00006, y: -62.5}
   m_SizeDelta: {x: 320, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &803373399
@@ -834,6 +835,18 @@ MonoBehaviour:
           m_StringArgument: 1_gameplay
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 803373403}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &803373401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +885,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 803373397}
   m_CullTransparentMesh: 1
+--- !u!114 &803373403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803373397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1794380351
+      Data2: 1143583778
+      Data3: 1029608359
+      Data4: -17787567
+    Path: event:/SFX/General/SFX_UI_General_Boton
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &870052859
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,6 +1036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _source: {fileID: 0}
   _fade: {fileID: 8971592881596815849, guid: 6386d7fdb09e45541aadf58ef032d232, type: 3}
+  _ignore: []
   _onSceneOverlap:
     m_PersistentCalls:
       m_Calls: []
@@ -1130,6 +1175,7 @@ GameObject:
   - component: {fileID: 1007759933}
   - component: {fileID: 1007759932}
   - component: {fileID: 1007759931}
+  - component: {fileID: 1007759934}
   m_Layer: 5
   m_Name: exit button
   m_TagString: Untagged
@@ -1213,6 +1259,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1007759934}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1007759932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,6 +1309,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007759929}
   m_CullTransparentMesh: 1
+--- !u!114 &1007759934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007759929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -144117336
+      Data2: 1321954549
+      Data3: 1120898191
+      Data4: -1724418462
+    Path: event:/SFX/General/Back
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1012569393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1450,6 +1539,7 @@ GameObject:
   - component: {fileID: 1614087472}
   - component: {fileID: 1614087471}
   - component: {fileID: 1614087470}
+  - component: {fileID: 1614087474}
   m_Layer: 5
   m_Name: credits button
   m_TagString: Untagged
@@ -1546,6 +1636,18 @@ MonoBehaviour:
           m_StringArgument: 1_gameplay
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1614087474}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1614087472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1584,6 +1686,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614087468}
   m_CullTransparentMesh: 1
+--- !u!114 &1614087474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1614087468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1794380351
+      Data2: 1143583778
+      Data3: 1029608359
+      Data4: -17787567
+    Path: event:/SFX/General/SFX_UI_General_Boton
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1620101623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1869,6 +2002,7 @@ GameObject:
   - component: {fileID: 1729098777}
   - component: {fileID: 1729098776}
   - component: {fileID: 1729098779}
+  - component: {fileID: 1729098780}
   m_Layer: 5
   m_Name: start button
   m_TagString: Untagged
@@ -1952,6 +2086,18 @@ MonoBehaviour:
           m_StringArgument: 1_gameplay
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1729098780}
+        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1729098777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,6 +2149,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _scenePath: Assets/Levels/Scenes/main/1_gameplay.unity
+--- !u!114 &1729098780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729098774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -350683504
+      Data2: 1179712305
+      Data3: -2014098555
+      Data4: -292203504
+    Path: event:/SFX/General/Correct
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1780603428
 GameObject:
   m_ObjectHideFlags: 0
