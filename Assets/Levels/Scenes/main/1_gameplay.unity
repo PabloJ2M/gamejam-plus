@@ -686,7 +686,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 29, y: -88.00006}
+  m_AnchoredPosition: {x: 29.000061, y: -88.000046}
   m_SizeDelta: {x: 700, y: 700}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &142337379
@@ -1474,7 +1474,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960.00006, y: -640}
+  m_AnchoredPosition: {x: 960, y: -640}
   m_SizeDelta: {x: 1920.0001, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263360454
@@ -29359,7 +29359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -199.99994, y: -50}
+  m_AnchoredPosition: {x: -200, y: -50}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1157688394
@@ -36074,10 +36074,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _ui:
-  - _type: 0
+  - _type: 1
     _object: {fileID: 0}
     _text: {fileID: 1581314213}
-  - _type: 1
+  - _type: 0
     _object: {fileID: 0}
     _text: {fileID: 1934806865}
 --- !u!114 &1321954528
@@ -38115,6 +38115,7 @@ GameObject:
   - component: {fileID: 1673871482}
   - component: {fileID: 1673871484}
   - component: {fileID: 1673871483}
+  - component: {fileID: 1673871485}
   m_Layer: 5
   m_Name: confirmation view
   m_TagString: Untagged
@@ -38180,6 +38181,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673871481}
   m_CullTransparentMesh: 1
+--- !u!114 &1673871485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673871481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -768643998
+      Data2: 1112644689
+      Data3: -655238237
+      Data4: -316542577
+    Path: event:/SFX/General/Start Minigame
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1691070819
 GameObject:
   m_ObjectHideFlags: 0
