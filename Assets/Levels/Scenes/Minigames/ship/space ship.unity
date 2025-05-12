@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 715240842}
-  resourcesToSave: 0100000002000000
+  resourcesToSave: 01000000
 --- !u!1 &730038986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,6 +2409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _parent: {fileID: 1395593708}
   _prefab: {fileID: 3233996989730000541, guid: f210f25baba00114b94497fffb58a375, type: 3}
+  _hiddenParent: {fileID: 0}
   _maxAmount: 4
   _level: 5
 --- !u!114 &1395593710

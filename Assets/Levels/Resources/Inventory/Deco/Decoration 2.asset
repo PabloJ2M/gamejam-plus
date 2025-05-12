@@ -16,8 +16,8 @@ MonoBehaviour:
   _max: 64
   _name: Radioactive Moonstone
   _image: {fileID: 3100932031709480008, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _hearts: 2
-  _coins: 0
+  _hearts: 0
+  _coins: 20
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}

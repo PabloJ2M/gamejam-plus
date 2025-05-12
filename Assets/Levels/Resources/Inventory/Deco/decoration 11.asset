@@ -17,7 +17,7 @@ MonoBehaviour:
   _name: TV
   _image: {fileID: 5381258272088866372, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
   _hearts: 0
-  _coins: 7
+  _coins: 35
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}

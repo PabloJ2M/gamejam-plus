@@ -16,8 +16,8 @@ MonoBehaviour:
   _max: 64
   _name: Hydrangea Plant
   _image: {fileID: 1002221813086553683, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _hearts: 6
-  _coins: 0
+  _hearts: 0
+  _coins: 18
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}

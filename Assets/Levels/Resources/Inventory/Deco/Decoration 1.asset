@@ -16,8 +16,8 @@ MonoBehaviour:
   _max: 64
   _name: Astro Waifu Anime Figure
   _image: {fileID: 1857056967673615299, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _hearts: 2
-  _coins: 0
+  _hearts: 0
+  _coins: 6
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}

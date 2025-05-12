@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 781302561}
-  resourcesToSave: 0000000002000000
+  resourcesToSave: 00000000
 --- !u!1 &802060016
 GameObject:
   m_ObjectHideFlags: 0

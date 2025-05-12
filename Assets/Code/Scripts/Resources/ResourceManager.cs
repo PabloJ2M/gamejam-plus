@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Player.Data
 {
-    public enum ResourceType { Hearts, Coins }
+    public enum ResourceType { Coins, Hearts }
 
     public class ResourceManager : MonoBehaviour
     {
