@@ -110,7 +110,7 @@ MonoBehaviour:
       Data4: -430384788
     Path: event:/SFX/Estudiando Constelaciones/SFX_ConexionEstrellas
   Event: 
-  EventPlayTrigger: 17
+  EventPlayTrigger: 15
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
