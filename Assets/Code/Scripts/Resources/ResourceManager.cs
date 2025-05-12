@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace Player.Data
 {
-    public enum ResourceType { Welfare, Maintenance, Intelligence }
+    public enum ResourceType { Hearts, Coins }
 
     public class ResourceManager : MonoBehaviour
     {
         public static event Action onResourcesUpdated;
 
         public static Vector3 GetResource() => 
-            new (GetResource(ResourceType.Welfare), GetResource(ResourceType.Maintenance), GetResource(ResourceType.Intelligence));
+            new (GetResource(ResourceType.Hearts), GetResource(ResourceType.Coins));
 
         public static float GetResource(ResourceType type) => PlayerPrefs.GetFloat(type.ToString());
         public static void RemoveResource(ResourceType type, float amount) => AddResource(type, -Mathf.Abs(amount));
@@ -25,7 +25,7 @@ namespace Player.Data
 
         public static void LogResources()
         {
-            foreach(ResourceType resource in System.Enum.GetValues(typeof(ResourceType)))
+            foreach(ResourceType resource in Enum.GetValues(typeof(ResourceType)))
                 print($"{resource} {GetResource(resource)}");
         }
     }

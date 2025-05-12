@@ -22,11 +22,10 @@ namespace UnityEngine.UI
         public void BuyItem(Item item)
         {
             Vector3 data = ResourceManager.GetResource();
-            if (data.x < item.Welfare || data.y < item.Maintenance || data.z < item.Intelligence) return;
+            if (data.x < item.Hearts || data.y < item.Coins) return;
 
-            ResourceManager.RemoveResource(ResourceType.Welfare, item.Welfare);
-            ResourceManager.RemoveResource(ResourceType.Maintenance, item.Maintenance);
-            ResourceManager.RemoveResource(ResourceType.Intelligence, item.Intelligence);
+            ResourceManager.RemoveResource(ResourceType.Hearts, item.Hearts);
+            ResourceManager.RemoveResource(ResourceType.Coins, item.Coins);
 
             _inventory.Storage.Container?.Add(item, 1);
             _inventory?.RefreshUI();

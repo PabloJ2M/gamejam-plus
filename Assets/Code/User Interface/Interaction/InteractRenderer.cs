@@ -8,11 +8,13 @@ namespace Gameplay.Events
     public class InteractRenderer : MonoBehaviour, IInteractable
     {
         [SerializeField] private bool _needConfirmation;
+        [SerializeField, Range(0, 1)] private float _upDistance = 1;
+
         [SerializeField] private UnityEvent _onInteract;
         private bool _isLocked, _isSeened, _isRendered;
 
         public int ID => GetInstanceID();
-        public Vector2 WorldCoords => transform.position + Vector3.up;
+        public Vector2 WorldCoords => transform.position + (Vector3.up * _upDistance);
         public Action Action => _onInteract.Invoke;
         public bool NeedConfirmation => _needConfirmation;
 

@@ -1,4 +1,3 @@
-using UnityEngine.UI.Display;
 using UnityEngine.InventorySystem;
 using TMPro;
 
@@ -8,7 +7,11 @@ namespace UnityEngine.UI
     {
         [SerializeField] private Image _image;
         [SerializeField] private TextMeshProUGUI _name;
-        [SerializeField] private DisplayUI _welfare, _maintenance, _inteligence;
+
+        [Header("Cost")]
+        [SerializeField] private Image _costIcon;
+        [SerializeField] private TextMeshProUGUI _costText;
+        [SerializeField] private Sprite _coin, _heart;
 
         private StoreUI _store;
         private Item _item;
@@ -19,11 +22,12 @@ namespace UnityEngine.UI
         public override void Setup(Item data)
         {
             _item = data;
-            _name?.SetText(_item.Name);
             _image.sprite = _item.Image;
-            _welfare.SetActive(data.Welfare > 0); _welfare.SetText(data.Welfare);
-            _maintenance.SetActive(data.Maintenance > 0); _maintenance.SetText(data.Maintenance);
-            _inteligence.SetActive(data.Intelligence > 0); _inteligence.SetText(data.Intelligence);
+            _name?.SetText(_item.Name);
+
+            bool isHearts = data.Hearts > 0;
+            _costIcon.sprite = isHearts ? _heart : _coin;
+            _costText.SetText(isHearts ? data.Hearts.ToString() : data.Coins.ToString());
         }
     }
 }

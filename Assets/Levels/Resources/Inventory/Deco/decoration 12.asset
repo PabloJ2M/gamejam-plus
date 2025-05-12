@@ -16,9 +16,8 @@ MonoBehaviour:
   _max: 64
   _name: Communications Panel
   _image: {fileID: -7499571915610040905, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _welfare: 0
-  _maintenance: 15
-  _intelligence: 20
+  _hearts: 0
+  _coins: 8
   _description: 
   _back: {fileID: 0}
   _left: {fileID: 0}

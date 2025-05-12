@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1767714720185567493}
   - component: {fileID: 3411256497650657175}
   - component: {fileID: 6745646164561893413}
-  - component: {fileID: 5569965868968718611}
+  - component: {fileID: 2387689251569578415}
   - component: {fileID: 5841065865287924033}
   - component: {fileID: 2608755824268800677}
   m_Layer: 5
@@ -91,7 +91,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &5569965868968718611
+--- !u!114 &2387689251569578415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,11 +100,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 606962007775526582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6bc6da526705c14f86e668d5dc3d4ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 277632f083744ea4ba82b7b7a449ef47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ignoreObjects: 1
-  _onPress:
+  _onClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2608755824268800677}
@@ -182,4 +181,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 5841065865287924033}
-  _interaction: {fileID: 5569965868968718611}
+  _interaction: {fileID: 0}

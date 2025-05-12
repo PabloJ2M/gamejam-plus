@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interaction: 1
   _messages:
-  - First, there's the well-being resource, which takes care of everything related
-    to our health and hygiene.
+  - Next, we have the intelligence resource, which encompasses the research and development
+    activities that allow us to progress in this space environment.

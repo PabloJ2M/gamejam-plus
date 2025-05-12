@@ -6,7 +6,7 @@ namespace UnityEngine.InventorySystem
         [SerializeField] protected int _id = -1, _max = 64;
         [SerializeField] protected string _name;
         [SerializeField] protected Sprite _image;
-        [SerializeField, Range(0, 24)] protected int _welfare, _maintenance, _intelligence;
+        [SerializeField, Range(0, 24)] protected int _hearts, _coins;
         [SerializeField, TextArea(5, 10)] protected string _description;
 
         private void Awake() { if (_id < 0) SetRandomID(); }
@@ -17,8 +17,7 @@ namespace UnityEngine.InventorySystem
         public string Name => _name;
         public Sprite Image => _image;
         
-        public int Welfare => _welfare;
-        public int Maintenance => _maintenance;
-        public int Intelligence => _intelligence;
+        public int Hearts => _hearts;
+        public int Coins => _coins;
     }
 }
