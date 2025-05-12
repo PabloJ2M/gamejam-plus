@@ -1474,8 +1474,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 961.36365, y: -715.00006}
-  m_SizeDelta: {x: 1922.7273, y: 730.0001}
+  m_AnchoredPosition: {x: 960.00006, y: -640}
+  m_SizeDelta: {x: 1920.0001, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &263360454
 MonoBehaviour:
@@ -29306,7 +29306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -199.99988, y: -50}
+  m_AnchoredPosition: {x: -199.99994, y: -50}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1157688394
@@ -38181,6 +38181,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1694361247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 364933016406823420, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+  m_PrefabInstance: {fileID: 7910947012906625706}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1702936565
 GameObject:
   m_ObjectHideFlags: 0
@@ -39209,6 +39214,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4499250903023421509, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
   m_PrefabInstance: {fileID: 7910947012906625706}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1776012690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694361247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1990683395
+      Data2: 1156144569
+      Data3: 120531078
+      Data4: -567985562
+    Path: event:/SFX/General/Door
+  Event: 
+  EventPlayTrigger: 19
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1780603428
 GameObject:
   m_ObjectHideFlags: 0
@@ -47481,13 +47517,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
       propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1359570187}
+      objectReference: {fileID: 1776012690}
+    - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FMODUnity.StudioEventEmitter, FMODUnity
+      objectReference: {fileID: 0}
+    - target: {fileID: 8678080449656115288, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      propertyPath: _onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 364933016406823420, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1776012690}
   m_SourcePrefab: {fileID: 100100000, guid: b4324812005590e4b8df9efddaa4e332, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

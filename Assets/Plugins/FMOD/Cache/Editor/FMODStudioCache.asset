@@ -393,10 +393,10 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638826127852802811
+  lastModified: 638826488036366010
   FileSizes:
   - Name: Desktop
-    Value: 1453888
+    Value: 1467616
   Exists: 1
 --- !u!114 &-5399329401265413746
 MonoBehaviour:
@@ -653,10 +653,10 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638826127851580521
+  lastModified: 638826488034058174
   FileSizes:
   - Name: Desktop
-    Value: 2950
+    Value: 2986
   Exists: 1
 --- !u!114 &-1377769049714688366
 MonoBehaviour:
@@ -794,12 +794,13 @@ MonoBehaviour:
   - {fileID: 2179033879473289171}
   - {fileID: -5504172677210290503}
   - {fileID: -8372183748343023230}
+  - {fileID: 4715243010710604006}
   EditorParameters: []
   MasterBanks:
   - {fileID: 4657823951122199280}
   StringsBanks:
   - {fileID: -1664212124066919506}
-  cacheTime: 638826127852802811
+  cacheTime: 638826488036366010
   cacheVersion: 131621
 --- !u!114 &116136200167934832
 MonoBehaviour:
@@ -870,7 +871,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638826127852210690
+  lastModified: 638826488035336316
   FileSizes:
   - Name: Desktop
     Value: 6979392
@@ -998,11 +999,38 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638826127851530470
+  lastModified: 638826488034007671
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &4715243010710604006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/General/Door
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/General/Door
+  Guid:
+    Data1: -1990683395
+    Data2: 1156144569
+    Data3: 120531078
+    Data4: -567985562
+  Banks:
+  - {fileID: -5402832557573063971}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1376
 --- !u!114 &5366806651435797856
 MonoBehaviour:
   m_ObjectHideFlags: 0
