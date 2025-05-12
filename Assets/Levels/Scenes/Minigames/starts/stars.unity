@@ -541,7 +541,7 @@ PrefabInstance:
       value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1595,7 +1595,7 @@ MonoBehaviour:
       Data4: -806125045
     Path: event:/SFX/Estudiando Constelaciones/SFX_NuevaConstelacion
   Event: 
-  EventPlayTrigger: 12
+  EventPlayTrigger: 11
   EventStopTrigger: 0
   AllowFadeout: 1
   TriggerOnce: 0
@@ -2259,6 +2259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
+    - {fileID: 7126804358968145184, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2586,6 +2587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
+    - {fileID: 7126804358968145184, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3075,6 +3077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5253835845348590634, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
+    - {fileID: 7126804358968145184, guid: e026e79f46eb6e14d9ee07e704e20f84, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
