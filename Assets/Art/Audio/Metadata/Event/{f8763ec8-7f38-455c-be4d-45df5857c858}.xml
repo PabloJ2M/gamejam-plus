@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{f8763ec8-7f38-455c-be4d-45df5857c858}">
 		<property name="name">
-			<value>Luz Verde On</value>
+			<value>Lights</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -56,7 +56,11 @@
 			<destination>{cebc2110-f878-47ba-8acb-ac42379e7efc}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{a5220532-52a9-4c17-84bc-23a67bc12217}" />
+	<object class="EventAutomatableProperties" id="{a5220532-52a9-4c17-84bc-23a67bc12217}">
+		<property name="triggerCooldown">
+			<value>500</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{44f75360-5b68-44fe-8cfc-ea1663dd693e}" />
 	<object class="GroupTrack" id="{d4c54e0a-b8ae-4da1-b0d8-eea1bb2c3823}">
 		<relationship name="modules">
@@ -92,6 +96,9 @@
 		<property name="length">
 			<value>0.18562358276643992</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{4995f337-934c-4706-9480-95265bd41456}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{9ef4450c-bc00-4eab-a2d3-ec3a46f8aa65}</destination>
 		</relationship>
@@ -117,6 +124,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{8cbd98bc-36bd-48e8-aeb7-22a8f32e5298}" />
 	<object class="MixerBusFader" id="{3a67b3c1-0878-4732-a10d-334b0333f4be}" />
+	<object class="RandomizerModulator" id="{4995f337-934c-4706-9480-95265bd41456}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{518cb0e6-fbee-46b4-b3d3-f31db6000aec}">
 		<relationship name="effects">
 			<destination>{3a23b864-7a59-4919-a6d0-d03353a215e2}</destination>
