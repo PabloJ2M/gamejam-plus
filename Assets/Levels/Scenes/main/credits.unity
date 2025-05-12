@@ -1533,7 +1533,7 @@ MonoBehaviour:
     Path: event:/MUS/General/Creditos
   Event: 
   EventPlayTrigger: 1
-  EventStopTrigger: 0
+  EventStopTrigger: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -2143,6 +2143,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _source: {fileID: 0}
   _fade: {fileID: 8971592881596815849, guid: 6386d7fdb09e45541aadf58ef032d232, type: 3}
+  _ignore: []
+  _onSceneOverlap:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &898515927
 GameObject:
   m_ObjectHideFlags: 0
