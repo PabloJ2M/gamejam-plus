@@ -27,6 +27,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5800
+--- !u!114 &-9046802790298385127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUS/Lobby/Extradiegetic_BM/MUS_Menu
+  m_EditorClassIdentifier: 
+  Path: event:/MUS/Lobby/Extradiegetic_BM/MUS_Menu
+  Guid:
+    Data1: 969756305
+    Data2: 1195457675
+    Data3: 2002817458
+    Data4: 186455956
+  Banks:
+  - {fileID: 1388868704411895600}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 128000
 --- !u!114 &-8588278387129874269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +393,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638826775472448315
+  lastModified: 638826761725617632
   FileSizes:
   - Name: Desktop
     Value: 1538912
@@ -653,10 +680,10 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638826775469198740
+  lastModified: 638826761725068875
   FileSizes:
   - Name: Desktop
-    Value: 3140
+    Value: 3208
   Exists: 1
 --- !u!114 &-1377769049714688366
 MonoBehaviour:
@@ -762,6 +789,7 @@ MonoBehaviour:
   - {fileID: 7934158703517870172}
   - {fileID: 8630702504438285487}
   - {fileID: -6740782029654140940}
+  - {fileID: -9046802790298385127}
   - {fileID: 8151319602342905054}
   - {fileID: -2407478603122546344}
   - {fileID: -1107629744556559529}
@@ -804,7 +832,7 @@ MonoBehaviour:
   - {fileID: 4657823951122199280}
   StringsBanks:
   - {fileID: -1664212124066919506}
-  cacheTime: 638826775472448315
+  cacheTime: 638826761725617632
   cacheVersion: 131621
 --- !u!114 &116136200167934832
 MonoBehaviour:
@@ -886,7 +914,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 112000
+  Length: 21333
 --- !u!114 &1388868704411895600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,10 +930,10 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638826775470790340
+  lastModified: 638826761725567759
   FileSizes:
   - Name: Desktop
-    Value: 6372608
+    Value: 6979392
   Exists: 1
 --- !u!114 &1645927074383981709
 MonoBehaviour:
@@ -1084,7 +1112,7 @@ MonoBehaviour:
   Path: Assets/Art/Audio/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638826775469151284
+  lastModified: 638722189517356517
   FileSizes:
   - Name: Desktop
     Value: 1036
