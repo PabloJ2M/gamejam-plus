@@ -1,23 +1,23 @@
 # ninja log v5
-483	3317	7674663570429758	D:/1_Proyectos/0_Unity/Game Jams/gamejam-plus (2024)/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t11241o/obj/arm64-v8a/libswappywrapper.so	1878c61f800fe75a
-24	4060	7674663582789551	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e8f598fda1208c46
-116	482	7674663546745975	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	6661a1649574fefc
-34	3201	7674663573827506	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2f87260465db22df
-97	3414	7674663575522968	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	c814feeda9f8394f
-14	3276	7674663573957180	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be23004b17534262
-1	3564	7674663577821333	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	deeb21004271d0fc
-83	3374	7674663575383341	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cd63afedd3cae0ad
-47	3522	7674663577180782	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2c8dfd30e683aa2e
-61	4039	7674663582430524	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5664dccf98f0a1f1
-4060	4431	7674663586507480	D:/1_Proyectos/0_Unity/Game Jams/gamejam-plus (2024)/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t11241o/obj/arm64-v8a/libgame.so	c843a3ab763dd575
+17	1987	7687956150179489	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e8f598fda1208c46
 123	669	7687956137006698	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	6661a1649574fefc
 669	897	7687956139126344	D:/1_Proyectos/0_Unity/Game Jams/gamejam-plus (2024)/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t11241o/obj/arm64-v8a/libswappywrapper.so	1878c61f800fe75a
 105	1536	7687956145653448	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2f87260465db22df
-76	1568	7687956145992605	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2c8dfd30e683aa2e
 55	1582	7687956146142196	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be23004b17534262
-95	1591	7687956146232012	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cd63afedd3cae0ad
 115	1653	7687956146846305	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	c814feeda9f8394f
+95	1591	7687956146232012	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cd63afedd3cae0ad
 65	1737	7687956147684415	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	deeb21004271d0fc
+76	1568	7687956145992605	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2c8dfd30e683aa2e
 86	1891	7687956149211827	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5664dccf98f0a1f1
-17	1987	7687956150179489	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e8f598fda1208c46
 1988	2146	7687956151728456	D:/1_Proyectos/0_Unity/Game Jams/gamejam-plus (2024)/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t11241o/obj/arm64-v8a/libgame.so	c843a3ab763dd575
+268	500	7688000453468482	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	6661a1649574fefc
+500	893	7688000457308202	D:/1_Proyectos/0_Unity/Game Jams/gamejam-plus (2024)/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t11241o/obj/arm64-v8a/libswappywrapper.so	1878c61f800fe75a
+60	1399	7688000462340027	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2f87260465db22df
+39	1497	7688000463327387	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	2c8dfd30e683aa2e
+30	1500	7688000463337357	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	be23004b17534262
+69	1518	7688000463586702	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	cd63afedd3cae0ad
+253	1598	7688000464384566	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	c814feeda9f8394f
+49	1689	7688000465282165	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	deeb21004271d0fc
+227	1918	7688000467541361	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5664dccf98f0a1f1
+4	2050	7688000468897738	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e8f598fda1208c46
+2050	2221	7688000470614645	D:/1_Proyectos/0_Unity/Game Jams/gamejam-plus (2024)/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/3t11241o/obj/arm64-v8a/libgame.so	c843a3ab763dd575
