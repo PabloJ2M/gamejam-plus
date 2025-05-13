@@ -5,7 +5,7 @@
 			<value>Red</value>
 		</property>
 		<property name="name">
-			<value>Mini Games</value>
+			<value>Minijuegos</value>
 		</property>
 		<relationship name="folder">
 			<destination>{1f919f50-a418-4a3f-9468-f96d313ca2a2}</destination>

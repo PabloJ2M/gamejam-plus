@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine.Events;
+using Unity.Mathematics;
 
 namespace UnityEngine.InputSystem
 {
@@ -9,9 +9,11 @@ namespace UnityEngine.InputSystem
         [SerializeField] private Camera _camera;
         [SerializeField] private RectTransform _container;
         [SerializeField] private LineRenderer _renderer;
-        [SerializeField] private UnityEvent _onComplete;
+        [SerializeField] private UnityEvent _onConnect, _onComplete;
 
+        public Camera Camera => _camera;
         public bool IsDragging => _isDragging && !_isLocked;
+        public float2 Input => _input;
 
         private List<ScreenPoint> _points = new();
         private bool _isLocked;
@@ -32,6 +34,7 @@ namespace UnityEngine.InputSystem
         {
             if (_points.Contains(newPoint)) return;
             _points.Add(newPoint);
+            _onConnect.Invoke();
 
             int count = _renderer.positionCount;
             _renderer.SetPosition(count - 1, newPoint.Position);

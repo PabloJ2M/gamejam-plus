@@ -12,7 +12,7 @@ namespace UI.Effects
         [SerializeField] private UnityEvent _onFadeIn, _onFadeOut;
 
         [HideInInspector, SerializeField] private CanvasGroup _group;
-        protected override float _alpha { get => _group.alpha; set => _group.alpha = value; }
+        protected override float _alpha { get => _group.alpha; set { if (_group) _group.alpha = value; } }
 
         protected virtual void Awake() => _group = GetComponent<CanvasGroup>();
         protected virtual void OnEnable() => _onFade += OnFadeComplete;
@@ -26,6 +26,7 @@ namespace UI.Effects
         }
         private void OnFadeComplete(bool value)
         {
+            if (_group == null) return;
             if (_affectInteraction) _group.interactable = value;
             if (_affectRaycast) _group.blocksRaycasts = value;
         }

@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.Events;
+using System.Linq;
 using UI.Effects;
+using UnityEngine.Events;
 
 namespace UnityEngine.SceneManagement
 {
@@ -11,6 +12,9 @@ namespace UnityEngine.SceneManagement
     {
         [SerializeField] private AudioSource _source;
         [SerializeField] private FadeScene _fade;
+        [SerializeField] private string[] _ignore;
+
+        [SerializeField] private UnityEvent<bool> _onSceneOverlap;
 
         public List<string> scenes { get; protected set; }
         public Action onSwitchScene;
@@ -25,12 +29,14 @@ namespace UnityEngine.SceneManagement
         {
             if (scenes.Contains(value)) yield break;
             yield return SceneManager.LoadSceneAsync(value, LoadSceneMode.Additive);
+            if (!_ignore.Contains(value)) _onSceneOverlap.Invoke(false);
             scenes.Add(value);
         }
         public void RemoveScene(string value)
         {
             if (!scenes.Contains(value)) return;
             SceneManager.UnloadSceneAsync(value, UnloadSceneOptions.None);
+            if (!_ignore.Contains(value)) _onSceneOverlap.Invoke(true);
             scenes.Remove(value);
         }
         private void OnFading(string value)

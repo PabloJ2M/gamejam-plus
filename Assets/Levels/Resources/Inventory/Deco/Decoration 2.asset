@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1cda5ccb0dcc8734ab563567d927c0b6, type: 3}
-  m_Name: Decoration 2
+  m_Name: decoration 2
   m_EditorClassIdentifier: 
   _id: 125256
   _max: 64
-  _name: item 2
-  _image: {fileID: 8831524967467744588, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
-  _resources: 5
-  _research: 3
-  _health: 0
+  _name: Radioactive Moonstone
+  _image: {fileID: 3100932031709480008, guid: bca2e829ddfd0a04caeadc09e06a10b6, type: 3}
+  _hearts: 0
+  _coins: 20
   _description: 
-  _front: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
   _back: {fileID: 0}
   _left: {fileID: 0}
   _right: {fileID: 0}
+  _overrideSize: {x: 1, y: 3}

@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,15 +11,12 @@ namespace Player.Data
         private void Awake()
         {
             if (PlayerPrefs.HasKey(_id)) return;
-            PlayerPrefs.SetString(_id, DateTime.Now.ToLongDateString());
+            Timeout.SaveExpirationDate(_id);
         }
         private void Start()
         {
-            string data = PlayerPrefs.GetString(_id);
-            DateTime.TryParse(data, out DateTime time);
-            TimeSpan result = time.Subtract(DateTime.Now);
-
-            _onDateUpdated.Invoke($"Días: {-result.Days}");
+            int days = Timeout.GetExpirationLengthDays(_id);
+            _onDateUpdated.Invoke($"Días: {days}");
         }
     }
 }

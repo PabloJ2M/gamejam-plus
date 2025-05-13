@@ -5,7 +5,7 @@
 			<value>Red</value>
 		</property>
 		<property name="name">
-			<value>Music</value>
+			<value>MUS</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ab165533-42ee-40a3-bb02-8c2d468a2200}</destination>

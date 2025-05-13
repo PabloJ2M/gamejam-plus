@@ -5,7 +5,7 @@
 			<value>Blue</value>
 		</property>
 		<property name="name">
-			<value>Ritmo Dental</value>
+			<value>Cepillado</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5d7e91ad-8ac0-404d-9304-505bf1318613}</destination>

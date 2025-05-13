@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{16b025c0-6955-479e-9261-7676c82cb1eb}">
 		<property name="assetPath">
-			<value>MUS/Mini Games/MUS_FuchibolEspacial.ogg</value>
+			<value>MUS/Minijuegos/MUS_FuchibolEspacial.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

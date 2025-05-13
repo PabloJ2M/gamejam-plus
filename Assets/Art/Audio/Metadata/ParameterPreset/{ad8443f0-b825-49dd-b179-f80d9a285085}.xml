@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ad8443f0-b825-49dd-b179-f80d9a285085}">
+		<property name="name">
+			<value>Phase 3 Transition</value>
+		</property>
+		<relationship name="folder">
+			<destination>{4278bdab-2ebf-4ad9-a8f3-1fbd7f91d9da}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f8c09e17-af21-413b-a7f8-fcfed5ca5f3d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f8c09e17-af21-413b-a7f8-fcfed5ca5f3d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

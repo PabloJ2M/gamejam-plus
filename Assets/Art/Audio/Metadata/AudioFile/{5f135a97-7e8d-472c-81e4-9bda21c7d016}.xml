@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{5f135a97-7e8d-472c-81e4-9bda21c7d016}">
 		<property name="assetPath">
-			<value>MUS/Mini Games/MUS_EstudiandoConstelaciones.ogg</value>
+			<value>MUS/Minijuegos/MUS_EstudiandoConstelaciones.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

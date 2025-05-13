@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _group: {fileID: 0}
-  _switchIcon: {fileID: -2413806693520163455, guid: 43de157ef9601054186de631104d21cc, type: 3}
+  _switchIcon: {fileID: 981260644, guid: 4218bcd5c034bb14791381f136f7566f, type: 3}
   _invert: 0
 --- !u!1 &7843695883824790743
 GameObject:

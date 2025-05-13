@@ -1,4 +1,6 @@
+using UnityEngine.Events;
 using UnityEngine.InventorySystem;
+using Player.Data;
 
 namespace UnityEngine.UI
 {
@@ -6,17 +8,27 @@ namespace UnityEngine.UI
     {
         [SerializeField] private InventoryUI _inventory;
         [SerializeField] private Database _database;
+        [SerializeField] private UnityEvent _OnFail, _OnSuccess;
 
         protected override void OnDisplay()
         {
             ClearItems();
             var items = _database.Items;
-            for (int i = 0; i < items.Count; i++) { var item = Pool.Get() as StoreUI_Entry; item.Setup(items[i]); }
+            for (int i = 0; i < items.Count; i++)
+            {
+                var item = Pool.Get() as StoreUI_Entry;
+                item.Setup(items[i]);
+            }
         }
 
         public void BuyItem(Item item)
         {
-            //permitir compra si tiene suficiente dinero
+            Vector3 data = ResourceManager.GetResource();
+            if (data.x < item.Hearts || data.y < item.Coins){ _OnFail.Invoke(); return; }
+            _OnSuccess.Invoke();
+
+            ResourceManager.RemoveResource(ResourceType.Hearts, item.Hearts);
+            ResourceManager.RemoveResource(ResourceType.Coins, item.Coins);
 
             _inventory.Storage.Container?.Add(item, 1);
             _inventory?.RefreshUI();

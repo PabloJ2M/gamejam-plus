@@ -5,7 +5,7 @@
 			<value>Red</value>
 		</property>
 		<property name="assetPath">
-			<value>MUS/Mini Games/</value>
+			<value>MUS/Minijuegos/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{f3ac518d-0304-4719-a243-8a64a101766d}</destination>

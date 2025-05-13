@@ -12,7 +12,7 @@ public class NavMeshAgentRandom : MonoBehaviour
     private WaitForSeconds _delay = new(3);
 
     private void Awake() => _core = GetComponent<NavMeshAgentCore>();
-    private void OnEnable() => _waitUntil = new(() => _core.Agent.remainingDistance > _core.Agent.radius);
+    private void OnEnable() => _waitUntil = new(() => _core.Agent.remainingDistance < _core.Agent.radius);
 
     private IEnumerator Start()
     {

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{2c5445cc-a96c-4c50-b98b-2e8fe45ad581}">
 		<property name="assetPath">
-			<value>MUS/Mini Games/MUS_FrenesiDeHidratacion.ogg</value>
+			<value>MUS/Minijuegos/MUS_FrenesiDeHidratacion.ogg</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

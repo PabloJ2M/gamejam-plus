@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{12254e5f-0779-4d5c-af61-18283afad9f4}">
+		<property name="assetPath">
+			<value>SFX/Ritmo Dental/SFX_Tragar.wav.meta</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f3ac518d-0304-4719-a243-8a64a101766d}</destination>
+		</relationship>
+	</object>
+</objects>

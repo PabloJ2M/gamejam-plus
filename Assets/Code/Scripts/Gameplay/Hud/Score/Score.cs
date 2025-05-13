@@ -1,14 +1,14 @@
-using UnityEngine;
 using TMPro;
 
-namespace UI.Display
+namespace UnityEngine.UI.Display
 {
     public class Score : MonoBehaviour
     {
         [SerializeField] private string _format = "Score: {0}";
         [SerializeField] private TextMeshProUGUI _textUI;
-        
+
         private float _score;
+        public float score => _score;
 
         public void AddScore(float amount) { _score += amount; UpdateScore(); }
         public void RemoveScore(float amount) { _score = Mathf.Clamp(_score -= amount, 0, int.MaxValue); UpdateScore(); }

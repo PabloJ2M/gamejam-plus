@@ -183,6 +183,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -191,7 +204,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 64
+        y: 120
         width: 48
         height: 48
       alignment: 0
@@ -213,7 +226,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 86
-        y: 85
+        y: 141
         width: 20
         height: 22
       alignment: 0
@@ -235,7 +248,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 113
-        y: 96
+        y: 152
         width: 14
         height: 15
       alignment: 0
@@ -257,7 +270,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 135
-        y: 86
+        y: 142
         width: 34
         height: 20
       alignment: 0
@@ -279,7 +292,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 179
-        y: 83
+        y: 139
         width: 10
         height: 10
       alignment: 0
@@ -301,7 +314,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 179
-        y: 72
+        y: 128
         width: 10
         height: 10
       alignment: 0
@@ -319,33 +332,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Botones_Tile_6
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 50
-        width: 32
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 4, z: 4, w: 4}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06b33cdab1a8f2bd0800000000000000
-      internalID: -2652749804013929632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Botones_Tile_7
       rect:
         serializedVersion: 2
         x: 81
-        y: 66
+        y: 122
         width: 30
         height: 12
       alignment: 0
@@ -367,7 +358,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 118
-        y: 66
+        y: 122
         width: 4
         height: 12
       alignment: 0
@@ -389,7 +380,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 148
-        y: 54
+        y: 110
         width: 22
         height: 22
       alignment: 0
@@ -411,7 +402,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 179
-        y: 61
+        y: 117
         width: 10
         height: 10
       alignment: 0
@@ -433,7 +424,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 16
-        y: 16
+        y: 72
         width: 48
         height: 32
       alignment: 0
@@ -455,7 +446,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 16
+        y: 72
         width: 48
         height: 32
       alignment: 0
@@ -477,7 +468,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 179
-        y: 50
+        y: 106
         width: 10
         height: 10
       alignment: 0
@@ -499,11 +490,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 146
-        y: 19
+        y: 75
         width: 26
         height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -521,7 +512,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 179
-        y: 33
+        y: 89
         width: 10
         height: 10
       alignment: 0
@@ -543,7 +534,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 179
-        y: 22
+        y: 78
         width: 10
         height: 10
       alignment: 0
@@ -556,6 +547,50 @@ TextureImporter:
       bones: []
       spriteID: 6f114fb4fb8851920800000000000000
       internalID: 2960422685260386806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: radio_sprite-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 157
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0df002fa5d6af4d92ecb01679f719a
+      internalID: 981260644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: radio_sprite-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 16
+        width: 176
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d7197f3a41596458d83aa95ab474b5
+      internalID: -537560908
       vertices: []
       indices: 
       edges: []
@@ -591,6 +626,8 @@ TextureImporter:
       Botones_Tile_7: -146980508718563256
       Botones_Tile_8: 2166747483986657570
       Botones_Tile_9: -5831791654424207844
+      radio_sprite-sheet_0: 981260644
+      radio_sprite-sheet_1: -537560908
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
